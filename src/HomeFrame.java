@@ -38,6 +38,9 @@ public class HomeFrame {
         button1.setText("Books Management");
         button2.setText("Membership Management");
         button3.setText("Study Room Management");
+        button1.setFocusable(false);
+        button2.setFocusable(false);
+        button3.setFocusable(false);
 
         homeFrame.add(button1);
         homeFrame.add(button2);
