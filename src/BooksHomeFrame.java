@@ -11,6 +11,12 @@ public class BooksHomeFrame {
         bhFrame.setLocationRelativeTo(null);
         bhFrame.setTitle("Books Management");
 
+        backButton.setLocation(30,30);
+        backButton.setSize(80,40);
+        backButton.setText("Back");
+        backButton.setFocusable(false);
+
+        bhFrame.add(backButton);
         bhFrame.setVisible(true);
     }
 }
