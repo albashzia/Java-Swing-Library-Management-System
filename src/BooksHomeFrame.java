@@ -26,6 +26,7 @@ public class BooksHomeFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e){
         if (e.getSource()==backButton){
+            bhFrame.dispose();
             new HomeFrame();
         }
     }
