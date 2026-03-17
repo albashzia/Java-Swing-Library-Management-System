@@ -20,6 +20,7 @@ public class HomeFrame {
         label1.setHorizontalAlignment(JLabel.CENTER);
         label1.setVerticalAlignment(JLabel.CENTER);
         label1.setText("Library Management System");
+        label1.setFont(new Font("Comic Sans",Font.ITALIC,35));
         label1.setForeground(Color.WHITE);
         label1.setOpaque(true);
 
