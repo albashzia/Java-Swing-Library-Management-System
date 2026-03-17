@@ -35,6 +35,10 @@ public class HomeFrame {
         button2.setLocation(100,240);
         button3.setLocation(100,320);
 
+        button1.setText("Books Management");
+        button2.setText("Membership Management");
+        button3.setText("Study Room Management");
+
         homeFrame.add(button1);
         homeFrame.add(button2);
         homeFrame.add(button3);
