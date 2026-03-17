@@ -17,6 +17,10 @@ public class HomeFrame {
         label1.setLocation(100,30);
         label1.setSize(600,70);
         label1.setBackground(Color.BLACK);
+        label1.setHorizontalAlignment(JLabel.CENTER);
+        label1.setVerticalAlignment(JLabel.CENTER);
+        label1.setText("Library Management System");
+        label1.setForeground(Color.WHITE);
         label1.setOpaque(true);
 
         homeFrame.add(label1);
