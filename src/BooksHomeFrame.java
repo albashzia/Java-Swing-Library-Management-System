@@ -4,6 +4,12 @@ public class BooksHomeFrame {
     JFrame bhFrame = new JFrame();
 
     BooksHomeFrame(){
+        bhFrame.setSize(800,600);
+        bhFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        bhFrame.setLayout(null);
+        bhFrame.setLocationRelativeTo(null);
+        bhFrame.setTitle("Books Management");
 
+        bhFrame.setVisible(true);
     }
 }
