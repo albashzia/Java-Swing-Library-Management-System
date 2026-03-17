@@ -45,6 +45,7 @@ public class HomeFrame implements ActionListener {
         button3.setFocusable(false);
 
         button1.addActionListener(this);
+        button2.addActionListener(this);
 
         homeFrame.add(button1);
         homeFrame.add(button2);
@@ -60,6 +61,10 @@ public class HomeFrame implements ActionListener {
         if(e.getSource()==button1){
             homeFrame.dispose();
             new BooksHomeFrame();
+        }
+        if(e.getSource()==button2){
+            homeFrame.dispose();
+            new MembersHomeFrame();
         }
     }
 }
