@@ -5,6 +5,9 @@ public class HomeFrame {
 
     JFrame homeFrame = new JFrame();
     JLabel label1 = new JLabel();
+    JButton button1 = new JButton();
+    JButton button2 = new JButton();
+    JButton button3 = new JButton();
 
     HomeFrame(){
 
