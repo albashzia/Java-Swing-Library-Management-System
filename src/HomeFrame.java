@@ -5,5 +5,10 @@ public class HomeFrame {
     JFrame homeFrame = new JFrame();
     HomeFrame(){
 
+        homeFrame.setSize(800,600);
+        homeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        homeFrame.setLayout(null);
+        homeFrame.setTitle("Library Management System");
+        homeFrame.setVisible(true);
     }
 }
