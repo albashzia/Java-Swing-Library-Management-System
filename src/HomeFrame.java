@@ -46,6 +46,7 @@ public class HomeFrame implements ActionListener {
 
         button1.addActionListener(this);
         button2.addActionListener(this);
+        button3.addActionListener(this);
 
         homeFrame.add(button1);
         homeFrame.add(button2);

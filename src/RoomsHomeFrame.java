@@ -9,5 +9,7 @@ public class RoomsHomeFrame {
         srhFrame.setLayout(null);
         srhFrame.setLocationRelativeTo(null);
         srhFrame.setTitle("Study Room Management");
+
+        srhFrame.setVisible(true);
     }
 }
