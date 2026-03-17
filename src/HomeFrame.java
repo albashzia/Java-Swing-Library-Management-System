@@ -1,7 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class HomeFrame {
+public class HomeFrame implements ActionListener {
 
     JFrame homeFrame = new JFrame();
     JLabel label1 = new JLabel();
@@ -49,5 +51,10 @@ public class HomeFrame {
         homeFrame.add(label1);
 
         homeFrame.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+
     }
 }
