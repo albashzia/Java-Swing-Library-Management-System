@@ -27,9 +27,9 @@ public class HomeFrame {
         label1.setForeground(Color.WHITE);
         label1.setOpaque(true);
 
-        button1.setSize(200,50);
-        button2.setSize(200,50);
-        button3.setSize(200,50);
+        button1.setSize(240,50);
+        button2.setSize(240,50);
+        button3.setSize(240,50);
 
         button1.setLocation(100,160);
         button2.setLocation(100,240);
