@@ -66,5 +66,9 @@ public class HomeFrame implements ActionListener {
             homeFrame.dispose();
             new MembersHomeFrame();
         }
+        if (e.getSource()==button3){
+            homeFrame.dispose();
+            new RoomsHomeFrame();
+        }
     }
 }
