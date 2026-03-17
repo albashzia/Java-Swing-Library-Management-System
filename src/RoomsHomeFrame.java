@@ -18,12 +18,16 @@ public class RoomsHomeFrame implements ActionListener {
         backButton.setSize(80,40);
         backButton.setText("Back");
         backButton.setFocusable(false);
+        backButton.addActionListener(this);
 
         srhFrame.add(backButton);
         srhFrame.setVisible(true);
     }
     @Override
     public void actionPerformed(ActionEvent e){
-
+        if (e.getSource()==backButton){
+            srhFrame.dispose();
+            new HomeFrame();
+        }
     }
 }
