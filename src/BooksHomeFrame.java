@@ -2,6 +2,7 @@ import javax.swing.*;
 
 public class BooksHomeFrame {
     JFrame bhFrame = new JFrame();
+    JButton backButton = new JButton();
 
     BooksHomeFrame(){
         bhFrame.setSize(800,600);
