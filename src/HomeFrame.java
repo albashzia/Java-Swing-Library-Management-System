@@ -3,6 +3,8 @@ import javax.swing.*;
 public class HomeFrame {
 
     JFrame homeFrame = new JFrame();
+    JLabel label1 = new JLabel();
+
     HomeFrame(){
 
         homeFrame.setSize(800,600);
