@@ -44,6 +44,8 @@ public class HomeFrame implements ActionListener {
         button2.setFocusable(false);
         button3.setFocusable(false);
 
+        button1.addActionListener(this);
+
         homeFrame.add(button1);
         homeFrame.add(button2);
         homeFrame.add(button3);
@@ -55,6 +57,8 @@ public class HomeFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e){
-
+        if(e.getSource()==button1){
+            new BooksHomeFrame();
+        }
     }
 }
