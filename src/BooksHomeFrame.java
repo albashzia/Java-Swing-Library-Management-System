@@ -17,6 +17,7 @@ public class BooksHomeFrame implements ActionListener {
         backButton.setSize(80,40);
         backButton.setText("Back");
         backButton.setFocusable(false);
+        backButton.addActionListener(this);
 
         bhFrame.add(backButton);
         bhFrame.setVisible(true);
@@ -24,6 +25,8 @@ public class BooksHomeFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e){
-
+        if (e.getSource()==backButton){
+            new HomeFrame();
+        }
     }
 }
