@@ -51,6 +51,8 @@ public class HomeFrame implements ActionListener {
 
         exitButton.setSize(240,50);
         exitButton.setLocation(100,400);
+        exitButton.setText("Exit");
+        exitButton.setFocusable(false);
 
         homeFrame.add(button1);
         homeFrame.add(button2);
