@@ -10,6 +10,7 @@ public class HomeFrame implements ActionListener {
     JButton button1 = new JButton();
     JButton button2 = new JButton();
     JButton button3 = new JButton();
+    JButton exitButton = new JButton();
 
     HomeFrame(){
 
