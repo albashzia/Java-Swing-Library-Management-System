@@ -8,6 +8,14 @@ public class BooksHomeFrame implements ActionListener {
     JButton backButton = new JButton();
     JLabel label1 = new JLabel();
 
+    JButton button1 = new JButton();
+    JButton button2 = new JButton();
+    JButton button3 = new JButton();
+    JButton button4 = new JButton();
+    JButton button5 = new JButton();
+    JButton button6 = new JButton();
+    JButton button7 = new JButton();
+
     BooksHomeFrame(){
         bhFrame.setSize(800,600);
         bhFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
