@@ -53,6 +53,7 @@ public class HomeFrame implements ActionListener {
         exitButton.setLocation(100,400);
         exitButton.setText("Exit");
         exitButton.setFocusable(false);
+        exitButton.addActionListener(this);
 
         homeFrame.add(button1);
         homeFrame.add(button2);
@@ -78,6 +79,9 @@ public class HomeFrame implements ActionListener {
         if (e.getSource()==button3){
             homeFrame.dispose();
             new RoomsHomeFrame();
+        }
+        if (e.getSource()==exitButton){
+            homeFrame.dispose();
         }
     }
 }
