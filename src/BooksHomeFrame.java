@@ -39,6 +39,22 @@ public class BooksHomeFrame implements ActionListener {
         backButton.setFocusable(false);
         backButton.addActionListener(this);
 
+        button1.setBounds(120,130,200,50);
+        button2.setBounds(120,190,200,50);
+        button3.setBounds(120,250,200,50);
+        button4.setBounds(120,310,200,50);
+        button5.setBounds(120,370,200,50);
+        button6.setBounds(120,430,200,50);
+        button7.setBounds(120,490,200,50);
+
+        bhFrame.add(button1);
+        bhFrame.add(button2);
+        bhFrame.add(button3);
+        bhFrame.add(button4);
+        bhFrame.add(button5);
+        bhFrame.add(button6);
+        bhFrame.add(button7);
+
         bhFrame.add(label1);
         bhFrame.add(backButton);
         bhFrame.setVisible(true);
