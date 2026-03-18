@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 public class BooksHomeFrame implements ActionListener {
     JFrame bhFrame = new JFrame();
     JButton backButton = new JButton();
+    JLabel label1 = new JLabel();
 
     BooksHomeFrame(){
         bhFrame.setSize(800,600);
