@@ -49,9 +49,14 @@ public class HomeFrame implements ActionListener {
         button2.addActionListener(this);
         button3.addActionListener(this);
 
+        exitButton.setSize(240,50);
+        exitButton.setLocation(100,400);
+
         homeFrame.add(button1);
         homeFrame.add(button2);
         homeFrame.add(button3);
+
+        homeFrame.add(exitButton);
 
         homeFrame.add(label1);
 
