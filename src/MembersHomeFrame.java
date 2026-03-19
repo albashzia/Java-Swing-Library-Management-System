@@ -7,6 +7,11 @@ public class MembersHomeFrame implements ActionListener {
     JFrame mhFrame = new JFrame();
     JButton backButton = new JButton();
     JLabel label1 = new JLabel();
+    JButton button1 = new JButton();
+    JButton button2 = new JButton();
+    JButton button3 = new JButton();
+    JButton button4 = new JButton();
+    JButton button5 = new JButton();
 
     MembersHomeFrame(){
         mhFrame.setSize(800,600);
