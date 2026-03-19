@@ -6,6 +6,7 @@ public class RoomsHomeFrame implements ActionListener {
     
     JFrame srhFrame = new JFrame();
     JButton backButton = new JButton();
+    JLabel label1 = new JLabel();
     JButton button1 = new JButton();
     JButton button2 = new JButton();
     JButton button3 = new JButton();
