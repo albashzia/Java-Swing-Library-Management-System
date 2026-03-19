@@ -82,5 +82,33 @@ public class BooksHomeFrame implements ActionListener {
             bhFrame.dispose();
             new HomeFrame();
         }
+        if (e.getSource()==button1){
+            bhFrame.dispose();
+            new AddBookFrame();
+        }
+        if (e.getSource()==button2){
+            bhFrame.dispose();
+            new RemoveBookFrame();
+        }
+        if (e.getSource()==button3){
+            bhFrame.dispose();
+            new SearchBookFrame();
+        }
+        if (e.getSource()==button4){
+            bhFrame.dispose();
+            new DisplayBookFrame();
+        }
+        if (e.getSource()==button5){
+            bhFrame.dispose();
+            new IssueBookFrame();
+        }
+        if (e.getSource()==button6){
+            bhFrame.dispose();
+            new ReturnBookFrame();
+        }
+        if (e.getSource()==button7){
+            bhFrame.dispose();
+            new DisplayIssuedBooksFrame();
+        }
     }
 }
