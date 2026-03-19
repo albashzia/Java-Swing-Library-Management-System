@@ -55,7 +55,7 @@ public class RoomsHomeFrame implements ActionListener {
         srhFrame.add(button2);
         srhFrame.add(button3);
         srhFrame.add(button4);
-
+        srhFrame.add(label1);
         srhFrame.add(backButton);
         srhFrame.setVisible(true);
     }
