@@ -6,6 +6,10 @@ public class RoomsHomeFrame implements ActionListener {
     
     JFrame srhFrame = new JFrame();
     JButton backButton = new JButton();
+    JButton button1 = new JButton();
+    JButton button2 = new JButton();
+    JButton button3 = new JButton();
+    JButton button4 = new JButton();
 
     RoomsHomeFrame(){
         srhFrame.setSize(800,600);
