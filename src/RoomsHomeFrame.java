@@ -24,6 +24,11 @@ public class RoomsHomeFrame implements ActionListener {
         backButton.setFocusable(false);
         backButton.addActionListener(this);
 
+        button1.setBounds(120,130,200,50);
+        button2.setBounds(120,190,200,50);
+        button3.setBounds(120,250,200,50);
+        button4.setBounds(120,310,200,50);
+
         srhFrame.add(backButton);
         srhFrame.setVisible(true);
     }
