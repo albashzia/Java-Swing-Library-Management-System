@@ -36,6 +36,12 @@ public class MembersHomeFrame implements ActionListener {
         label1.setForeground(Color.WHITE);
         label1.setOpaque(true);
 
+        button1.setBounds(120,130,200,50);
+        button2.setBounds(120,190,200,50);
+        button3.setBounds(120,250,200,50);
+        button4.setBounds(120,310,200,50);
+        button5.setBounds(120,370,200,50);
+
         mhFrame.add(label1);
         mhFrame.add(backButton);
         mhFrame.setVisible(true);
