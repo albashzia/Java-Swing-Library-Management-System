@@ -29,6 +29,16 @@ public class RoomsHomeFrame implements ActionListener {
         button3.setBounds(120,250,200,50);
         button4.setBounds(120,310,200,50);
 
+        button1.setText("Show Available Rooms");
+        button2.setText("Reserve Study Room");
+        button3.setText("Cancel Reservation");
+        button4.setText("Check Reservation Status");
+
+        button1.setFocusable(false);
+        button2.setFocusable(false);
+        button3.setFocusable(false);
+        button4.setFocusable(false);
+
         srhFrame.add(backButton);
         srhFrame.setVisible(true);
     }
