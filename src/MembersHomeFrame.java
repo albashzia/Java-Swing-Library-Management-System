@@ -42,6 +42,18 @@ public class MembersHomeFrame implements ActionListener {
         button4.setBounds(120,310,200,50);
         button5.setBounds(120,370,200,50);
 
+        button1.setText("Register member");
+        button2.setText("Display all members");
+        button3.setText("Search member");
+        button4.setText("View Issued Books");
+        button5.setText("Remove member");
+
+        button1.setFocusable(false);
+        button2.setFocusable(false);
+        button3.setFocusable(false);
+        button4.setFocusable(false);
+        button5.setFocusable(false);
+
         mhFrame.add(label1);
         mhFrame.add(backButton);
         mhFrame.setVisible(true);
