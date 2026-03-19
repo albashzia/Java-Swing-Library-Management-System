@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,6 +25,16 @@ public class RoomsHomeFrame implements ActionListener {
         backButton.setText("Back");
         backButton.setFocusable(false);
         backButton.addActionListener(this);
+
+        label1.setLocation(150,30);
+        label1.setSize(500,70);
+        label1.setBackground(Color.BLACK);
+        label1.setHorizontalAlignment(JLabel.CENTER);
+        label1.setVerticalAlignment(JLabel.CENTER);
+        label1.setText("Study Room Management");
+        label1.setFont(new Font("Comic Sans",Font.ITALIC,35));
+        label1.setForeground(Color.WHITE);
+        label1.setOpaque(true);
 
         button1.setBounds(120,130,200,50);
         button2.setBounds(120,190,200,50);
