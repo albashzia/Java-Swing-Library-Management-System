@@ -54,6 +54,11 @@ public class MembersHomeFrame implements ActionListener {
         button4.setFocusable(false);
         button5.setFocusable(false);
 
+        mhFrame.add(button1);
+        mhFrame.add(button2);
+        mhFrame.add(button3);
+        mhFrame.add(button4);
+        mhFrame.add(button5);
         mhFrame.add(label1);
         mhFrame.add(backButton);
         mhFrame.setVisible(true);
