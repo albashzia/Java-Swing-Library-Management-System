@@ -63,6 +63,14 @@ public class BooksHomeFrame implements ActionListener {
         button6.setFocusable(false);
         button7.setFocusable(false);
 
+        button1.addActionListener(this);
+        button2.addActionListener(this);
+        button3.addActionListener(this);
+        button4.addActionListener(this);
+        button5.addActionListener(this);
+        button6.addActionListener(this);
+        button7.addActionListener(this);
+
         bhFrame.add(button1);
         bhFrame.add(button2);
         bhFrame.add(button3);
