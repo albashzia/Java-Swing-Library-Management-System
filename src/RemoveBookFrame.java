@@ -3,6 +3,7 @@ import javax.swing.*;
 public class RemoveBookFrame {
 
     JFrame rbFrame = new JFrame();
+    JButton backButton = new JButton();
 
     RemoveBookFrame(){
 
@@ -12,6 +13,12 @@ public class RemoveBookFrame {
         rbFrame.setLocationRelativeTo(null);
         rbFrame.setTitle("Remove Book");
 
+        backButton.setLocation(30,30);
+        backButton.setSize(80,40);
+        backButton.setText("Back");
+        backButton.setFocusable(false);
+
+        rbFrame.add(backButton);
         rbFrame.setVisible(true);
     }
 }
