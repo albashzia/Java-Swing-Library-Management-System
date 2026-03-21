@@ -1,6 +1,8 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class AddBookFrame {
+public class AddBookFrame implements ActionListener {
     
     JFrame abFrame = new JFrame();
     JButton backButton = new JButton();
@@ -17,10 +19,15 @@ public class AddBookFrame {
         backButton.setSize(80,40);
         backButton.setText("Back");
         backButton.setFocusable(false);
-
-
+        backButton.addActionListener(this);
 
         abFrame.add(backButton);
         abFrame.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+        abFrame.dispose();
+        new BooksHomeFrame();
     }
 }
