@@ -1,6 +1,8 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class SearchBookFrame {
+public class SearchBookFrame implements ActionListener {
 
     JFrame sbFrame = new JFrame();
     JButton backButton = new JButton();
@@ -16,8 +18,15 @@ public class SearchBookFrame {
         backButton.setSize(80,40);
         backButton.setText("Back");
         backButton.setFocusable(false);
+        backButton.addActionListener(this);
 
         sbFrame.add(backButton);
         sbFrame.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+        sbFrame.dispose();
+        new BooksHomeFrame();
     }
 }
