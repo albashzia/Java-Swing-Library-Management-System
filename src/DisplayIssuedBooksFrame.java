@@ -3,6 +3,7 @@ import javax.swing.*;
 public class DisplayIssuedBooksFrame {
 
     JFrame dibFrame = new JFrame();
+    JButton backButton = new JButton();
 
     DisplayIssuedBooksFrame(){
 
@@ -12,6 +13,12 @@ public class DisplayIssuedBooksFrame {
         dibFrame.setLocationRelativeTo(null);
         dibFrame.setTitle("Display Issued Books");
 
+        backButton.setLocation(30,30);
+        backButton.setSize(80,40);
+        backButton.setText("Back");
+        backButton.setFocusable(false);
+
+        dibFrame.add(backButton);
         dibFrame.setVisible(true);
     }
 }
