@@ -70,5 +70,21 @@ public class MembersHomeFrame implements ActionListener {
             mhFrame.dispose();
             new HomeFrame();
         }
+        if(e.getSource()==button1){
+            mhFrame.dispose();
+            new RegisterMemberFrame();
+        }
+        if (e.getSource()==button2){
+            mhFrame.dispose();
+        }
+        if (e.getSource()==button3){
+            mhFrame.dispose();
+        }
+        if (e.getSource()==button4){
+            mhFrame.dispose();
+        }
+        if (e.getSource()==button5){
+            mhFrame.dispose();
+        }
     }
 }
