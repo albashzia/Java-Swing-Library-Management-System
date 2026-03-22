@@ -28,7 +28,7 @@ public class SearchBookFrame implements ActionListener {
         label1.setBackground(Color.BLACK);
         label1.setHorizontalAlignment(JLabel.CENTER);
         label1.setVerticalAlignment(JLabel.CENTER);
-        label1.setText("Add a Book");
+        label1.setText("Search a Book");
         label1.setFont(new Font("Comic Sans",Font.ITALIC,35));
         label1.setForeground(Color.WHITE);
         label1.setOpaque(true);
