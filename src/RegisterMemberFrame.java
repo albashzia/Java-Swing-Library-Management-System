@@ -2,6 +2,7 @@ import javax.swing.*;
 
 public class RegisterMemberFrame {
     JFrame rmFrame = new JFrame();
+    JButton backButton = new JButton();
 
     RegisterMemberFrame(){
 
@@ -11,7 +12,12 @@ public class RegisterMemberFrame {
         rmFrame.setLocationRelativeTo(null);
         rmFrame.setTitle("Register a Member");
 
+        backButton.setLocation(30,30);
+        backButton.setSize(80,40);
+        backButton.setText("Back");
+        backButton.setFocusable(false);
 
+        rmFrame.add(backButton);
         rmFrame.setVisible(true);
         
     }
