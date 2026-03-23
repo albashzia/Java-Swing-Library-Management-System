@@ -8,7 +8,7 @@ public class SearchMemberFrame {
         smFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         smFrame.setLayout(null);
         smFrame.setLocationRelativeTo(null);
-        smFrame.setTitle("Display Members");
+        smFrame.setTitle("Search Members");
 
         smFrame.setVisible(true);
     }
