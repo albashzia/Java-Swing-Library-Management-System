@@ -1,6 +1,8 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class DisplayMembersFrame {
+public class DisplayMembersFrame implements ActionListener {
     JFrame dmFrame = new JFrame();
     JButton backButton = new JButton();
 
@@ -16,8 +18,14 @@ public class DisplayMembersFrame {
         backButton.setSize(80,40);
         backButton.setText("Back");
         backButton.setFocusable(false);
+        backButton.addActionListener(this);
 
         dmFrame.add(backButton);
         dmFrame.setVisible(true);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+        dmFrame.dispose();
+        new MembersHomeFrame();
     }
 }
