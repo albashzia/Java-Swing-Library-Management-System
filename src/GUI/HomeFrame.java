@@ -1,3 +1,8 @@
+package GUI;
+
+import GUI.BookFrames.BooksHomeFrame;
+import GUI.MemberFrame.MembersHomeFrame;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

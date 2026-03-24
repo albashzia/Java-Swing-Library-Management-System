@@ -1,3 +1,7 @@
+package GUI.MemberFrame;
+
+import GUI.HomeFrame;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

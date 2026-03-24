@@ -1,21 +1,23 @@
+package GUI.BookFrames;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class AddBookFrame implements ActionListener {
-    
-    JFrame abFrame = new JFrame();
+public class RemoveBookFrame implements ActionListener {
+
+    JFrame rbFrame = new JFrame();
     JButton backButton = new JButton();
     JLabel label1 = new JLabel();
 
-    AddBookFrame(){
+    RemoveBookFrame(){
 
-        abFrame.setSize(800,600);
-        abFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        abFrame.setLayout(null);
-        abFrame.setLocationRelativeTo(null);
-        abFrame.setTitle("Add Book");
+        rbFrame.setSize(800,600);
+        rbFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        rbFrame.setLayout(null);
+        rbFrame.setLocationRelativeTo(null);
+        rbFrame.setTitle("Remove Book");
 
         backButton.setLocation(30,30);
         backButton.setSize(80,40);
@@ -28,19 +30,19 @@ public class AddBookFrame implements ActionListener {
         label1.setBackground(Color.BLACK);
         label1.setHorizontalAlignment(JLabel.CENTER);
         label1.setVerticalAlignment(JLabel.CENTER);
-        label1.setText("Add a Book");
+        label1.setText("Remove a Book");
         label1.setFont(new Font("Comic Sans",Font.ITALIC,35));
         label1.setForeground(Color.WHITE);
         label1.setOpaque(true);
 
-        abFrame.add(label1);
-        abFrame.add(backButton);
-        abFrame.setVisible(true);
+        rbFrame.add(label1);
+        rbFrame.add(backButton);
+        rbFrame.setVisible(true);
     }
 
     @Override
     public void actionPerformed(ActionEvent e){
-        abFrame.dispose();
+        rbFrame.dispose();
         new BooksHomeFrame();
     }
 }
