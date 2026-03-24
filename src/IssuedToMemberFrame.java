@@ -1,6 +1,8 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class IssuedToMemberFrame {
+public class IssuedToMemberFrame implements ActionListener {
     JFrame itmFrame = new JFrame();
     JButton backButton = new JButton();
 
@@ -16,8 +18,14 @@ public class IssuedToMemberFrame {
         backButton.setSize(80,40);
         backButton.setText("Back");
         backButton.setFocusable(false);
+        backButton.addActionListener(this);
 
         itmFrame.add(backButton);
         itmFrame.setVisible(true);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+        itmFrame.dispose();
+        new MembersHomeFrame();
     }
 }
