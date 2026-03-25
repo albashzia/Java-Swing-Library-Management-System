@@ -17,7 +17,7 @@ public class MembersHomeFrame implements ActionListener {
     JButton button4 = new JButton();
     JButton button5 = new JButton();
 
-    MembersHomeFrame(){
+    public MembersHomeFrame(){
         mhFrame.setSize(800,600);
         mhFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mhFrame.setLayout(null);

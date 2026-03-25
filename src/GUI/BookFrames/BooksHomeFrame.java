@@ -1,6 +1,6 @@
 package GUI.BookFrames;
 
-import GUI.*;
+import GUI.HomeFrame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,7 +20,7 @@ public class BooksHomeFrame implements ActionListener {
     JButton button6 = new JButton();
     JButton button7 = new JButton();
 
-    BooksHomeFrame(){
+    public BooksHomeFrame(){
         bhFrame.setSize(800,600);
         bhFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         bhFrame.setLayout(null);

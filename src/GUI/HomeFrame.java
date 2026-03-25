@@ -17,7 +17,7 @@ public class HomeFrame implements ActionListener {
     JButton button3 = new JButton();
     JButton exitButton = new JButton();
 
-    HomeFrame(){
+    public HomeFrame(){
 
         homeFrame.setSize(800,600);
         homeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
