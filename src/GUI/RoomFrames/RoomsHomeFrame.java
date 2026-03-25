@@ -1,4 +1,6 @@
-package GUI;
+package GUI.RoomFrames;
+
+import GUI.HomeFrame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +17,7 @@ public class RoomsHomeFrame implements ActionListener {
     JButton button3 = new JButton();
     JButton button4 = new JButton();
 
-    RoomsHomeFrame(){
+    public RoomsHomeFrame(){
         srhFrame.setSize(800,600);
         srhFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         srhFrame.setLayout(null);
