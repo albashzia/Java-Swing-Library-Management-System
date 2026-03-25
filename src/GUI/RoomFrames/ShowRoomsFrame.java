@@ -13,6 +13,12 @@ public class ShowRoomsFrame {
         srFrame.setLocationRelativeTo(null);
         srFrame.setTitle("Show Available Rooms");
 
+        backButton.setLocation(30,30);
+        backButton.setSize(80,40);
+        backButton.setText("Back");
+        backButton.setFocusable(false);
+
+        srFrame.add(backButton);
         srFrame.setVisible(true);
     }
 }
