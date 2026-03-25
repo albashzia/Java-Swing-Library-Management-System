@@ -1,4 +1,4 @@
-package GUI.MemberFrame;
+package GUI.MemberFrames;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

@@ -1,7 +1,7 @@
 package GUI;
 
 import GUI.BookFrames.BooksHomeFrame;
-import GUI.MemberFrame.MembersHomeFrame;
+import GUI.MemberFrames.MembersHomeFrame;
 
 import javax.swing.*;
 import java.awt.*;
