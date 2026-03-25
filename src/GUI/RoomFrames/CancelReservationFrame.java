@@ -13,6 +13,12 @@ public class CancelReservationFrame {
         crFrame.setLocationRelativeTo(null);
         crFrame.setTitle("Cancel Reservation");
 
+        backButton.setLocation(30,30);
+        backButton.setSize(80,40);
+        backButton.setText("Back");
+        backButton.setFocusable(false);
+
+        crFrame.add(backButton);
         crFrame.setVisible(true);
     }
 }
