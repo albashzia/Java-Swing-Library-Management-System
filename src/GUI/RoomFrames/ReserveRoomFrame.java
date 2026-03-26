@@ -1,8 +1,11 @@
 package GUI.RoomFrames;
 
 import javax.swing.*;
+import javax.swing.plaf.PanelUI;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class ReserveRoomFrame {
+public class ReserveRoomFrame implements ActionListener {
     JFrame rrFrame = new JFrame();
     JButton backButton = new JButton();
 
@@ -20,5 +23,9 @@ public class ReserveRoomFrame {
 
         rrFrame.add(backButton);
         rrFrame.setVisible(true);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+
     }
 }
