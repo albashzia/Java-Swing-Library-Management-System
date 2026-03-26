@@ -19,12 +19,16 @@ public class CancelReservationFrame implements ActionListener {
         backButton.setSize(80,40);
         backButton.setText("Back");
         backButton.setFocusable(false);
+        backButton.addActionListener(this);
 
         crFrame.add(backButton);
         crFrame.setVisible(true);
     }
     @Override
     public void actionPerformed(ActionEvent e){
-        
+        if (e.getSource()==backButton){
+            crFrame.dispose();
+            new RoomsHomeFrame();
+        }
     }
 }
