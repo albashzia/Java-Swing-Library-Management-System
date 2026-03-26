@@ -1,8 +1,10 @@
 package GUI.RoomFrames;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class CancelReservationFrame {
+public class CancelReservationFrame implements ActionListener {
     JFrame crFrame = new JFrame();
     JButton backButton = new JButton();
 
@@ -20,5 +22,9 @@ public class CancelReservationFrame {
 
         crFrame.add(backButton);
         crFrame.setVisible(true);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+        
     }
 }
