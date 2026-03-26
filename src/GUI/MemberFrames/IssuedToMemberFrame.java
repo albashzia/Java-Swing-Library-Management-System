@@ -1,5 +1,8 @@
 package GUI.MemberFrames;
 
+import GUI.CreateLabel;
+import GUI.RoomFrames.CancelReservationFrame;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,7 +10,7 @@ import java.awt.event.ActionListener;
 public class IssuedToMemberFrame implements ActionListener {
     JFrame itmFrame = new JFrame();
     JButton backButton = new JButton();
-
+    CreateLabel label1 = new CreateLabel("Books Issued to Member");
     IssuedToMemberFrame(){
 
         itmFrame.setSize(800,600);
@@ -22,6 +25,7 @@ public class IssuedToMemberFrame implements ActionListener {
         backButton.setFocusable(false);
         backButton.addActionListener(this);
 
+        itmFrame.add(label1);
         itmFrame.add(backButton);
         itmFrame.setVisible(true);
     }
