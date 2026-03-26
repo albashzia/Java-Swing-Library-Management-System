@@ -20,12 +20,16 @@ public class ReserveRoomFrame implements ActionListener {
         backButton.setSize(80,40);
         backButton.setText("Back");
         backButton.setFocusable(false);
+        backButton.addActionListener(this);
 
         rrFrame.add(backButton);
         rrFrame.setVisible(true);
     }
     @Override
     public void actionPerformed(ActionEvent e){
-
+        if (e.getSource()==backButton){
+            rrFrame.dispose();
+            new RoomsHomeFrame();
+        }
     }
 }
