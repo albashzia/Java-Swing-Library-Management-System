@@ -1,8 +1,10 @@
 package GUI.RoomFrames;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class ShowRoomsFrame {
+public class ShowRoomsFrame implements ActionListener {
     JFrame srFrame = new JFrame();
     JButton backButton = new JButton();
 
@@ -20,5 +22,9 @@ public class ShowRoomsFrame {
 
         srFrame.add(backButton);
         srFrame.setVisible(true);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+
     }
 }
