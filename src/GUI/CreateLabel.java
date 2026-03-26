@@ -3,10 +3,10 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
-public class CreateLabel extends JLabel{
-    JLabel label1 = new JLabel();
-
-    public CreateLabel(String title){
+public class CreateLabel extends JLabel
+{
+    public CreateLabel(String title)
+    {
         this.setLocation(200,30);
         this.setSize(400,70);
         this.setBackground(Color.BLACK);
