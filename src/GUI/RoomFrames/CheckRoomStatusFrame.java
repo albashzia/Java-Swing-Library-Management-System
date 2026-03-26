@@ -19,12 +19,16 @@ public class CheckRoomStatusFrame implements ActionListener {
         backButton.setSize(80,40);
         backButton.setText("Back");
         backButton.setFocusable(false);
+        backButton.addActionListener(this);
 
         crsFrame.add(backButton);
         crsFrame.setVisible(true);
     }
     @Override
     public void actionPerformed(ActionEvent e){
-
+        if (e.getSource()==backButton){
+            crsFrame.dispose();
+            new RoomsHomeFrame();
+        }
     }
 }
