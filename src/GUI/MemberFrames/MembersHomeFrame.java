@@ -1,5 +1,6 @@
 package GUI.MemberFrames;
 
+import GUI.CreateLabel;
 import GUI.HomeFrame;
 
 import javax.swing.*;
@@ -10,7 +11,7 @@ import java.awt.event.ActionListener;
 public class MembersHomeFrame implements ActionListener {
     JFrame mhFrame = new JFrame();
     JButton backButton = new JButton();
-    JLabel label1 = new JLabel();
+    CreateLabel label1 = new CreateLabel("Membership Management");
     JButton button1 = new JButton();
     JButton button2 = new JButton();
     JButton button3 = new JButton();
@@ -29,16 +30,6 @@ public class MembersHomeFrame implements ActionListener {
         backButton.setText("Back");
         backButton.setFocusable(false);
         backButton.addActionListener(this);
-
-        label1.setLocation(150,30);
-        label1.setSize(500,70);
-        label1.setBackground(Color.BLACK);
-        label1.setHorizontalAlignment(JLabel.CENTER);
-        label1.setVerticalAlignment(JLabel.CENTER);
-        label1.setText("Membership Management");
-        label1.setFont(new Font("Comic Sans",Font.ITALIC,35));
-        label1.setForeground(Color.WHITE);
-        label1.setOpaque(true);
 
         button1.setBounds(120,130,200,50);
         button2.setBounds(120,190,200,50);
