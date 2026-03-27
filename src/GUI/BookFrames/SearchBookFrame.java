@@ -1,5 +1,7 @@
 package GUI.BookFrames;
 
+import GUI.CreateLabel;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,7 +11,7 @@ public class SearchBookFrame implements ActionListener {
 
     JFrame sbFrame = new JFrame();
     JButton backButton = new JButton();
-    JLabel label1 = new JLabel();
+    CreateLabel label1 = new CreateLabel("Search a Book");
 
     SearchBookFrame(){
 
@@ -24,16 +26,6 @@ public class SearchBookFrame implements ActionListener {
         backButton.setText("Back");
         backButton.setFocusable(false);
         backButton.addActionListener(this);
-
-        label1.setLocation(200,30);
-        label1.setSize(400,70);
-        label1.setBackground(Color.BLACK);
-        label1.setHorizontalAlignment(JLabel.CENTER);
-        label1.setVerticalAlignment(JLabel.CENTER);
-        label1.setText("Search a Book");
-        label1.setFont(new Font("Comic Sans",Font.ITALIC,35));
-        label1.setForeground(Color.WHITE);
-        label1.setOpaque(true);
 
         sbFrame.add(label1);
         sbFrame.add(backButton);
