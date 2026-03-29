@@ -1,5 +1,6 @@
 package GUI.MemberFrames;
 
+import GUI.CreateBackButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
@@ -8,7 +9,8 @@ import java.awt.event.ActionListener;
 
 public class DisplayMembersFrame implements ActionListener {
     JFrame dmFrame = new JFrame();
-    JButton backButton = new JButton();
+    CreateBackButton backButton = new CreateBackButton();
+    //JButton backButton = new JButton();
     CreateLabel label1 = new CreateLabel("Display Members");
     DisplayMembersFrame(){
 
@@ -18,10 +20,6 @@ public class DisplayMembersFrame implements ActionListener {
         dmFrame.setLocationRelativeTo(null);
         dmFrame.setTitle("Display Members");
 
-        backButton.setLocation(30,30);
-        backButton.setSize(80,40);
-        backButton.setText("Back");
-        backButton.setFocusable(false);
         backButton.addActionListener(this);
 
         dmFrame.add(label1);
