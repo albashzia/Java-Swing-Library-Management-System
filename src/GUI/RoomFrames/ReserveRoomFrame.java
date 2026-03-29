@@ -1,15 +1,15 @@
 package GUI.RoomFrames;
 
+import GUI.CreateBackButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
-import javax.swing.plaf.PanelUI;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ReserveRoomFrame implements ActionListener {
     JFrame rrFrame = new JFrame();
-    JButton backButton = new JButton();
+    CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Reserve a Room");
     public ReserveRoomFrame(){
         rrFrame.setSize(800,600);
@@ -18,10 +18,6 @@ public class ReserveRoomFrame implements ActionListener {
         rrFrame.setLocationRelativeTo(null);
         rrFrame.setTitle("Reserve Study Room");
 
-        backButton.setLocation(30,30);
-        backButton.setSize(80,40);
-        backButton.setText("Back");
-        backButton.setFocusable(false);
         backButton.addActionListener(this);
 
         rrFrame.add(label1);
