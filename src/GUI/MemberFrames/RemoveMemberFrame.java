@@ -1,5 +1,6 @@
 package GUI.MemberFrames;
 
+import GUI.CreateBackButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
@@ -8,7 +9,7 @@ import java.awt.event.ActionListener;
 
 public class RemoveMemberFrame implements ActionListener {
     JFrame rmFrame = new JFrame();
-    JButton backButton = new JButton();
+    CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Remove a Member");
 
     RemoveMemberFrame(){
@@ -19,10 +20,6 @@ public class RemoveMemberFrame implements ActionListener {
         rmFrame.setLocationRelativeTo(null);
         rmFrame.setTitle("Remove Member");
 
-        backButton.setLocation(30,30);
-        backButton.setSize(80,40);
-        backButton.setText("Back");
-        backButton.setFocusable(false);
         backButton.addActionListener(this);
 
         rmFrame.add(label1);
