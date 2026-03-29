@@ -1,5 +1,6 @@
 package GUI.RoomFrames;
 
+import GUI.CreateBackButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
@@ -8,7 +9,7 @@ import java.awt.event.ActionListener;
 
 public class ShowRoomsFrame implements ActionListener {
     JFrame srFrame = new JFrame();
-    JButton backButton = new JButton();
+    CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Show Available Rooms");
     public ShowRoomsFrame(){
         srFrame.setSize(800,600);
@@ -17,10 +18,6 @@ public class ShowRoomsFrame implements ActionListener {
         srFrame.setLocationRelativeTo(null);
         srFrame.setTitle("Show Available Rooms");
 
-        backButton.setLocation(30,30);
-        backButton.setSize(80,40);
-        backButton.setText("Back");
-        backButton.setFocusable(false);
         backButton.addActionListener(this);
 
         srFrame.add(label1);
