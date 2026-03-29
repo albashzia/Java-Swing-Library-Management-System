@@ -1,5 +1,6 @@
 package GUI.MemberFrames;
 
+import GUI.CreateBackButton;
 import GUI.CreateLabel;
 import GUI.RoomFrames.CancelReservationFrame;
 
@@ -9,7 +10,7 @@ import java.awt.event.ActionListener;
 
 public class IssuedToMemberFrame implements ActionListener {
     JFrame itmFrame = new JFrame();
-    JButton backButton = new JButton();
+    CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Books Issued to Member");
     IssuedToMemberFrame(){
 
@@ -19,10 +20,6 @@ public class IssuedToMemberFrame implements ActionListener {
         itmFrame.setLocationRelativeTo(null);
         itmFrame.setTitle("Book Issued to Member");
 
-        backButton.setLocation(30,30);
-        backButton.setSize(80,40);
-        backButton.setText("Back");
-        backButton.setFocusable(false);
         backButton.addActionListener(this);
 
         itmFrame.add(label1);
