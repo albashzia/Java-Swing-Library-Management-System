@@ -1,9 +1,13 @@
 package GUI.BookFrames;
 
+import GUI.CreateBackButton;
+import GUI.CreateLabel;
+
 import javax.swing.*;
 
 public class SearchBookByAuthorFrame {
     JFrame sbaFrame = new JFrame();
+    CreateBackButton backButton = new CreateBackButton();
 
     public SearchBookByAuthorFrame(){
 
@@ -13,6 +17,7 @@ public class SearchBookByAuthorFrame {
         sbaFrame.setLocationRelativeTo(null);
         sbaFrame.setTitle("Search Book By Author");
 
+        sbaFrame.add(backButton);
         sbaFrame.setVisible(true);
     }
 }
