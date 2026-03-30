@@ -8,6 +8,7 @@ import javax.swing.*;
 public class SearchBookByTitleFrame {
     JFrame sbtFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
+    CreateLabel label = new CreateLabel("Search Book By Title");
     public SearchBookByTitleFrame(){
 
         sbtFrame.setSize(800,600);
