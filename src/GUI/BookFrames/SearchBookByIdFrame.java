@@ -20,6 +20,7 @@ public class SearchBookByIdFrame implements ActionListener {
         sbiFrame.setLocationRelativeTo(null);
         sbiFrame.setTitle("Search Book By ID");
 
+        backButton.addActionListener(this);
 
         sbiFrame.add(backButton);
         sbiFrame.add(label);
@@ -27,6 +28,9 @@ public class SearchBookByIdFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e){
-
+        if(e.getSource()==backButton){
+            sbiFrame.dispose();
+            new SearchBookFrame();
+        }
     }
 }
