@@ -29,6 +29,7 @@ public class SearchBookByTitleFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e){
-
+        sbtFrame.dispose();
+        new SearchBookFrame();
     }
 }
