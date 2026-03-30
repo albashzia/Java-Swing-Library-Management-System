@@ -39,6 +39,7 @@ public class SearchBookFrame implements ActionListener {
 
         button1.addActionListener(this);
         button2.addActionListener(this);
+        button3.addActionListener(this);
 
         backButton.addActionListener(this);
 
@@ -64,6 +65,11 @@ public class SearchBookFrame implements ActionListener {
         if (e.getSource()==button2){
             sbFrame.dispose();
             new SearchBookByTitleFrame();
+        }
+
+        if (e.getSource()==button3){
+            sbFrame.dispose();
+            new SearchBookByAuthorFrame();
         }
     }
 }
