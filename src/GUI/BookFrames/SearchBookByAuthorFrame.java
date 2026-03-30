@@ -8,6 +8,7 @@ import javax.swing.*;
 public class SearchBookByAuthorFrame {
     JFrame sbaFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
+    CreateLabel label = new CreateLabel("Search Book By Author");
 
     public SearchBookByAuthorFrame(){
 
@@ -18,6 +19,7 @@ public class SearchBookByAuthorFrame {
         sbaFrame.setTitle("Search Book By Author");
 
         sbaFrame.add(backButton);
+        sbaFrame.add(label);
         sbaFrame.setVisible(true);
     }
 }
