@@ -4,8 +4,10 @@ import GUI.CreateBackButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class SearchBookByIdFrame {
+public class SearchBookByIdFrame implements ActionListener {
     JFrame sbiFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateLabel label = new CreateLabel("Search Book by ID");
@@ -22,5 +24,9 @@ public class SearchBookByIdFrame {
         sbiFrame.add(backButton);
         sbiFrame.add(label);
         sbiFrame.setVisible(true);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+
     }
 }
