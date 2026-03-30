@@ -1,5 +1,6 @@
 package GUI.BookFrames;
 
+import GUI.CreateBackButton;
 import GUI.CreateLabel;
 import GUI.HomeFrame;
 
@@ -10,9 +11,8 @@ import java.awt.event.ActionListener;
 
 public class BooksHomeFrame implements ActionListener {
     JFrame bhFrame = new JFrame();
-    JButton backButton = new JButton();
+    CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Books Management");
-    //JLabel label1 = new JLabel();
 
     JButton button1 = new JButton();
     JButton button2 = new JButton();
@@ -29,10 +29,6 @@ public class BooksHomeFrame implements ActionListener {
         bhFrame.setLocationRelativeTo(null);
         bhFrame.setTitle("Books Management");
 
-        backButton.setLocation(30,30);
-        backButton.setSize(80,40);
-        backButton.setText("Back");
-        backButton.setFocusable(false);
         backButton.addActionListener(this);
 
         button1.setBounds(120,130,200,50);
