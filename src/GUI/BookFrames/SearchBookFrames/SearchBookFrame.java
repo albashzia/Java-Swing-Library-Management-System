@@ -1,10 +1,10 @@
-package GUI.BookFrames;
+package GUI.BookFrames.SearchBookFrames;
 
+import GUI.BookFrames.BooksHomeFrame;
 import GUI.CreateBackButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -17,7 +17,7 @@ public class SearchBookFrame implements ActionListener {
     JButton button3 = new JButton();
     CreateLabel label1 = new CreateLabel("Search a Book");
 
-    SearchBookFrame(){
+    public SearchBookFrame(){
 
         sbFrame.setSize(800,600);
         sbFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

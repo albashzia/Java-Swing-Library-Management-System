@@ -1,4 +1,4 @@
-package GUI.BookFrames;
+package GUI.BookFrames.SearchBookFrames;
 
 import GUI.CreateBackButton;
 import GUI.CreateLabel;
