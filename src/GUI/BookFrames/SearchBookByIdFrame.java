@@ -19,6 +19,8 @@ public class SearchBookByIdFrame {
         sbiFrame.setTitle("Search Book By ID");
 
 
+        sbiFrame.add(backButton);
+        sbiFrame.add(label);
         sbiFrame.setVisible(true);
     }
 }
