@@ -12,6 +12,9 @@ public class SearchBookFrame implements ActionListener {
 
     JFrame sbFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
+    JButton button1 = new JButton();
+    JButton button2 = new JButton();
+    JButton button3 = new JButton();
     CreateLabel label1 = new CreateLabel("Search a Book");
 
     SearchBookFrame(){
