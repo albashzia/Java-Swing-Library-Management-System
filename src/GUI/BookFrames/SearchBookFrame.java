@@ -25,8 +25,23 @@ public class SearchBookFrame implements ActionListener {
         sbFrame.setLocationRelativeTo(null);
         sbFrame.setTitle("Search Book");
 
+        button1.setBounds(120,160,250,50);
+        button2.setBounds(120,240,250,50);
+        button3.setBounds(120,320,250,50);
+
+        button1.setText("");
+        button2.setText("");
+        button3.setText("");
+
+        button1.setFocusable(false);
+        button2.setFocusable(false);
+        button3.setFocusable(false);
+
         backButton.addActionListener(this);
 
+        sbFrame.add(button1);
+        sbFrame.add(button2);
+        sbFrame.add(button3);
         sbFrame.add(label1);
         sbFrame.add(backButton);
         sbFrame.setVisible(true);
