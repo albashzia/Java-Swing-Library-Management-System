@@ -20,6 +20,8 @@ public class SearchBookByAuthorFrame implements ActionListener {
         sbaFrame.setLocationRelativeTo(null);
         sbaFrame.setTitle("Search Book By Author");
 
+        backButton.addActionListener(this);
+
         sbaFrame.add(backButton);
         sbaFrame.add(label);
         sbaFrame.setVisible(true);
@@ -27,6 +29,9 @@ public class SearchBookByAuthorFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e){
-
+        if (e.getSource()==backButton){
+            sbaFrame.dispose();
+            new SearchBookFrame();
+        }
     }
 }
