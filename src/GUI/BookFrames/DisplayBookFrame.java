@@ -1,6 +1,7 @@
 package GUI.BookFrames;
 
 import GUI.CreateBackButton;
+import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
@@ -12,6 +13,7 @@ public class DisplayBookFrame implements ActionListener {
 
     JFrame dbFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
+    CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Display a Book");
 
     DisplayBookFrame(){
@@ -24,6 +26,7 @@ public class DisplayBookFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        dbFrame.add(exitButton);
         dbFrame.add(label1);
         dbFrame.add(backButton);
         dbFrame.setVisible(true);
