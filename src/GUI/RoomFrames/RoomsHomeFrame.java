@@ -1,6 +1,7 @@
 package GUI.RoomFrames;
 
 import GUI.CreateBackButton;
+import GUI.CreateExitButton;
 import GUI.CreateLabel;
 import GUI.HomeFrame;
 
@@ -13,6 +14,7 @@ public class RoomsHomeFrame implements ActionListener {
     
     JFrame srhFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
+    CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Study Room Management");
     JButton button1 = new JButton();
     JButton button2 = new JButton();
@@ -48,6 +50,7 @@ public class RoomsHomeFrame implements ActionListener {
         button3.addActionListener(this);
         button4.addActionListener(this);
 
+        srhFrame.add(exitButton);
         srhFrame.add(button1);
         srhFrame.add(button2);
         srhFrame.add(button3);
