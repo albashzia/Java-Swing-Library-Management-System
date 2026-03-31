@@ -2,6 +2,7 @@ package GUI.BookFrames.SearchBookFrames;
 
 import GUI.BookFrames.BooksHomeFrame;
 import GUI.CreateBackButton;
+import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
@@ -12,6 +13,8 @@ public class SearchBookFrame implements ActionListener {
 
     JFrame sbFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
+    CreateExitButton exitButton = new CreateExitButton();
+
     JButton button1 = new JButton();
     JButton button2 = new JButton();
     JButton button3 = new JButton();
@@ -43,6 +46,7 @@ public class SearchBookFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        sbFrame.add(exitButton);
         sbFrame.add(button1);
         sbFrame.add(button2);
         sbFrame.add(button3);
