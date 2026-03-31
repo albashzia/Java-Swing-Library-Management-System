@@ -1,6 +1,7 @@
 package GUI.MemberFrames;
 
 import GUI.CreateBackButton;
+import GUI.CreateExitButton;
 import GUI.CreateLabel;
 import GUI.HomeFrame;
 
@@ -12,6 +13,7 @@ import java.awt.event.ActionListener;
 public class MembersHomeFrame implements ActionListener {
     JFrame mhFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
+    CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Membership Management");
     JButton button1 = new JButton();
     JButton button2 = new JButton();
@@ -52,6 +54,7 @@ public class MembersHomeFrame implements ActionListener {
         button4.addActionListener(this);
         button5.addActionListener(this);
 
+        mhFrame.add(exitButton);
         mhFrame.add(button1);
         mhFrame.add(button2);
         mhFrame.add(button3);
