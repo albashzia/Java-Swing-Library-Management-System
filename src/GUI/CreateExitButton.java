@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 public class CreateExitButton extends JButton implements ActionListener {
     public CreateExitButton(){
-        this.setBounds(100,100,10,10);
+        this.setBounds(670,470,70,50);
         this.setText("Exit");
         this.setFocusable(false);
         this.addActionListener(this);
