@@ -2,6 +2,7 @@ package GUI.BookFrames;
 
 import GUI.BookFrames.SearchBookFrames.SearchBookFrame;
 import GUI.CreateBackButton;
+import GUI.CreateExitButton;
 import GUI.CreateLabel;
 import GUI.HomeFrame;
 
@@ -12,6 +13,7 @@ import java.awt.event.ActionListener;
 public class BooksHomeFrame implements ActionListener {
     JFrame bhFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
+    CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Books Management");
 
     JButton button1 = new JButton();
@@ -63,6 +65,7 @@ public class BooksHomeFrame implements ActionListener {
         button6.addActionListener(this);
         button7.addActionListener(this);
 
+        bhFrame.add(exitButton);
         bhFrame.add(button1);
         bhFrame.add(button2);
         bhFrame.add(button3);
