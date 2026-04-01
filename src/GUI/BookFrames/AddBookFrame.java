@@ -41,9 +41,9 @@ public class AddBookFrame implements ActionListener {
         quantityLabel.setText("Enter Total Quantity : ");
 
         idLabel.setBounds(100,120,150,100);
-        titleLabel.setBounds(100,160,150,100);
-        authorLabel.setBounds(100,200,150,100);
-        quantityLabel.setBounds(100,240,150,100);
+        titleLabel.setBounds(100,170,150,100);
+        authorLabel.setBounds(100,220,150,100);
+        quantityLabel.setBounds(100,270,150,100);
 
         backButton.addActionListener(this);
 
