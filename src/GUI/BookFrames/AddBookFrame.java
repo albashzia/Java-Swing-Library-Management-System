@@ -55,6 +55,27 @@ public class AddBookFrame implements ActionListener {
         authorTextField.setBounds(300,260,300,30);
         quantityTextField.setBounds(300,310,100,30);
 
+        idTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        idTextField.setForeground(Color.WHITE);
+        idTextField.setBackground(Color.BLACK);
+        idTextField.setCaretColor(Color.WHITE);
+
+        titleTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        titleTextField.setForeground(Color.WHITE);
+        titleTextField.setBackground(Color.BLACK);
+        titleTextField.setCaretColor(Color.WHITE);
+        
+        authorTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        authorTextField.setForeground(Color.WHITE);
+        authorTextField.setBackground(Color.BLACK);
+        authorTextField.setCaretColor(Color.WHITE);
+
+        quantityTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        quantityTextField.setForeground(Color.WHITE);
+        quantityTextField.setBackground(Color.BLACK);
+        quantityTextField.setCaretColor(Color.WHITE);
+        
+
         backButton.addActionListener(this);
 
         abFrame.add(idTextField);
