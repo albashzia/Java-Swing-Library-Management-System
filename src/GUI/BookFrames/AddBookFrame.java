@@ -15,6 +15,11 @@ public class AddBookFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
 
+    JLabel idLabel = new JLabel();
+    JLabel titleLabel = new JLabel();
+    JLabel authorLabel = new JLabel();
+    JLabel quantityLabel = new JLabel();
+
     JTextField idTextField = new JTextField();
     JTextField titleTextField = new JTextField();
     JTextField authorField = new JTextField();
