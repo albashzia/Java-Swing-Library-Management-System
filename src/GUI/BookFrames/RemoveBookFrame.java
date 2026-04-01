@@ -14,6 +14,7 @@ public class RemoveBookFrame implements ActionListener {
     JFrame rbFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
+    JTextField idTextField = new JTextField();
     CreateLabel label1 = new CreateLabel("Remove a Book");
 
     RemoveBookFrame(){
