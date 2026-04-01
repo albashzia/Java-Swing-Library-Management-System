@@ -35,6 +35,11 @@ public class AddBookFrame implements ActionListener {
         abFrame.setLocationRelativeTo(null);
         abFrame.setTitle("Add Book");
 
+        idLabel.setText("Enter Book ID : ");
+        titleLabel.setText("Enter Book Title : ");
+        authorLabel.setText("Enter Author Name : ");
+        quantityLabel.setText("Enter Total Quantity : ");
+
         backButton.addActionListener(this);
 
         abFrame.add(exitButton);
