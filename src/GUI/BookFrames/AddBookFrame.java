@@ -22,7 +22,7 @@ public class AddBookFrame implements ActionListener {
 
     JTextField idTextField = new JTextField();
     JTextField titleTextField = new JTextField();
-    JTextField authorField = new JTextField();
+    JTextField authorTextField = new JTextField();
     JTextField quantityTextField = new JTextField();
 
     CreateLabel label1 = new CreateLabel("Add a Book");
@@ -50,15 +50,29 @@ public class AddBookFrame implements ActionListener {
         authorLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
         quantityLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
+        idTextField.setBounds(270,160,100,30);
+        titleTextField.setBounds(300,210,300,30);
+        authorTextField.setBounds(300,260,300,30);
+        quantityTextField.setBounds(300,310,100,30);
+
         backButton.addActionListener(this);
+
+        abFrame.add(idTextField);
+        abFrame.add(titleTextField);
+        abFrame.add(authorTextField);
+        abFrame.add(quantityTextField);
 
         abFrame.add(idLabel);
         abFrame.add(titleLabel);
         abFrame.add(authorLabel);
         abFrame.add(quantityLabel);
+
         abFrame.add(exitButton);
+
         abFrame.add(label1);
+
         abFrame.add(backButton);
+
         abFrame.setVisible(true);
     }
 
