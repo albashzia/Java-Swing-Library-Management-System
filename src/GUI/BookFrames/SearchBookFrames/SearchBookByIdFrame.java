@@ -5,6 +5,7 @@ import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,8 +25,13 @@ public class SearchBookByIdFrame implements ActionListener {
         sbiFrame.setLocationRelativeTo(null);
         sbiFrame.setTitle("Search Book By ID");
 
+        idLabel.setText("Enter book id : ");
+        idLabel.setBounds(130,200,200,40);
+        idLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
+
         backButton.addActionListener(this);
 
+        sbiFrame.add(idLabel);
         sbiFrame.add(exitButton);
         sbiFrame.add(backButton);
         sbiFrame.add(label);
