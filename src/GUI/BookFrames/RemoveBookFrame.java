@@ -26,7 +26,7 @@ public class RemoveBookFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
-        rbFrame.add(backButton);
+        rbFrame.add(exitButton);
         rbFrame.add(label1);
         rbFrame.add(backButton);
         rbFrame.setVisible(true);

@@ -26,7 +26,7 @@ public class DisplayIssuedBooksFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
-        dibFrame.add(backButton);
+        dibFrame.add(exitButton);
         dibFrame.add(label1);
         dibFrame.add(backButton);
         dibFrame.setVisible(true);

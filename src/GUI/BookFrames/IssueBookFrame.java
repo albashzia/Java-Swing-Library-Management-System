@@ -26,7 +26,7 @@ public class IssueBookFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
-        ibFrame.add(backButton);
+        ibFrame.add(exitButton);
         ibFrame.add(label1);
         ibFrame.add(backButton);
         ibFrame.setVisible(true);
