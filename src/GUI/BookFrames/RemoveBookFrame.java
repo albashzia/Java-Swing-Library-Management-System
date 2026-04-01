@@ -26,8 +26,13 @@ public class RemoveBookFrame implements ActionListener {
         rbFrame.setLocationRelativeTo(null);
         rbFrame.setTitle("Remove Book");
 
+        idLabel.setText("Enter book id : ");
+        idLabel.setBounds(130,200,200,40);
+        idLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
+
         backButton.addActionListener(this);
 
+        rbFrame.add(idLabel);
         rbFrame.add(exitButton);
         rbFrame.add(label1);
         rbFrame.add(backButton);
