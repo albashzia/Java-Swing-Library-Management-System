@@ -12,6 +12,8 @@ public class SearchBookByIdFrame implements ActionListener {
     JFrame sbiFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
+    JLabel idLabel = new JLabel();
+    JTextField idTextField = new JTextField();
     CreateLabel label = new CreateLabel("Search Book by ID");
     
     public SearchBookByIdFrame(){
