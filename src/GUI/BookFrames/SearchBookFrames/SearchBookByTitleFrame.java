@@ -28,6 +28,12 @@ public class SearchBookByTitleFrame implements ActionListener {
         titleLabel.setText("Enter author name : ");
         titleLabel.setBounds(130,200,250,40);
         titleLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
+
+        titleTextField.setBounds(350,200,100,40);
+        titleTextField.setFont(new Font("Comic",Font.BOLD,20));
+        titleTextField.setForeground(Color.WHITE);
+        titleTextField.setBackground(Color.BLACK);
+        titleTextField.setCaretColor(Color.WHITE);
         
         backButton.addActionListener(this);
 
