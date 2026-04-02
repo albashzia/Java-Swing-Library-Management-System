@@ -5,6 +5,7 @@ import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,6 +25,10 @@ public class SearchBookByAuthorFrame implements ActionListener {
         sbaFrame.setLocationRelativeTo(null);
         sbaFrame.setTitle("Search Book By Author");
 
+        authorLabel.setText("Enter author name : ");
+        authorLabel.setBounds(130,200,250,40);
+        authorLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
+        
         backButton.addActionListener(this);
 
         sbaFrame.add(exitButton);
