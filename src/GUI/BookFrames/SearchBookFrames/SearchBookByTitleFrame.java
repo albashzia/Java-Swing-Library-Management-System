@@ -5,6 +5,7 @@ import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,8 +14,8 @@ public class SearchBookByTitleFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label = new CreateLabel("Search Book By Title");
-    JLabel idLabel = new JLabel();
-    JTextField idTextField = new JTextField();
+    JLabel authorLabel = new JLabel();
+    JTextField authorTextField = new JTextField();
 
     public SearchBookByTitleFrame(){
 
@@ -23,6 +24,7 @@ public class SearchBookByTitleFrame implements ActionListener {
         sbtFrame.setLayout(null);
         sbtFrame.setLocationRelativeTo(null);
         sbtFrame.setTitle("Search Book By Title");
+
 
         backButton.addActionListener(this);
 
