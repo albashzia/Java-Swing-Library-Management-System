@@ -14,8 +14,8 @@ public class SearchBookByTitleFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label = new CreateLabel("Search Book By Title");
-    JLabel authorLabel = new JLabel();
-    JTextField authorTextField = new JTextField();
+    JLabel titleLabel = new JLabel();
+    JTextField titleTextField = new JTextField();
 
     public SearchBookByTitleFrame(){
 
@@ -25,7 +25,10 @@ public class SearchBookByTitleFrame implements ActionListener {
         sbtFrame.setLocationRelativeTo(null);
         sbtFrame.setTitle("Search Book By Title");
 
-
+        titleLabel.setText("Enter author name : ");
+        titleLabel.setBounds(130,200,200,40);
+        titleLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
+        
         backButton.addActionListener(this);
 
         sbtFrame.add(exitButton);
