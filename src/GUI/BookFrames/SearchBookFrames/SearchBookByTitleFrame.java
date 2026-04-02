@@ -13,6 +13,8 @@ public class SearchBookByTitleFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label = new CreateLabel("Search Book By Title");
+    JLabel idLabel = new JLabel();
+    JTextField idTextField = new JTextField();
 
     public SearchBookByTitleFrame(){
 
