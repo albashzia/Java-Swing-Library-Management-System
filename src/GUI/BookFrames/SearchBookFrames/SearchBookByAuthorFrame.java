@@ -37,6 +37,7 @@ public class SearchBookByAuthorFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        sbaFrame.add(authorTextField);
         sbaFrame.add(authorLabel);
         sbaFrame.add(exitButton);
         sbaFrame.add(backButton);
