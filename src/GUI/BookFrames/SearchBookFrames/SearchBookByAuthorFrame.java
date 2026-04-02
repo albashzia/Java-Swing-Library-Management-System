@@ -28,7 +28,13 @@ public class SearchBookByAuthorFrame implements ActionListener {
         authorLabel.setText("Enter author name : ");
         authorLabel.setBounds(130,200,250,40);
         authorLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
-        
+
+        authorTextField.setBounds(350,200,300,40);
+        authorTextField.setFont(new Font("Comic",Font.BOLD,20));
+        authorTextField.setForeground(Color.WHITE);
+        authorTextField.setBackground(Color.BLACK);
+        authorTextField.setCaretColor(Color.WHITE);
+
         backButton.addActionListener(this);
 
         sbaFrame.add(authorLabel);
