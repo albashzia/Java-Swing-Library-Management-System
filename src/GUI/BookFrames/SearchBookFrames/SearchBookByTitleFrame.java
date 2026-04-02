@@ -29,7 +29,7 @@ public class SearchBookByTitleFrame implements ActionListener {
         titleLabel.setBounds(130,200,250,40);
         titleLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
-        titleTextField.setBounds(350,200,100,40);
+        titleTextField.setBounds(350,200,300,40);
         titleTextField.setFont(new Font("Comic",Font.BOLD,20));
         titleTextField.setForeground(Color.WHITE);
         titleTextField.setBackground(Color.BLACK);
@@ -37,6 +37,7 @@ public class SearchBookByTitleFrame implements ActionListener {
         
         backButton.addActionListener(this);
 
+        sbtFrame.add(titleTextField);
         sbtFrame.add(titleLabel);
         sbtFrame.add(exitButton);
         sbtFrame.add(label);
