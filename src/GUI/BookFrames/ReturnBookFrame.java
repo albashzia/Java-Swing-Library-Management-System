@@ -14,6 +14,8 @@ public class ReturnBookFrame implements ActionListener {
     JFrame rbFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
+    JLabel idLabel = new JLabel();
+    JLabel memberIdLabel = new JLabel();
     CreateLabel label1 = new CreateLabel("Return a Book");
 
     ReturnBookFrame(){
