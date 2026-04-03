@@ -28,6 +28,10 @@ public class ReturnBookFrame implements ActionListener {
         rbFrame.setLocationRelativeTo(null);
         rbFrame.setTitle("Return Book");
 
+        idLabel.setText("Enter book id : ");
+        idLabel.setBounds(130,170,200,40);
+        idLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
+
         backButton.addActionListener(this);
 
         rbFrame.add(exitButton);
