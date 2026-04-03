@@ -28,8 +28,12 @@ public class IssueBookFrame implements ActionListener {
         ibFrame.setLocationRelativeTo(null);
         ibFrame.setTitle("Issue Book");
 
+        idLabel.setText("Enter book id : ");
+        idLabel.setBounds(130,170,200,40);
+        idLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
         backButton.addActionListener(this);
 
+        ibFrame.add(idLabel);
         ibFrame.add(exitButton);
         ibFrame.add(label1);
         ibFrame.add(backButton);
