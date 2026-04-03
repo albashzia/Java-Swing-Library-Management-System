@@ -39,6 +39,11 @@ public class IssueBookFrame implements ActionListener {
         idTextField.setBackground(Color.BLACK);
         idTextField.setCaretColor(Color.WHITE);
 
+        memberIdLabel.setText("Enter member id : ");
+        memberIdLabel.setBounds(130,220,250,40);
+        memberIdLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
+
+        ibFrame.add(memberIdLabel);
         ibFrame.add(idTextField);
         ibFrame.add(idLabel);
         ibFrame.add(exitButton);
