@@ -33,6 +33,13 @@ public class IssueBookFrame implements ActionListener {
         idLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
         backButton.addActionListener(this);
 
+        idTextField.setBounds(350,170,100,40);
+        idTextField.setFont(new Font("Comic",Font.BOLD,20));
+        idTextField.setForeground(Color.WHITE);
+        idTextField.setBackground(Color.BLACK);
+        idTextField.setCaretColor(Color.WHITE);
+
+        ibFrame.add(idTextField);
         ibFrame.add(idLabel);
         ibFrame.add(exitButton);
         ibFrame.add(label1);
