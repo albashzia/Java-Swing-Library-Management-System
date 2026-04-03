@@ -50,6 +50,10 @@ public class ReturnBookFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        rbFrame.add(idLabel);
+        rbFrame.add(idTextField);
+        rbFrame.add(memberIdLabel);
+        rbFrame.add(memberIdTextField);
         rbFrame.add(exitButton);
         rbFrame.add(label1);
         rbFrame.add(backButton);
