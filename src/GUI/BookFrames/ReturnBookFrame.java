@@ -42,6 +42,12 @@ public class ReturnBookFrame implements ActionListener {
         memberIdLabel.setBounds(130,220,250,40);
         memberIdLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
+        memberIdTextField.setBounds(350,220,100,40);
+        memberIdTextField.setFont(new Font("Comic",Font.BOLD,20));
+        memberIdTextField.setForeground(Color.WHITE);
+        memberIdTextField.setBackground(Color.BLACK);
+        memberIdTextField.setCaretColor(Color.WHITE);
+
         backButton.addActionListener(this);
 
         rbFrame.add(exitButton);
