@@ -16,6 +16,8 @@ public class IssueBookFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     JLabel idLabel = new JLabel();
     JLabel memberIdLabel = new JLabel();
+    JTextField idTextField = new JTextField();
+    JTextField memberIdTextField = new JTextField();
     CreateLabel label1 = new CreateLabel("Issue a Book");
 
     IssueBookFrame(){
