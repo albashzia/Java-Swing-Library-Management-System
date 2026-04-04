@@ -5,6 +5,7 @@ import javax.swing.*;
 public class TestFrame {
     JFrame frame = new JFrame();
     CreateExitButton button = new CreateExitButton();
+    CreateSubmitButton sb = new CreateSubmitButton("Submit");
     TestFrame(){
 
         frame.setSize(800,600);
@@ -13,6 +14,7 @@ public class TestFrame {
         frame.setLocationRelativeTo(null);
         frame.setLayout(null);
 
+        frame.add(sb);
         frame.add(button);
         frame.setVisible(true);
     }
