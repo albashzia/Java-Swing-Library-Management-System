@@ -15,8 +15,10 @@ public class CreateSubmitButton extends JButton {
         this.setFocusable(false);
     }
 
-    CreateSubmitButton(int len, int wid, int x, int y, String text){
-
+    CreateSubmitButton(int x, int y, int width, int height,  String text){
+        this.setBounds(x,y,width,height);
+        this.setText(text);
+        this.setFocusable(false);
     }
 
 }
