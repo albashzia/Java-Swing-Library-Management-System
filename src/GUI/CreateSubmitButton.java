@@ -4,7 +4,9 @@ import javax.swing.*;
 
 public class CreateSubmitButton extends JButton {
     CreateSubmitButton(String text){
-
+        this.setBounds(350,330,100,50);
+        this.setText(text);
+        this.setFocusable(false);
     }
 
     CreateSubmitButton(int x, int y, String text){
@@ -14,5 +16,5 @@ public class CreateSubmitButton extends JButton {
     CreateSubmitButton(int len, int wid, int x, int y, String text){
 
     }
-    
+
 }
