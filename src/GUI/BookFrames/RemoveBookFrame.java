@@ -3,6 +3,7 @@ package GUI.BookFrames;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
+import GUI.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,6 +16,7 @@ public class RemoveBookFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     JLabel idLabel = new JLabel();
+    CreateSubmitButton submitButton = new CreateSubmitButton(320,300,160,50,"Remove Book");
     JTextField idTextField = new JTextField();
     CreateLabel label1 = new CreateLabel("Remove a Book");
 
@@ -38,6 +40,7 @@ public class RemoveBookFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        rbFrame.add(submitButton);
         rbFrame.add(idLabel);
         rbFrame.add(idTextField);
         rbFrame.add(exitButton);
