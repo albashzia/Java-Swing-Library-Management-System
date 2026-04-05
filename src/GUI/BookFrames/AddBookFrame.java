@@ -3,6 +3,7 @@ package GUI.BookFrames;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
+import GUI.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,6 +15,7 @@ public class AddBookFrame implements ActionListener {
     JFrame abFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
+    CreateSubmitButton submitButton = new CreateSubmitButton(350,350,"Add Book");
 
     JLabel idLabel = new JLabel();
     JLabel titleLabel = new JLabel();
@@ -78,6 +80,7 @@ public class AddBookFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        abFrame.add(submitButton);
         abFrame.add(idTextField);
         abFrame.add(titleTextField);
         abFrame.add(authorTextField);
