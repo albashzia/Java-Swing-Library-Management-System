@@ -3,6 +3,7 @@ package GUI.BookFrames;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
+import GUI.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,6 +20,7 @@ public class ReturnBookFrame implements ActionListener {
     JTextField idTextField = new JTextField();
     JTextField memberIdTextField = new JTextField();
     CreateLabel label1 = new CreateLabel("Return a Book");
+    CreateSubmitButton sb = new CreateSubmitButton(350,290,"Return");
 
     ReturnBookFrame(){
 
@@ -50,6 +52,7 @@ public class ReturnBookFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        rbFrame.add(sb);
         rbFrame.add(idLabel);
         rbFrame.add(idTextField);
         rbFrame.add(memberIdLabel);
