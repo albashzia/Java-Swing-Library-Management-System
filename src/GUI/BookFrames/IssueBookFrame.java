@@ -3,6 +3,7 @@ package GUI.BookFrames;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
+import GUI.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,6 +20,7 @@ public class IssueBookFrame implements ActionListener {
     JTextField idTextField = new JTextField();
     JTextField memberIdTextField = new JTextField();
     CreateLabel label1 = new CreateLabel("Issue a Book");
+    CreateSubmitButton sb = new CreateSubmitButton(350,290,"Search");
 
     IssueBookFrame(){
 
@@ -49,6 +51,7 @@ public class IssueBookFrame implements ActionListener {
         memberIdTextField.setBackground(Color.BLACK);
         memberIdTextField.setCaretColor(Color.WHITE);
 
+        ibFrame.add(sb);
         ibFrame.add(memberIdTextField);
         ibFrame.add(memberIdLabel);
         ibFrame.add(idTextField);
