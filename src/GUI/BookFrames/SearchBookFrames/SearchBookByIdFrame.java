@@ -3,6 +3,7 @@ package GUI.BookFrames.SearchBookFrames;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
+import GUI.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,7 +17,8 @@ public class SearchBookByIdFrame implements ActionListener {
     JLabel idLabel = new JLabel();
     JTextField idTextField = new JTextField();
     CreateLabel label = new CreateLabel("Search Book by ID");
-    
+    CreateSubmitButton sb = new CreateSubmitButton(350,280,"Search");
+
     public SearchBookByIdFrame(){
 
         sbiFrame.setSize(800,600);
@@ -37,6 +39,7 @@ public class SearchBookByIdFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        sbiFrame.add(sb);
         sbiFrame.add(idLabel);
         sbiFrame.add(idTextField);
         sbiFrame.add(exitButton);
