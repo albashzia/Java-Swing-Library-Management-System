@@ -20,7 +20,7 @@ public class IssueBookFrame implements ActionListener {
     JTextField idTextField = new JTextField();
     JTextField memberIdTextField = new JTextField();
     CreateLabel label1 = new CreateLabel("Issue a Book");
-    CreateSubmitButton sb = new CreateSubmitButton(350,290,"Search");
+    CreateSubmitButton sb = new CreateSubmitButton(350,290,"Issue");
 
     IssueBookFrame(){
 
