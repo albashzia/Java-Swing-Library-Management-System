@@ -7,7 +7,19 @@
         <ul>
             <li>GUI
                 <ul>
-                    <li>BookFrames</li>
+                    <li>
+                        BookFrames
+                            <ul>
+                                <li>SearchBookFrames</li>
+                                <li>AddBookFrame</li>
+                                <li>BooksHomeFrame</li>
+                                <li>DisplayBookFrame</li>
+                                <li>DisplayIssuedBooksFrame</li>
+                                <li>IssueBookFrame</li>
+                                <li>RemoveBookFrame</li>
+                                <li>ReturnBookFrame</li>
+                                </ul>
+                    </li>
                     <li>MemberFrames</li>
                     <li>RoomFrames</li>
                     <li>CreateBackButton</li>
