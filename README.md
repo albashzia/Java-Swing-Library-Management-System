@@ -10,7 +10,14 @@
                     <li>
                         BookFrames
                             <ul>
-                                <li>SearchBookFrames</li>
+                                <li>SearchBookFrames
+                                    <ul>
+                                        <li>SearchBookByAuthorFrame</li>
+                                        <li>SearchBookByIdFrame</li>
+                                        <li>SearchBookByTitleFrame</li>
+                                        <li>SearchBookFrame</li>
+                                    </ul>
+                                </li>
                                 <li>AddBookFrame</li>
                                 <li>BooksHomeFrame</li>
                                 <li>DisplayBookFrame</li>
