@@ -32,6 +32,11 @@ public class RegisterMemberFrame implements ActionListener {
         rmFrame.setLocationRelativeTo(null);
         rmFrame.setTitle("Register a Member");
 
+        idLabel.setText("Enter Member ID : ");
+        nameLabel.setText("Enter Member Name : ");
+        phoneLabel.setText("Enter Phone Number : ");
+        emailLabel.setText("Enter Member Email : ");
+
         backButton.addActionListener(this);
 
         rmFrame.add(exitButton);
