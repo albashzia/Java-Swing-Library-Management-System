@@ -37,6 +37,11 @@ public class RegisterMemberFrame implements ActionListener {
         phoneLabel.setText("Enter Phone Number : ");
         emailLabel.setText("Enter Member Email : ");
 
+        idLabel.setBounds(100,120,200,100);
+        nameLabel.setBounds(100,170,200,100);
+        phoneLabel.setBounds(100,220,200,100);
+        emailLabel.setBounds(100,270,200,100);
+
         backButton.addActionListener(this);
 
         rmFrame.add(exitButton);
