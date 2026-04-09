@@ -5,6 +5,7 @@ import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -41,6 +42,11 @@ public class RegisterMemberFrame implements ActionListener {
         nameLabel.setBounds(100,170,200,100);
         phoneLabel.setBounds(100,220,200,100);
         emailLabel.setBounds(100,270,200,100);
+
+        idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
+        nameLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
+        phoneLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
+        emailLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
         backButton.addActionListener(this);
 
