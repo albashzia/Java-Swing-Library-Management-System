@@ -40,7 +40,7 @@ public class RegisterMemberFrame implements ActionListener {
 
         idLabel.setBounds(100,120,200,100);
         nameLabel.setBounds(100,170,200,100);
-        phoneLabel.setBounds(100,220,200,100);
+        phoneLabel.setBounds(100,220,250,100);
         emailLabel.setBounds(100,270,200,100);
 
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
