@@ -14,6 +14,11 @@ public class RegisterMemberFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Register a Member");
 
+    JLabel idLabel = new JLabel();
+    JLabel nameLabel = new JLabel();
+    JLabel phoneLabel = new JLabel();
+    JLabel emailLabel = new JLabel();
+
     RegisterMemberFrame(){
 
         rmFrame.setSize(800,600);
