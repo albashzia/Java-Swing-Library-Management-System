@@ -27,7 +27,16 @@
                                 <li>ReturnBookFrame</li>
                                 </ul>
                     </li>
-                    <li>MemberFrames</li>
+                    <li>MemberFrames
+                           <ul>
+                                <li>DisplayMembersFrame</li>
+                                <li>IssuedToMemberFrame</li>
+                                <li>MembersHomeFrame</li>
+                                <li>RegisterMemberFrame</li>
+                                <li>RemoveMemberFrame</li>
+                                <li>SearchMemberFrame</li>
+                           </ul>
+                    </li>
                     <li>RoomFrames</li>
                     <li>CreateBackButton</li>
                     <li>CreateExitButton</li>
