@@ -75,6 +75,10 @@ public class RegisterMemberFrame implements ActionListener {
         
         backButton.addActionListener(this);
 
+        rmFrame.add(idTextField);
+        rmFrame.add(nameTextField);
+        rmFrame.add(phoneTextField);
+        rmFrame.add(emailTextField);
         rmFrame.add(idLabel);
         rmFrame.add(nameLabel);
         rmFrame.add(phoneLabel);
