@@ -67,6 +67,11 @@ public class RegisterMemberFrame implements ActionListener {
         phoneTextField.setForeground(Color.WHITE);
         phoneTextField.setBackground(Color.BLACK);
         phoneTextField.setCaretColor(Color.WHITE);
+
+        emailTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        emailTextField.setForeground(Color.WHITE);
+        emailTextField.setBackground(Color.BLACK);
+        emailTextField.setCaretColor(Color.WHITE);
         
         backButton.addActionListener(this);
 
