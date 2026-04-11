@@ -17,7 +17,7 @@ public class SearchMemberFrame implements ActionListener {
     JButton button1 = new JButton();
     JButton button2 = new JButton();
 
-    SearchMemberFrame(){
+    public SearchMemberFrame(){
 
         smFrame.setSize(800,600);
         smFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
