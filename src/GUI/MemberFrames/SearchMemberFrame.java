@@ -31,6 +31,9 @@ public class SearchMemberFrame implements ActionListener {
         button1.setText("Search Member using ID");
         button2.setText("Search Member using name");
 
+        button1.setFocusable(false);
+        button2.setFocusable(false);
+
         backButton.addActionListener(this);
 
         smFrame.add(exitButton);
