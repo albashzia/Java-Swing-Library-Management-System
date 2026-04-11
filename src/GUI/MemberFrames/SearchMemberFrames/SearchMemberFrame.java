@@ -1,8 +1,9 @@
-package GUI.MemberFrames;
+package GUI.MemberFrames.SearchMemberFrames;
 
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
+import GUI.MemberFrames.MembersHomeFrame;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

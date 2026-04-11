@@ -4,9 +4,9 @@ import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
 import GUI.HomeFrame;
+import GUI.MemberFrames.SearchMemberFrames.SearchMemberFrame;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
