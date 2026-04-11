@@ -35,6 +35,9 @@ public class SearchMemberFrame implements ActionListener {
         button1.setFocusable(false);
         button2.setFocusable(false);
 
+        button1.addActionListener(this);
+        button2.addActionListener(this);
+
         backButton.addActionListener(this);
 
         smFrame.add(button1);
