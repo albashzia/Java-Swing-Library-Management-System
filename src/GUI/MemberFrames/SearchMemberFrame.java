@@ -25,8 +25,8 @@ public class SearchMemberFrame implements ActionListener {
         smFrame.setLocationRelativeTo(null);
         smFrame.setTitle("Search Members");
 
-        button1.setBounds(120,160,220,50);
-        button2.setBounds(120,240,220,50);
+        button1.setBounds(150,160,220,50);
+        button2.setBounds(150,240,220,50);
 
         button1.setText("Search Member using ID");
         button2.setText("Search Member using name");
