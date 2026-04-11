@@ -49,7 +49,9 @@ public class SearchMemberFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e){
-        smFrame.dispose();
-        new MembersHomeFrame();
+        if (e.getSource()==backButton){
+            smFrame.dispose();
+            new MembersHomeFrame();
+        }
     }
 }
