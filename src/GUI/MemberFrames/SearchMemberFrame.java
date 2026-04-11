@@ -28,6 +28,9 @@ public class SearchMemberFrame implements ActionListener {
         button1.setBounds(120,160,220,50);
         button2.setBounds(120,240,220,50);
 
+        button1.setText("Search Member using ID");
+        button2.setText("Search Member using name");
+
         backButton.addActionListener(this);
 
         smFrame.add(exitButton);
