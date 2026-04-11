@@ -25,6 +25,9 @@ public class SearchMemberFrame implements ActionListener {
         smFrame.setLocationRelativeTo(null);
         smFrame.setTitle("Search Members");
 
+        button1.setBounds(120,160,220,50);
+        button2.setBounds(120,240,220,50);
+
         backButton.addActionListener(this);
 
         smFrame.add(exitButton);
