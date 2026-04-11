@@ -13,6 +13,10 @@ public class SearchMemberFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Search Member");
+
+    JButton button1 = new JButton();
+    JButton button2 = new JButton();
+
     SearchMemberFrame(){
 
         smFrame.setSize(800,600);
