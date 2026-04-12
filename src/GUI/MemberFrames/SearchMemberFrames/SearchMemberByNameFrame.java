@@ -22,6 +22,7 @@ public class SearchMemberByNameFrame implements ActionListener {
         smnFrame.setLocationRelativeTo(null);
         smnFrame.setTitle("Search Members by Name");
 
+        smnFrame.add(backButton);
         smnFrame.add(exitButton);
         smnFrame.add(label);
         smnFrame.setVisible(true);
