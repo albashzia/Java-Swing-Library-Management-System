@@ -28,6 +28,9 @@ public class SearchMemberByNameFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e){
-
+        if (e.getSource()==backButton){
+            smnFrame.dispose();
+            new SearchMemberFrame();
+        }
     }
 }
