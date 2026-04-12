@@ -11,7 +11,7 @@ public class SearchMemberByNameFrame {
         smnFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         smnFrame.setLayout(null);
         smnFrame.setLocationRelativeTo(null);
-        smnFrame.setTitle("Search Members by ID");
+        smnFrame.setTitle("Search Members by Name");
 
 
 
