@@ -5,8 +5,10 @@ import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class SearchMemberByNameFrame {
+public class SearchMemberByNameFrame implements ActionListener {
 
     JFrame smnFrame = new JFrame();
     CreateLabel label = new CreateLabel("Search Member by Name");
@@ -23,5 +25,9 @@ public class SearchMemberByNameFrame {
         smnFrame.add(exitButton);
         smnFrame.add(label);
         smnFrame.setVisible(true);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+
     }
 }
