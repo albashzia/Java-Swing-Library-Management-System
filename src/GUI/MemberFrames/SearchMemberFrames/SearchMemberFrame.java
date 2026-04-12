@@ -53,5 +53,9 @@ public class SearchMemberFrame implements ActionListener {
             smFrame.dispose();
             new MembersHomeFrame();
         }
+        if (e.getSource()==button1){
+            smFrame.dispose();
+            new SearchMemberByIDFrame();
+        }
     }
 }
