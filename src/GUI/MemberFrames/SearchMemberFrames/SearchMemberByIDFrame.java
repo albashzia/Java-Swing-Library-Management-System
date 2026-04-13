@@ -4,8 +4,10 @@ import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class SearchMemberByIDFrame {
+public class SearchMemberByIDFrame implements ActionListener {
 
     JFrame smiFrame = new JFrame();
     CreateLabel label = new CreateLabel("Search Member by ID");
@@ -21,5 +23,10 @@ public class SearchMemberByIDFrame {
         smiFrame.add(exitButton);
         smiFrame.add(label);
         smiFrame.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+
     }
 }
