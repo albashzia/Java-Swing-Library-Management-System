@@ -1,5 +1,6 @@
 package GUI.MemberFrames.SearchMemberFrames;
 
+import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
@@ -12,6 +13,7 @@ public class SearchMemberByIDFrame implements ActionListener {
     JFrame smiFrame = new JFrame();
     CreateLabel label = new CreateLabel("Search Member by ID");
     CreateExitButton exitButton = new CreateExitButton();
+    CreateBackButton backButton = new CreateBackButton();
 
     SearchMemberByIDFrame(){
         smiFrame.setSize(800,600);
