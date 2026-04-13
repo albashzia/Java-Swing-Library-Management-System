@@ -24,6 +24,7 @@ public class SearchMemberByIDFrame implements ActionListener {
         smiFrame.setTitle("Search Members by ID");
 
         idLabel.setText("Enter Member ID : ");
+        idLabel.setBounds(100,170,200,100);
 
         backButton.addActionListener(this);
 
