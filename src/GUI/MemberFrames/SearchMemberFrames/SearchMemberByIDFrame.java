@@ -22,6 +22,8 @@ public class SearchMemberByIDFrame implements ActionListener {
         smiFrame.setLocationRelativeTo(null);
         smiFrame.setTitle("Search Members by ID");
 
+        backButton.addActionListener(this);
+
         smiFrame.add(exitButton);
         smiFrame.add(label);
         smiFrame.setVisible(true);
