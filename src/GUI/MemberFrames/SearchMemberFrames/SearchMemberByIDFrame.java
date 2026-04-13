@@ -23,6 +23,8 @@ public class SearchMemberByIDFrame implements ActionListener {
         smiFrame.setLocationRelativeTo(null);
         smiFrame.setTitle("Search Members by ID");
 
+        idLabel.setText("Enter Member ID : ");
+
         backButton.addActionListener(this);
 
         smiFrame.add(backButton);
