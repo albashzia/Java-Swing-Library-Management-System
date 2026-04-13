@@ -14,6 +14,7 @@ public class SearchMemberByIDFrame implements ActionListener {
     CreateLabel label = new CreateLabel("Search Member by ID");
     CreateExitButton exitButton = new CreateExitButton();
     CreateBackButton backButton = new CreateBackButton();
+    JLabel idLabel = new JLabel();
 
     SearchMemberByIDFrame(){
         smiFrame.setSize(800,600);
