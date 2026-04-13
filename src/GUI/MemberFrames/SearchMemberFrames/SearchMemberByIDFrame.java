@@ -29,6 +29,9 @@ public class SearchMemberByIDFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e){
-
+        if(e.getSource()==backButton){
+            smiFrame.dispose();
+            new SearchMemberFrame();
+        }
     }
 }
