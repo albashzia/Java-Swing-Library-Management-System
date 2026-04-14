@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 public class SearchMemberByNameFrame implements ActionListener {
 
     JFrame smnFrame = new JFrame();
-    CreateLabel label = new CreateLabel("Search Member by Name");
+    CreateLabel label = new CreateLabel("Search Member by Name",450);
     CreateExitButton exitButton = new CreateExitButton();
     CreateBackButton backButton = new CreateBackButton();
 
