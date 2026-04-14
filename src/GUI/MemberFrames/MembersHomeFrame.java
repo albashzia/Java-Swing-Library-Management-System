@@ -14,7 +14,7 @@ public class MembersHomeFrame implements ActionListener {
     JFrame mhFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
-    CreateLabel label1 = new CreateLabel("Membership Management");
+    CreateLabel label1 = new CreateLabel("Membership Management",450);
     JButton button1 = new JButton();
     JButton button2 = new JButton();
     JButton button3 = new JButton();
