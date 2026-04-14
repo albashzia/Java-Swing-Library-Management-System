@@ -29,6 +29,8 @@ public class SearchMemberByIDFrame implements ActionListener {
         idLabel.setBounds(100,170,200,100);
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
+        idTextField.setBounds(270,170,100,30);
+
         backButton.addActionListener(this);
 
         smiFrame.add(idLabel);
