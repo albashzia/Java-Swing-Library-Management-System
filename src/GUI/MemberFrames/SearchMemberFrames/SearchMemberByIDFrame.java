@@ -37,6 +37,7 @@ public class SearchMemberByIDFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        smiFrame.add(idTextField);
         smiFrame.add(idLabel);
         smiFrame.add(backButton);
         smiFrame.add(exitButton);
