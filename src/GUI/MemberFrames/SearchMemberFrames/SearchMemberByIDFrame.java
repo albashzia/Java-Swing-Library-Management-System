@@ -16,6 +16,7 @@ public class SearchMemberByIDFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     CreateBackButton backButton = new CreateBackButton();
     JLabel idLabel = new JLabel();
+    JTextField idTextField = new JTextField();
 
     SearchMemberByIDFrame(){
         smiFrame.setSize(800,600);
