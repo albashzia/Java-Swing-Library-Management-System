@@ -91,7 +91,9 @@ public class RegisterMemberFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e){
-        rmFrame.dispose();
-        new MembersHomeFrame();
+        if(e.getSource()==backButton){
+            rmFrame.dispose();
+            new MembersHomeFrame();
+        }
     }
 }
