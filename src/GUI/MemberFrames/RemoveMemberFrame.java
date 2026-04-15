@@ -26,7 +26,7 @@ public class RemoveMemberFrame implements ActionListener {
         rmFrame.setTitle("Remove Member");
 
         idLabel.setText("Enter Member ID : ");
-        idLabel.setBounds(100,120,200,100);
+        idLabel.setBounds(100,150,200,100);
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
         backButton.addActionListener(this);
