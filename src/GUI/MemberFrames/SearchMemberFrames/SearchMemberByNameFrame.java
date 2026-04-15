@@ -29,6 +29,12 @@ public class SearchMemberByNameFrame implements ActionListener {
         nameLabel.setBounds(100,170,200,100);
         nameLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
+        nameTextField.setBounds(270,210,100,30);
+        nameTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        nameTextField.setForeground(Color.WHITE);
+        nameTextField.setBackground(Color.BLACK);
+        nameTextField.setCaretColor(Color.WHITE);
+        
         backButton.addActionListener(this);
 
         smnFrame.add(nameLabel);
