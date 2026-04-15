@@ -34,9 +34,10 @@ public class SearchMemberByNameFrame implements ActionListener {
         nameTextField.setForeground(Color.WHITE);
         nameTextField.setBackground(Color.BLACK);
         nameTextField.setCaretColor(Color.WHITE);
-        
+
         backButton.addActionListener(this);
 
+        smnFrame.add(nameTextField);
         smnFrame.add(nameLabel);
         smnFrame.add(backButton);
         smnFrame.add(exitButton);
