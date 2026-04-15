@@ -31,7 +31,9 @@ public class IssuedToMemberFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e){
-        itmFrame.dispose();
-        new MembersHomeFrame();
+        if (e.getSource()==backButton){
+            itmFrame.dispose();
+            new MembersHomeFrame();
+        }
     }
 }
