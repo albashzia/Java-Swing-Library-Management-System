@@ -13,6 +13,8 @@ public class RemoveMemberFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Remove a Member");
+    JLabel idLabel = new JLabel();
+    JTextField idTextField = new JTextField();
 
     RemoveMemberFrame(){
 
