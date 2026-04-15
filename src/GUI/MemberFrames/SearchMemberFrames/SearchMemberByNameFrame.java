@@ -5,6 +5,7 @@ import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -23,8 +24,13 @@ public class SearchMemberByNameFrame implements ActionListener {
         smnFrame.setLocationRelativeTo(null);
         smnFrame.setTitle("Search Members by Name");
 
+        nameLabel.setText("Enter Member Name : ");
+        nameLabel.setBounds(100,170,200,100);
+        nameLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
+
         backButton.addActionListener(this);
 
+        smnFrame.add(nameLabel);
         smnFrame.add(backButton);
         smnFrame.add(exitButton);
         smnFrame.add(label);
