@@ -30,7 +30,9 @@ public class DisplayMembersFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e){
-        dmFrame.dispose();
-        new MembersHomeFrame();
+        if (e.getSource()==backButton){
+            dmFrame.dispose();
+            new MembersHomeFrame();
+        }
     }
 }
