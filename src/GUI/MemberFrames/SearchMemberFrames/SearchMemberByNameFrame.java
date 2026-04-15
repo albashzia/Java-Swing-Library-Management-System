@@ -15,6 +15,7 @@ public class SearchMemberByNameFrame implements ActionListener {
     CreateLabel label = new CreateLabel("Search Member by Name",450);
     CreateExitButton exitButton = new CreateExitButton();
     JLabel nameLabel = new JLabel();
+    JTextField nameTextField = new JTextField();
     CreateBackButton backButton = new CreateBackButton();
 
     SearchMemberByNameFrame(){
