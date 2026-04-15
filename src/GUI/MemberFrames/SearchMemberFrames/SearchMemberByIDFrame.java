@@ -29,7 +29,7 @@ public class SearchMemberByIDFrame implements ActionListener {
         idLabel.setBounds(100,170,200,100);
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
-        idTextField.setBounds(270,170,100,30);
+        idTextField.setBounds(270,210,100,30);
         idTextField.setFont(new Font("Consolas",Font.BOLD,20));
         idTextField.setForeground(Color.WHITE);
         idTextField.setBackground(Color.BLACK);
