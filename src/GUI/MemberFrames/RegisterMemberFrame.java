@@ -3,6 +3,7 @@ package GUI.MemberFrames;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
+import GUI.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,6 +15,7 @@ public class RegisterMemberFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Register a Member");
+    CreateSubmitButton submitButton = new CreateSubmitButton(350,360,100,50,"Register");
 
     JLabel idLabel = new JLabel();
     JLabel nameLabel = new JLabel();
@@ -75,6 +77,7 @@ public class RegisterMemberFrame implements ActionListener {
         
         backButton.addActionListener(this);
 
+        rmFrame.add(submitButton);
         rmFrame.add(idTextField);
         rmFrame.add(nameTextField);
         rmFrame.add(phoneTextField);
