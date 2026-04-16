@@ -31,6 +31,9 @@ public class RemoveMemberFrame implements ActionListener {
 
         idTextField.setBounds(270,190,100,30);
         idTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        idTextField.setForeground(Color.WHITE);
+        idTextField.setBackground(Color.BLACK);
+        idTextField.setCaretColor(Color.WHITE);
 
         backButton.addActionListener(this);
 
