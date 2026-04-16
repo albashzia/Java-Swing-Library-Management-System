@@ -3,6 +3,7 @@ package GUI.MemberFrames.SearchMemberFrames;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
+import GUI.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,6 +15,7 @@ public class SearchMemberByNameFrame implements ActionListener {
     JFrame smnFrame = new JFrame();
     CreateLabel label = new CreateLabel("Search Member by Name",450);
     CreateExitButton exitButton = new CreateExitButton();
+    CreateSubmitButton submitButton = new CreateSubmitButton(350,270,"Search");
     JLabel nameLabel = new JLabel();
     JTextField nameTextField = new JTextField();
     CreateBackButton backButton = new CreateBackButton();
@@ -37,6 +39,7 @@ public class SearchMemberByNameFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        smnFrame.add(submitButton);
         smnFrame.add(nameTextField);
         smnFrame.add(nameLabel);
         smnFrame.add(backButton);
