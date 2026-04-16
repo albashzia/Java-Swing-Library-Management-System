@@ -30,6 +30,7 @@ public class RemoveMemberFrame implements ActionListener {
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
         idTextField.setBounds(270,190,100,30);
+        idTextField.setFont(new Font("Consolas",Font.BOLD,20));
 
         backButton.addActionListener(this);
 
