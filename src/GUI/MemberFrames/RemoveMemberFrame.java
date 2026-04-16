@@ -29,8 +29,11 @@ public class RemoveMemberFrame implements ActionListener {
         idLabel.setBounds(100,150,200,100);
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
+        idTextField.setBounds(270,190,100,30);
+
         backButton.addActionListener(this);
 
+        rmFrame.add(idTextField);
         rmFrame.add(idLabel);
         rmFrame.add(exitButton);
         rmFrame.add(label1);
