@@ -3,14 +3,14 @@
 <p>This repository holds a GUI based Library Management System developed as a practice project of Java Swing</p>
 <h2>Project Structure</h2>
 <ul>
-    <li>src
+    <li>📁src
         <ul>
-            <li>GUI
+            <li>📁GUI
                 <ul>
                     <li>
-                        BookFrames
+                        📁BookFrames
                             <ul>
-                                <li>SearchBookFrames
+                                <li>📁SearchBookFrames
                                     <ul>
                                         <li>SearchBookByAuthorFrame</li>
                                         <li>SearchBookByIdFrame</li>
@@ -27,9 +27,9 @@
                                 <li>ReturnBookFrame</li>
                                 </ul>
                     </li>
-                    <li>MemberFrames
+                    <li>📁MemberFrames
                            <ul>
-                                <li>SearchMemberFrames
+                                <li>📁SearchMemberFrames
                                     <ul>
                                         <li>SearchMemberByIDFrame</li>
                                         <li>SearchMemberByNameFrame</li>
@@ -43,7 +43,7 @@
                                 <li>RemoveMemberFrame</li>
                            </ul>
                     </li>
-                    <li>RoomFrames</li>
+                    <li>📁RoomFrames</li>
                     <li>CreateBackButton</li>
                     <li>CreateExitButton</li>
                     <li>CreateLabel</li>
