@@ -13,12 +13,14 @@ import java.awt.event.ActionListener;
 public class RemoveBookFrame implements ActionListener {
 
     JFrame rbFrame = new JFrame();
+
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
-    JLabel idLabel = new JLabel();
     CreateSubmitButton submitButton = new CreateSubmitButton(320,300,160,50,"Remove Book");
-    JTextField idTextField = new JTextField();
     CreateLabel label1 = new CreateLabel("Remove a Book");
+
+    JLabel idLabel = new JLabel();
+    JTextField idTextField = new JTextField();
 
     RemoveBookFrame(){
 
@@ -40,12 +42,15 @@ public class RemoveBookFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        rbFrame.add(label1);
+
         rbFrame.add(submitButton);
+        rbFrame.add(exitButton);
+        rbFrame.add(backButton);
+
         rbFrame.add(idLabel);
         rbFrame.add(idTextField);
-        rbFrame.add(exitButton);
-        rbFrame.add(label1);
-        rbFrame.add(backButton);
+
         rbFrame.setVisible(true);
     }
 
