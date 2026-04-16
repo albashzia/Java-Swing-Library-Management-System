@@ -29,12 +29,18 @@
                     </li>
                     <li>MemberFrames
                            <ul>
+                                <li>SearchMemberFrames
+                                    <ul>
+                                        <li>SearchMemberByIDFrame</li>
+                                        <li>SearchMemberByNameFrame</li>
+                                        <li>SearchMemberFrame</li>
+                                    </ul>
+                                </li>
                                 <li>DisplayMembersFrame</li>
                                 <li>IssuedToMemberFrame</li>
                                 <li>MembersHomeFrame</li>
                                 <li>RegisterMemberFrame</li>
                                 <li>RemoveMemberFrame</li>
-                                <li>SearchMemberFrame</li>
                            </ul>
                     </li>
                     <li>RoomFrames</li>
