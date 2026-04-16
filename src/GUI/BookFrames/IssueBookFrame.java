@@ -13,14 +13,17 @@ import java.awt.event.ActionListener;
 public class IssueBookFrame implements ActionListener {
 
     JFrame ibFrame = new JFrame();
+
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
+    CreateSubmitButton submitButton = new CreateSubmitButton(350,290,"Issue");
+    CreateLabel label1 = new CreateLabel("Issue a Book");
+
     JLabel idLabel = new JLabel();
     JLabel memberIdLabel = new JLabel();
+
     JTextField idTextField = new JTextField();
     JTextField memberIdTextField = new JTextField();
-    CreateLabel label1 = new CreateLabel("Issue a Book");
-    CreateSubmitButton sb = new CreateSubmitButton(350,290,"Issue");
 
     IssueBookFrame(){
 
@@ -51,14 +54,19 @@ public class IssueBookFrame implements ActionListener {
         memberIdTextField.setBackground(Color.BLACK);
         memberIdTextField.setCaretColor(Color.WHITE);
 
-        ibFrame.add(sb);
-        ibFrame.add(memberIdTextField);
-        ibFrame.add(memberIdLabel);
-        ibFrame.add(idTextField);
-        ibFrame.add(idLabel);
-        ibFrame.add(exitButton);
+
         ibFrame.add(label1);
+
+        ibFrame.add(idLabel);
+        ibFrame.add(idTextField);
+
+        ibFrame.add(memberIdLabel);
+        ibFrame.add(memberIdTextField);
+
+        ibFrame.add(submitButton);
+        ibFrame.add(exitButton);
         ibFrame.add(backButton);
+
         ibFrame.setVisible(true);
     }
     @Override
