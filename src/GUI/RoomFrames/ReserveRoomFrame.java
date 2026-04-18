@@ -23,6 +23,9 @@ public class ReserveRoomFrame implements ActionListener {
         rrFrame.setLocationRelativeTo(null);
         rrFrame.setTitle("Reserve Study Room");
 
+        memberIdLabel.setText("Enter Member Id: ");
+        roomNumberLabel.setText("Enter room number: ");
+
         backButton.addActionListener(this);
 
         rrFrame.add(label1);
