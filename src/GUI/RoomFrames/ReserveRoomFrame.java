@@ -11,6 +11,11 @@ public class ReserveRoomFrame implements ActionListener {
     JFrame rrFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Reserve a Room");
+    JLabel memberIdLabel = new JLabel();
+    JTextField memberIdTextField = new JTextField();
+    JLabel roomNumberLabel = new JLabel();
+    JTextField roomNumberTextField = new JTextField();
+
     public ReserveRoomFrame(){
         rrFrame.setSize(800,600);
         rrFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
