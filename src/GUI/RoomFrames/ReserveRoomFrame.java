@@ -4,6 +4,7 @@ import GUI.CreateBackButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -25,6 +26,12 @@ public class ReserveRoomFrame implements ActionListener {
 
         memberIdLabel.setText("Enter Member Id: ");
         roomNumberLabel.setText("Enter room number: ");
+
+        memberIdLabel.setBounds(100,120,200,100);
+        roomNumberLabel.setBounds(100,170,200,100);
+
+        memberIdLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
+        roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
         backButton.addActionListener(this);
 
