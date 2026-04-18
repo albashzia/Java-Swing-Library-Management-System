@@ -33,6 +33,9 @@ public class ReserveRoomFrame implements ActionListener {
         memberIdLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
         roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
+        memberIdTextField.setBounds(270,160,100,30);
+        roomNumberTextField.setBounds(300,210,300,30);
+
         backButton.addActionListener(this);
 
         rrFrame.add(label1);
