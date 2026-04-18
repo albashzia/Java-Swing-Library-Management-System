@@ -48,6 +48,10 @@ public class ReserveRoomFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        rrFrame.add(memberIdLabel);
+        rrFrame.add(memberIdTextField);
+        rrFrame.add(roomNumberLabel);
+        rrFrame.add(roomNumberTextField);
         rrFrame.add(label1);
         rrFrame.add(backButton);
         rrFrame.setVisible(true);
