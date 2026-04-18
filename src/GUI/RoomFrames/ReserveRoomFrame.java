@@ -36,6 +36,16 @@ public class ReserveRoomFrame implements ActionListener {
         memberIdTextField.setBounds(270,160,100,30);
         roomNumberTextField.setBounds(300,210,300,30);
 
+        memberIdTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        memberIdTextField.setForeground(Color.WHITE);
+        memberIdTextField.setBackground(Color.BLACK);
+        memberIdTextField.setCaretColor(Color.WHITE);
+
+        roomNumberTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        roomNumberTextField.setForeground(Color.WHITE);
+        roomNumberTextField.setBackground(Color.BLACK);
+        roomNumberTextField.setCaretColor(Color.WHITE);
+
         backButton.addActionListener(this);
 
         rrFrame.add(label1);
