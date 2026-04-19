@@ -29,7 +29,17 @@ public class DisplayBookFrame implements ActionListener {
         dbFrame.setLocationRelativeTo(null);
         dbFrame.setTitle("Display Book");
 
+        header1.setBounds(50,120,100,100);
+        header2.setBounds(150,120,100,100);
+        header3.setBounds(350,120,100,100);
+        header4.setBounds(550,120,100,100);
+
         backButton.addActionListener(this);
+
+        dbFrame.add(header1);
+        dbFrame.add(header2);
+        dbFrame.add(header3);
+        dbFrame.add(header4);
 
         dbFrame.add(exitButton);
         dbFrame.add(label1);
