@@ -26,8 +26,11 @@ public class CheckRoomStatusFrame implements ActionListener {
         roomNumberLabel.setBounds(80,150,350,100);
         roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
+        roomNumberTextField.setBounds(415,190,100,30);
+
         backButton.addActionListener(this);
 
+        crsFrame.add(roomNumberTextField);
         crsFrame.add(roomNumberLabel);
         crsFrame.add(label1);
         crsFrame.add(backButton);
