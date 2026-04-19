@@ -21,4 +21,13 @@ public class ArrayListsManager {
         bookAuthors.add(author);
         booksQuantity.add(quantity);
     }
+
+    public void displayAddedBooks(){
+        for (int i = 0; i < bookIds.size();i++){
+            System.out.println(bookIds.get(i));
+            System.out.println(bookTitles.get(i));
+            System.out.println(bookAuthors.get(i));
+            System.out.println(booksQuantity.get(i));
+        }
+    }
 }
