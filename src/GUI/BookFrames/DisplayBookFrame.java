@@ -16,6 +16,11 @@ public class DisplayBookFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Display a Book");
 
+    JLabel header1 = new JLabel("Book ID");
+    JLabel header2 = new JLabel("Book Name");
+    JLabel header3 = new JLabel("Author Name");
+    JLabel header4 = new JLabel("Quantity");
+
     DisplayBookFrame(){
 
         dbFrame.setSize(800,600);
