@@ -1,6 +1,7 @@
 package GUI.RoomFrames;
 
 import GUI.CreateBackButton;
+import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
@@ -11,6 +12,7 @@ public class CancelReservationFrame implements ActionListener {
     JFrame crFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Cancel Reservation");
+    CreateExitButton exitButton = new CreateExitButton();
 
     public CancelReservationFrame(){
         crFrame.setSize(800,600);
@@ -21,6 +23,7 @@ public class CancelReservationFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        crFrame.add(exitButton);
         crFrame.add(label1);
         crFrame.add(backButton);
         crFrame.setVisible(true);
