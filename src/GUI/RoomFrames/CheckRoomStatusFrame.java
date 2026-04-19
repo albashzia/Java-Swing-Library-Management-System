@@ -11,6 +11,9 @@ public class CheckRoomStatusFrame implements ActionListener {
     JFrame crsFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Check Room Status");
+    JLabel roomNumberLabel = new JLabel();
+    JTextField roomNumberTextField = new JTextField();
+
     public CheckRoomStatusFrame(){
         crsFrame.setSize(800,600);
         crsFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
