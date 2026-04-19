@@ -1,6 +1,7 @@
 package GUI.RoomFrames;
 
 import GUI.CreateBackButton;
+import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
@@ -11,6 +12,8 @@ public class ShowRoomsFrame implements ActionListener {
     JFrame srFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Show Available Rooms");
+    CreateExitButton exitButton = new CreateExitButton();
+
     public ShowRoomsFrame(){
         srFrame.setSize(800,600);
         srFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,6 +23,7 @@ public class ShowRoomsFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        srFrame.add(exitButton);
         srFrame.add(label1);
         srFrame.add(backButton);
         srFrame.setVisible(true);
