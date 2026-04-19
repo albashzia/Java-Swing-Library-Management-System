@@ -81,6 +81,7 @@ public class AddBookFrame implements ActionListener {
         quantityTextField.setCaretColor(Color.WHITE);
         
 
+        submitButton.addActionListener(this);
         backButton.addActionListener(this);
 
         abFrame.add(submitButton);
@@ -116,6 +117,8 @@ public class AddBookFrame implements ActionListener {
             String author = authorTextField.getText();
             int quantity = Integer.parseInt(quantityTextField.getText());
             manager.addBook(id,name,author,quantity);
+
+            manager.displayAddedBooks();
         }
     }
 }
