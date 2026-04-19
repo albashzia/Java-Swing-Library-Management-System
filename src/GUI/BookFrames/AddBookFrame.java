@@ -102,7 +102,9 @@ public class AddBookFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e){
-        abFrame.dispose();
-        new BooksHomeFrame();
+        if (e.getSource()==backButton){
+            abFrame.dispose();
+            new BooksHomeFrame();
+        }
     }
 }
