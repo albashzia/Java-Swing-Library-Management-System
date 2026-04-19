@@ -1,6 +1,7 @@
 package GUI.RoomFrames;
 
 import GUI.CreateBackButton;
+import GUI.CreateExitButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
@@ -16,6 +17,7 @@ public class ReserveRoomFrame implements ActionListener {
     JTextField memberIdTextField = new JTextField();
     JLabel roomNumberLabel = new JLabel();
     JTextField roomNumberTextField = new JTextField();
+    CreateExitButton exitButton = new CreateExitButton();
 
     public ReserveRoomFrame(){
         rrFrame.setSize(800,600);
@@ -48,6 +50,7 @@ public class ReserveRoomFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        rrFrame.add(exitButton);
         rrFrame.add(memberIdLabel);
         rrFrame.add(memberIdTextField);
         rrFrame.add(roomNumberLabel);
