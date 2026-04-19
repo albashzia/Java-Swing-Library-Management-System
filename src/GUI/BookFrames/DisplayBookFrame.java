@@ -30,9 +30,14 @@ public class DisplayBookFrame implements ActionListener {
         dbFrame.setTitle("Display Book");
 
         header1.setBounds(50,120,100,100);
-        header2.setBounds(150,120,100,100);
-        header3.setBounds(350,120,100,100);
-        header4.setBounds(550,120,100,100);
+        header2.setBounds(150,120,200,100);
+        header3.setBounds(350,120,200,100);
+        header4.setBounds(550,120,1500,100);
+
+        header1.setFont(new Font("Romans",Font.BOLD,20));
+        header2.setFont(new Font("Romans",Font.BOLD,20));
+        header3.setFont(new Font("Romans",Font.BOLD,20));
+        header4.setFont(new Font("Romans",Font.BOLD,20));
 
         backButton.addActionListener(this);
 
