@@ -4,6 +4,7 @@ import GUI.CreateBackButton;
 import GUI.CreateLabel;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -20,6 +21,10 @@ public class CheckRoomStatusFrame implements ActionListener {
         crsFrame.setLayout(null);
         crsFrame.setLocationRelativeTo(null);
         crsFrame.setTitle("Check Reservation Status");
+
+        roomNumberLabel.setText("Enter room number to check status : ");
+        roomNumberLabel.setBounds(100,200,200,100);
+        roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
         backButton.addActionListener(this);
 
