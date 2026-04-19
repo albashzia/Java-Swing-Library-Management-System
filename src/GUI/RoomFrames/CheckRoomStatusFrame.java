@@ -23,11 +23,12 @@ public class CheckRoomStatusFrame implements ActionListener {
         crsFrame.setTitle("Check Reservation Status");
 
         roomNumberLabel.setText("Enter room number to check status : ");
-        roomNumberLabel.setBounds(100,200,200,100);
+        roomNumberLabel.setBounds(80,150,350,100);
         roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
         backButton.addActionListener(this);
 
+        crsFrame.add(roomNumberLabel);
         crsFrame.add(label1);
         crsFrame.add(backButton);
         crsFrame.setVisible(true);
