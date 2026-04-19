@@ -1,5 +1,6 @@
 package GUI.BookFrames;
 
+import Code.ArrayListsManager;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
@@ -26,6 +27,8 @@ public class AddBookFrame implements ActionListener {
     JTextField titleTextField = new JTextField();
     JTextField authorTextField = new JTextField();
     JTextField quantityTextField = new JTextField();
+
+    ArrayListsManager manager = new ArrayListsManager();
 
     CreateLabel label1 = new CreateLabel("Add a Book");
 
@@ -105,6 +108,14 @@ public class AddBookFrame implements ActionListener {
         if (e.getSource()==backButton){
             abFrame.dispose();
             new BooksHomeFrame();
+        }
+
+        if (e.getSource()==submitButton){
+            int id = Integer.parseInt(idTextField.getText());
+            String name = titleTextField.getText();
+            String author = authorTextField.getText();
+            int quantity = Integer.parseInt(quantityTextField.getText());
+            manager.addBook(id,name,author,quantity);
         }
     }
 }
