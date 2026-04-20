@@ -13,7 +13,7 @@ public class CreateLabel extends JLabel
         this.setHorizontalAlignment(JLabel.CENTER);
         this.setVerticalAlignment(JLabel.CENTER);
         this.setText(title);
-        this.setFont(new Font("Comic Sans",Font.ITALIC,35));
+        this.setFont(new Font("Georgia",Font.BOLD,35));
         this.setForeground(Color.WHITE);
         this.setOpaque(true);
     }
