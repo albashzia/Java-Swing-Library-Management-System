@@ -42,6 +42,8 @@ public class DisplayBookFrame implements ActionListener {
         header3.setFont(new Font("Romans",Font.BOLD,20));
         header4.setFont(new Font("Romans",Font.BOLD,20));
 
+        String[] columns = {"Books Id", "Books Name", "Author Name", "Quantity"};
+
         backButton.addActionListener(this);
 
         dbFrame.add(header1);
