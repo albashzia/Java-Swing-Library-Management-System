@@ -28,7 +28,7 @@ public class AddBookFrame implements ActionListener {
     JTextField authorTextField = new JTextField();
     JTextField quantityTextField = new JTextField();
 
-    ArrayListsManager manager = new ArrayListsManager();
+    ArrayListsManager manager = ArrayListsManager.instance;
 
     CreateLabel label1 = new CreateLabel("Add a Book");
 

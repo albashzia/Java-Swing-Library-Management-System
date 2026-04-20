@@ -18,7 +18,7 @@ public class DisplayBookFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Display a Book");
 
-    ArrayListsManager manager = new ArrayListsManager();
+    ArrayListsManager manager = ArrayListsManager.instance;
 
     JLabel header1 = new JLabel("Book ID");
     JLabel header2 = new JLabel("Book Name");
