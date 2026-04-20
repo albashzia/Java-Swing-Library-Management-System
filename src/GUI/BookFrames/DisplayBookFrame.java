@@ -21,6 +21,8 @@ public class DisplayBookFrame implements ActionListener {
     JLabel header3 = new JLabel("Author Name");
     JLabel header4 = new JLabel("Quantity");
 
+    JTable table = new JTable();
+
     DisplayBookFrame(){
 
         dbFrame.setSize(800,600);
