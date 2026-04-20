@@ -20,11 +20,6 @@ public class DisplayBookFrame implements ActionListener {
 
     ArrayListsManager manager = ArrayListsManager.instance;
 
-    JLabel header1 = new JLabel("Book ID");
-    JLabel header2 = new JLabel("Book Name");
-    JLabel header3 = new JLabel("Author Name");
-    JLabel header4 = new JLabel("Quantity");
-
 
     DisplayBookFrame(){
 
@@ -33,16 +28,6 @@ public class DisplayBookFrame implements ActionListener {
         dbFrame.setLayout(null);
         dbFrame.setLocationRelativeTo(null);
         dbFrame.setTitle("Display Book");
-
-        header1.setBounds(50,120,100,100);
-        header2.setBounds(150,120,200,100);
-        header3.setBounds(350,120,200,100);
-        header4.setBounds(550,120,1500,100);
-
-        header1.setFont(new Font("Romans",Font.BOLD,20));
-        header2.setFont(new Font("Romans",Font.BOLD,20));
-        header3.setFont(new Font("Romans",Font.BOLD,20));
-        header4.setFont(new Font("Romans",Font.BOLD,20));
 
         String[] columns = {"Books Id", "Books Name", "Author Name", "Quantity"};
 
@@ -67,10 +52,6 @@ public class DisplayBookFrame implements ActionListener {
         backButton.addActionListener(this);
 
         dbFrame.add(scrollPane);
-        dbFrame.add(header1);
-        dbFrame.add(header2);
-        dbFrame.add(header3);
-        dbFrame.add(header4);
 
         dbFrame.add(exitButton);
         dbFrame.add(label1);
