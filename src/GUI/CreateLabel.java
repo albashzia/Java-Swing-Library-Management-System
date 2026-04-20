@@ -20,7 +20,7 @@ public class CreateLabel extends JLabel
 
     public CreateLabel(String title, int width)
     {
-        this.setLocation(200,30);
+        this.setLocation((800-width)/2,30);
         this.setSize(width,70);
         this.setBackground(Color.BLACK);
         this.setHorizontalAlignment(JLabel.CENTER);
