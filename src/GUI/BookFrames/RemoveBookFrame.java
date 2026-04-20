@@ -18,7 +18,7 @@ public class RemoveBookFrame implements ActionListener {
 
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
-    CreateSubmitButton submitButton = new CreateSubmitButton(320,300,160,50,"Remove Book");
+    CreateSubmitButton submitButton = new CreateSubmitButton(320, 300, 160, 50, "Remove Book");
     CreateLabel label1 = new CreateLabel("Remove a Book");
 
     ArrayListsManager manager = ArrayListsManager.instance;
@@ -31,20 +31,20 @@ public class RemoveBookFrame implements ActionListener {
     public ArrayList<String> authors;
     public ArrayList<Integer> quantities;
 
-    RemoveBookFrame(){
+    RemoveBookFrame() {
 
-        rbFrame.setSize(800,600);
+        rbFrame.setSize(800, 600);
         rbFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         rbFrame.setLayout(null);
         rbFrame.setLocationRelativeTo(null);
         rbFrame.setTitle("Remove Book");
 
         idLabel.setText("Enter book id : ");
-        idLabel.setBounds(130,200,200,40);
-        idLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
+        idLabel.setBounds(130, 200, 200, 40);
+        idLabel.setFont(new Font("Comic Sans", Font.PLAIN, 25));
 
-        idTextField.setBounds(350,200,100,40);
-        idTextField.setFont(new Font("Comic",Font.BOLD,20));
+        idTextField.setBounds(350, 200, 100, 40);
+        idTextField.setFont(new Font("Comic", Font.BOLD, 20));
         idTextField.setForeground(Color.WHITE);
         idTextField.setBackground(Color.BLACK);
         idTextField.setCaretColor(Color.WHITE);
@@ -70,22 +70,15 @@ public class RemoveBookFrame implements ActionListener {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e){
-        if (e.getSource()==backButton){
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == backButton) {
             rbFrame.dispose();
             new BooksHomeFrame();
         }
 
-        if (e.getSource()==submitButton){
+        if (e.getSource() == submitButton) {
             int id = Integer.parseInt(idTextField.getText());
-            for (int i = 0; i < ids.size(); i++){
-                if (ids.get(i)==id){
-                    ids.remove(i);
-                    titles.remove(i);
-                    authors.remove(i);
-                    quantities.remove(i);
-                }
-            }
+            manager.removeBookById(id);
         }
     }
 }
