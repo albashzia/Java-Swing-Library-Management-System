@@ -9,6 +9,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class DisplayBookFrame implements ActionListener {
 
@@ -46,6 +47,11 @@ public class DisplayBookFrame implements ActionListener {
         header4.setFont(new Font("Romans",Font.BOLD,20));
 
         String[] columns = {"Books Id", "Books Name", "Author Name", "Quantity"};
+
+        ArrayList<Integer> ids = manager.fetchIdsData();
+        ArrayList<String> titles = manager.fetchTitlesData();
+        ArrayList<String> authors = manager.fetchAuthorsData();
+        ArrayList<Integer> quantities = manager.fetchQuantityData();
 
         backButton.addActionListener(this);
 
