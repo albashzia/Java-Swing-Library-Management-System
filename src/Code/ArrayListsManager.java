@@ -33,16 +33,18 @@ public class ArrayListsManager {
         }
     }
 
+    // Fetching data, returning array lists for DisplayBookFrame class
     public ArrayList<Integer> fetchIdsData(){
         return bookIds;
     }
-
     public ArrayList<String> fetchTitlesData(){
         return bookTitles;
     }
     public ArrayList<String> fetchAuthorsData(){
         return bookAuthors;
-    }public ArrayList<Integer> fetchQuantityData(){
+    }
+    public ArrayList<Integer> fetchQuantityData(){
         return booksQuantity;
     }
+
 }
