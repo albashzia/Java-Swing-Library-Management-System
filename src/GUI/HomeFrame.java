@@ -12,11 +12,11 @@ import java.awt.event.ActionListener;
 public class HomeFrame implements ActionListener {
 
     JFrame homeFrame = new JFrame();
-    JLabel label1 = new JLabel();
     JButton button1 = new JButton();
     JButton button2 = new JButton();
     JButton button3 = new JButton();
 
+    CreateLabel label = new CreateLabel("Library Management System",600);
     JButton testButton = new JButton();
 
     JButton exitButton = new JButton();
@@ -28,16 +28,6 @@ public class HomeFrame implements ActionListener {
         homeFrame.setLayout(null);
         homeFrame.setLocationRelativeTo(null);
         homeFrame.setTitle("Library Management System");
-
-        label1.setLocation(100,30);
-        label1.setSize(600,70);
-        label1.setBackground(Color.BLACK);
-        label1.setHorizontalAlignment(JLabel.CENTER);
-        label1.setVerticalAlignment(JLabel.CENTER);
-        label1.setText("Library Management System");
-        label1.setFont(new Font("Comic Sans",Font.ITALIC,35));
-        label1.setForeground(Color.WHITE);
-        label1.setOpaque(true);
 
         button1.setSize(240,50);
         button2.setSize(240,50);
@@ -77,7 +67,7 @@ public class HomeFrame implements ActionListener {
 
         homeFrame.add(exitButton);
 
-        homeFrame.add(label1);
+        homeFrame.add(label);
 
         homeFrame.setVisible(true);
     }
