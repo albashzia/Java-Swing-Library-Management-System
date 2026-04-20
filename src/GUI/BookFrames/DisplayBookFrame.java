@@ -16,7 +16,7 @@ public class DisplayBookFrame implements ActionListener {
     JFrame dbFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
-    CreateLabel label1 = new CreateLabel("Display a Book");
+    CreateLabel label1 = new CreateLabel("Display Books");
 
     ArrayListsManager manager = ArrayListsManager.instance;
 
