@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class RemoveBookFrame implements ActionListener {
 
@@ -42,6 +43,11 @@ public class RemoveBookFrame implements ActionListener {
         idTextField.setForeground(Color.WHITE);
         idTextField.setBackground(Color.BLACK);
         idTextField.setCaretColor(Color.WHITE);
+
+        ArrayList<Integer> ids = manager.fetchIdsData();
+        ArrayList<String> titles = manager.fetchTitlesData();
+        ArrayList<String> authors = manager.fetchAuthorsData();
+        ArrayList<Integer> quantities = manager.fetchQuantityData();
 
         backButton.addActionListener(this);
 
