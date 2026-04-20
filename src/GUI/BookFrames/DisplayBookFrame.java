@@ -25,8 +25,6 @@ public class DisplayBookFrame implements ActionListener {
     JLabel header3 = new JLabel("Author Name");
     JLabel header4 = new JLabel("Quantity");
 
-    JTable table = new JTable();
-    JScrollPane scrollPane = new JScrollPane();
 
     DisplayBookFrame(){
 
@@ -60,6 +58,11 @@ public class DisplayBookFrame implements ActionListener {
             data[i][2] = authors.get(i);
             data[i][4] = Integer.toString((quantities.get(i)));
         }
+
+        JScrollPane scrollPane = new JScrollPane();
+        JTable table = new JTable(data,columns);
+
+        table.add(scrollPane);
 
         backButton.addActionListener(this);
 
