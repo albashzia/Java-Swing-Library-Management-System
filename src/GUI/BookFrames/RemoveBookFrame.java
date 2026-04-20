@@ -26,6 +26,11 @@ public class RemoveBookFrame implements ActionListener {
     JLabel idLabel = new JLabel();
     JTextField idTextField = new JTextField();
 
+    public ArrayList<Integer> ids;
+    public ArrayList<String> titles;
+    public ArrayList<String> authors;
+    public ArrayList<Integer> quantities;
+
     RemoveBookFrame(){
 
         rbFrame.setSize(800,600);
@@ -44,10 +49,10 @@ public class RemoveBookFrame implements ActionListener {
         idTextField.setBackground(Color.BLACK);
         idTextField.setCaretColor(Color.WHITE);
 
-        ArrayList<Integer> ids = manager.fetchIdsData();
-        ArrayList<String> titles = manager.fetchTitlesData();
-        ArrayList<String> authors = manager.fetchAuthorsData();
-        ArrayList<Integer> quantities = manager.fetchQuantityData();
+        ids = manager.fetchIdsData();
+        titles = manager.fetchTitlesData();
+        authors = manager.fetchAuthorsData();
+        quantities = manager.fetchQuantityData();
 
         backButton.addActionListener(this);
 
