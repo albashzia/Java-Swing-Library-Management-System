@@ -54,6 +54,7 @@ public class RemoveBookFrame implements ActionListener {
         authors = manager.fetchAuthorsData();
         quantities = manager.fetchQuantityData();
 
+        submitButton.addActionListener(this);
         backButton.addActionListener(this);
 
         rbFrame.add(label1);
