@@ -1,5 +1,6 @@
 package GUI.BookFrames;
 
+import Code.ArrayListsManager;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
@@ -15,6 +16,8 @@ public class DisplayBookFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Display a Book");
+
+    ArrayListsManager manager = new ArrayListsManager();
 
     JLabel header1 = new JLabel("Book ID");
     JLabel header2 = new JLabel("Book Name");
