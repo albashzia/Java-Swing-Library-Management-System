@@ -22,6 +22,7 @@ public class DisplayBookFrame implements ActionListener {
     JLabel header4 = new JLabel("Quantity");
 
     JTable table = new JTable();
+    JScrollPane scrollPane = new JScrollPane();
 
     DisplayBookFrame(){
 
