@@ -51,12 +51,12 @@ public class DisplayBookFrame implements ActionListener {
         ArrayList<String> authors = manager.fetchAuthorsData();
         ArrayList<Integer> quantities = manager.fetchQuantityData();
 
-        String[][] data = new String[ids.size()][];
+        String[][] data = new String[ids.size()][4];
         for (int i = 0; i < ids.size();i++){
             data[i][0] = Integer.toString((ids.get(i)));
             data[i][1] = titles.get(i);
             data[i][2] = authors.get(i);
-            data[i][4] = Integer.toString((quantities.get(i)));
+            data[i][3] = Integer.toString((quantities.get(i)));
         }
 
         JScrollPane scrollPane = new JScrollPane();
