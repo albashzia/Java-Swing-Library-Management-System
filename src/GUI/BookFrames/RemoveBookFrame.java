@@ -77,6 +77,14 @@ public class RemoveBookFrame implements ActionListener {
 
         if (e.getSource()==submitButton){
             int id = Integer.parseInt(idTextField.getText());
+            for (int i = 0; i < ids.size(); i++){
+                if (ids.get(i)==id){
+                    ids.remove(i);
+                    titles.remove(i);
+                    authors.remove(i);
+                    quantities.remove(i);
+                }
+            }
         }
     }
 }
