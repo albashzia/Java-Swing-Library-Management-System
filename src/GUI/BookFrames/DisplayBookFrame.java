@@ -47,7 +47,7 @@ public class DisplayBookFrame implements ActionListener {
         JTable table = new JTable(data,columns);
 
         JScrollPane scrollPane = new JScrollPane(table);
-        scrollPane.setBounds(50,200,700,300);
+        scrollPane.setBounds(50,150,700,300);
 
         backButton.addActionListener(this);
 
