@@ -60,5 +60,9 @@ public class RemoveBookFrame implements ActionListener {
             rbFrame.dispose();
             new BooksHomeFrame();
         }
+
+        if (e.getSource()==submitButton){
+            int id = Integer.parseInt(idTextField.getText());
+        }
     }
 }
