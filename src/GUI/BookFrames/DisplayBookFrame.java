@@ -59,13 +59,14 @@ public class DisplayBookFrame implements ActionListener {
             data[i][3] = Integer.toString((quantities.get(i)));
         }
 
-        JScrollPane scrollPane = new JScrollPane();
         JTable table = new JTable(data,columns);
 
-        table.add(scrollPane);
+        JScrollPane scrollPane = new JScrollPane(table);
+        scrollPane.setBounds(50,200,700,300);
 
         backButton.addActionListener(this);
 
+        dbFrame.add(scrollPane);
         dbFrame.add(header1);
         dbFrame.add(header2);
         dbFrame.add(header3);
