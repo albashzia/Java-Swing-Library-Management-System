@@ -56,7 +56,9 @@ public class RemoveBookFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e){
-        rbFrame.dispose();
-        new BooksHomeFrame();
+        if (e.getSource()==backButton){
+            rbFrame.dispose();
+            new BooksHomeFrame();
+        }
     }
 }
