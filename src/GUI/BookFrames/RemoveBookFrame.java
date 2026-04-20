@@ -1,5 +1,6 @@
 package GUI.BookFrames;
 
+import Code.ArrayListsManager;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
@@ -18,6 +19,8 @@ public class RemoveBookFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     CreateSubmitButton submitButton = new CreateSubmitButton(320,300,160,50,"Remove Book");
     CreateLabel label1 = new CreateLabel("Remove a Book");
+
+    ArrayListsManager manager = ArrayListsManager.instance;
 
     JLabel idLabel = new JLabel();
     JTextField idTextField = new JTextField();
