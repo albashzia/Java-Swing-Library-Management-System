@@ -30,4 +30,17 @@ public class ArrayListsManager {
             System.out.println(booksQuantity.get(i));
         }
     }
+
+    public ArrayList<Integer> fetchIdsData(){
+        return bookIds;
+    }
+
+    public ArrayList<String> fetchTitlesData(){
+        return bookTitles;
+    }
+    public ArrayList<String> fetchAuthorsData(){
+        return bookAuthors;
+    }public ArrayList<Integer> fetchQuantityData(){
+        return booksQuantity;
+    }
 }
