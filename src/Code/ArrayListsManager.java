@@ -33,6 +33,17 @@ public class ArrayListsManager {
         }
     }
 
+    public void removeBookById(int id) {
+        for (int i = 0; i < bookIds.size(); i++) {
+            if (bookIds.get(i) == id) {
+                bookIds.remove(i);
+                bookTitles.remove(i);
+                bookAuthors.remove(i);
+                booksQuantity.remove(i);
+            }
+        }
+    }
+
     // Fetching data, returning array lists for DisplayBookFrame class
     public ArrayList<Integer> fetchIdsData(){
         return bookIds;
