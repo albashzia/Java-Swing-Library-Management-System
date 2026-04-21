@@ -101,5 +101,14 @@ public class RegisterMemberFrame implements ActionListener {
             rmFrame.dispose();
             new MembersHomeFrame();
         }
+
+        if (e.getSource() == submitButton){
+            int id = Integer.parseInt(idTextField.getText());
+            String name = nameTextField.getText();
+            String number = phoneTextField.getText();
+            String email = emailTextField.getText();
+
+            manager.addMember(id,name, number, email);
+        }
     }
 }
