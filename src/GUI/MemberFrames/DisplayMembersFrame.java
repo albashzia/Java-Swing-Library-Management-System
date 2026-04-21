@@ -35,6 +35,13 @@ public class DisplayMembersFrame implements ActionListener {
 
         String[][] data = new String[ids.size()][4];
 
+        for (int i = 0; i < ids.size(); i++){
+            data[i][0] = Integer.toString(ids.get(i));
+            data[i][1] = names.get(i);
+            data[i][2] = numbers.get(i);
+            data[i][3] = emails.get(i);
+        }
+
         backButton.addActionListener(this);
 
         dmFrame.add(exitButton);
