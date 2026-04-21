@@ -44,8 +44,12 @@ public class DisplayMembersFrame implements ActionListener {
 
         JTable table = new JTable(data,columns);
 
+        JScrollPane scrollPane = new JScrollPane(table);
+        scrollPane.setBounds(100,150,600,300);
+
         backButton.addActionListener(this);
 
+        dmFrame.add(scrollPane);
         dmFrame.add(exitButton);
         dmFrame.add(label1);
         dmFrame.add(backButton);
