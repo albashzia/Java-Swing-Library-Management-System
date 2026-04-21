@@ -42,6 +42,8 @@ public class DisplayMembersFrame implements ActionListener {
             data[i][3] = emails.get(i);
         }
 
+        JTable table = new JTable(data,columns);
+
         backButton.addActionListener(this);
 
         dmFrame.add(exitButton);
