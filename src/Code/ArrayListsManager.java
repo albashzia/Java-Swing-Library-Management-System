@@ -74,4 +74,18 @@ public class ArrayListsManager {
         memberNumbers.add(number);
         memberEmails.add(email);
     }
+
+    // Fetching data, returning array lists for DisplayMembersFrame class
+    public ArrayList<Integer> fetchMemberIdsData(){
+        return memberIds;
+    }
+    public ArrayList<String> fetchMemberNamesData(){
+        return memberNames;
+    }
+    public ArrayList<String> fetchMemberNumbersData(){
+        return memberNumbers;
+    }
+    public ArrayList<String> fetchMemberMailsData(){
+        return memberEmails;
+    }
 }
