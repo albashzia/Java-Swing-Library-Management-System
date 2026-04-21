@@ -1,5 +1,6 @@
 package GUI.MemberFrames;
 
+import Code.ArrayListsManager;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
@@ -13,6 +14,9 @@ public class DisplayMembersFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Display Members");
+
+    ArrayListsManager manager = ArrayListsManager.instance;
+
     DisplayMembersFrame(){
 
         dmFrame.setSize(800,600);
