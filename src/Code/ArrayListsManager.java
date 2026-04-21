@@ -10,6 +10,11 @@ public class ArrayListsManager {
     ArrayList<String> bookAuthors;
     ArrayList<Integer> booksQuantity;
 
+    ArrayList<Integer> memberIds;
+    ArrayList<String> memberNames;
+    ArrayList<String> memberNumbers;
+    ArrayList<String> memberEmails;
+
     public ArrayListsManager(){
         bookIds = new ArrayList<Integer>();
         bookTitles = new ArrayList<String>();
