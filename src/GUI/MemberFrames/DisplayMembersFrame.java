@@ -8,6 +8,7 @@ import GUI.CreateLabel;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class DisplayMembersFrame implements ActionListener {
     JFrame dmFrame = new JFrame();
@@ -26,6 +27,11 @@ public class DisplayMembersFrame implements ActionListener {
         dmFrame.setTitle("Display Members");
 
         String[] columns = {"Ids", "Names", "Phone Numbers", "Emails"};
+
+        ArrayList<Integer> ids = manager.fetchMemberIdsData();
+        ArrayList<String> names = manager.fetchMemberNamesData();
+        ArrayList<String> numbers = manager.fetchMemberNumbersData();
+        ArrayList<String> emails = manager.fetchMemberMailsData();
 
         backButton.addActionListener(this);
 
