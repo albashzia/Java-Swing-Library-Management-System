@@ -20,6 +20,11 @@ public class ArrayListsManager {
         bookTitles = new ArrayList<String>();
         bookAuthors = new ArrayList<String>();
         booksQuantity = new ArrayList<Integer>();
+
+        memberIds = new ArrayList<Integer>();
+        memberNames = new ArrayList<String>();
+        memberNumbers = new ArrayList<String>();
+        memberEmails = new ArrayList<String>();
     }
 
     public void addBook(int id, String title, String author, int quantity){
