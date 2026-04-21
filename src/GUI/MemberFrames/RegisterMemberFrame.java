@@ -1,5 +1,6 @@
 package GUI.MemberFrames;
 
+import Code.ArrayListsManager;
 import GUI.CreateBackButton;
 import GUI.CreateExitButton;
 import GUI.CreateLabel;
@@ -16,6 +17,8 @@ public class RegisterMemberFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Register a Member");
     CreateSubmitButton submitButton = new CreateSubmitButton(350,360,100,50,"Register");
+
+    ArrayListsManager manager = ArrayListsManager.instance;
 
     JLabel idLabel = new JLabel();
     JLabel nameLabel = new JLabel();
