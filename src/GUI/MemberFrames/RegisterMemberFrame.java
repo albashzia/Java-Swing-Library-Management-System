@@ -77,7 +77,8 @@ public class RegisterMemberFrame implements ActionListener {
         emailTextField.setForeground(Color.WHITE);
         emailTextField.setBackground(Color.BLACK);
         emailTextField.setCaretColor(Color.WHITE);
-        
+
+        submitButton.addActionListener(this);
         backButton.addActionListener(this);
 
         rmFrame.add(submitButton);
