@@ -33,6 +33,8 @@ public class DisplayMembersFrame implements ActionListener {
         ArrayList<String> numbers = manager.fetchMemberNumbersData();
         ArrayList<String> emails = manager.fetchMemberMailsData();
 
+        String[][] data = new String[ids.size()][4];
+
         backButton.addActionListener(this);
 
         dmFrame.add(exitButton);
