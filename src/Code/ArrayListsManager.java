@@ -68,4 +68,10 @@ public class ArrayListsManager {
         return booksQuantity;
     }
 
+    public void addMember(int id, String name, String number, String email){
+        memberIds.add(id);
+        memberNames.add(name);
+        memberNumbers.add(number);
+        memberEmails.add(email);
+    }
 }
