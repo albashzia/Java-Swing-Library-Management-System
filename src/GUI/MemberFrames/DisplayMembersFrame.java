@@ -25,6 +25,8 @@ public class DisplayMembersFrame implements ActionListener {
         dmFrame.setLocationRelativeTo(null);
         dmFrame.setTitle("Display Members");
 
+        String[] columns = {"Ids", "Names", "Phone Numbers", "Emails"};
+
         backButton.addActionListener(this);
 
         dmFrame.add(exitButton);
