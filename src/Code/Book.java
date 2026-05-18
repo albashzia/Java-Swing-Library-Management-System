@@ -18,4 +18,20 @@ public class Book implements Serializable {
         this.bookAuthor= bookAuthor;
         this.quantity = quantity;
     }
+
+    public String getId(){
+        return bookId;
+    }
+
+    public String getBookTitle() {
+        return bookTitle;
+    }
+
+    public String getBookAuthor() {
+        return bookAuthor;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
 }
