@@ -1,4 +1,6 @@
 package Code;
 
-public class IssuedBook {
+import java.io.Serializable;
+
+public class IssuedBook implements Serializable {
 }

@@ -1,4 +1,6 @@
 package Code;
 
-public class StudyRoom {
+import java.io.Serializable;
+
+public class StudyRoom implements Serializable {
 }
