@@ -14,4 +14,11 @@ public class Member implements Serializable {
         this.phoneNumber = null;
         this.email = null;
     }
+
+    Member(String id, String name, String phoneNumber, String email){
+        this.id = id;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
 }
