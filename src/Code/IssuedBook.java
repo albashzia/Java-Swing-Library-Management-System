@@ -12,4 +12,10 @@ public class IssuedBook implements Serializable {
         this.member = null;
         this.issueDate = null;
     }
+
+    IssuedBook(Book book, Member member, String issueDate){
+        this.book = book;
+        this.member = member;
+        this.issueDate = issueDate;
+    }
 }
