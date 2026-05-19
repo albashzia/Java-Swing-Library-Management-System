@@ -21,4 +21,20 @@ public class Member implements Serializable {
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }
