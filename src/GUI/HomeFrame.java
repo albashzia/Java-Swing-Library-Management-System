@@ -29,13 +29,13 @@ public class HomeFrame implements ActionListener {
         homeFrame.setLocationRelativeTo(null);
         homeFrame.setTitle("Library Management System");
 
-        button1.setSize(240,50);
-        button2.setSize(240,50);
-        button3.setSize(240,50);
+        button1.setSize(200,80);
+        button2.setSize(200,80);
+        button3.setSize(200,80);
 
-        button1.setLocation(100,160);
-        button2.setLocation(100,240);
-        button3.setLocation(100,320);
+        button1.setLocation(80,160);
+        button2.setLocation(300,160);
+        button3.setLocation(520,160);
 
         button1.setText("Books Management");
         button2.setText("Membership Management");
