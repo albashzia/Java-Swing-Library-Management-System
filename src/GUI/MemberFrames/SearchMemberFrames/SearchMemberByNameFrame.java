@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 public class SearchMemberByNameFrame implements ActionListener {
 
     JFrame smnFrame = new JFrame();
-    CreateLabel label = new CreateLabel("Search Member by Name",450);
+    CreateLabel label = new CreateLabel("Search Member by Name");
     CreateExitButton exitButton = new CreateExitButton();
     CreateSubmitButton submitButton = new CreateSubmitButton(350,270,"Search");
     JLabel nameLabel = new JLabel();

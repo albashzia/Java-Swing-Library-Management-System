@@ -14,7 +14,7 @@ public class RoomsHomeFrame implements ActionListener {
     JFrame srhFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
-    CreateLabel label1 = new CreateLabel("Study Room Management",450);
+    CreateLabel label1 = new CreateLabel("Study Room Management");
     JButton button1 = new JButton();
     JButton button2 = new JButton();
     JButton button3 = new JButton();

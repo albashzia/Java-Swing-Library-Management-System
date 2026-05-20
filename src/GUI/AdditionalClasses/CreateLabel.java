@@ -18,16 +18,4 @@ public class CreateLabel extends JLabel
         this.setOpaque(true);
     }
 
-    public CreateLabel(String title, int width)
-    {
-        this.setLocation((800-width)/2,30);
-        this.setSize(width,70);
-        this.setBackground(Color.BLACK);
-        this.setHorizontalAlignment(JLabel.CENTER);
-        this.setVerticalAlignment(JLabel.CENTER);
-        this.setText(title);
-        this.setFont(new Font("Georgia",Font.BOLD,35));
-        this.setForeground(Color.WHITE);
-        this.setOpaque(true);
-    }
 }

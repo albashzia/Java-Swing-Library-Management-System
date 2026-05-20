@@ -12,7 +12,7 @@ public class IssuedToMemberFrame implements ActionListener {
     JFrame itmFrame = new JFrame();
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
-    CreateLabel label1 = new CreateLabel("Books Issued to Member",500);
+    CreateLabel label1 = new CreateLabel("Books Issued to Member");
     IssuedToMemberFrame(){
 
         itmFrame.setSize(800,600);

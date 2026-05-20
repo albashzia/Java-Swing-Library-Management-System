@@ -16,7 +16,7 @@ public class SearchBookByAuthorFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     JLabel authorLabel = new JLabel();
     JTextField authorTextField = new JTextField();
-    CreateLabel label = new CreateLabel("Search Book By Author",500);
+    CreateLabel label = new CreateLabel("Search Book By Author");
     CreateSubmitButton sb = new CreateSubmitButton(400,280,"Search");
 
     public SearchBookByAuthorFrame(){
