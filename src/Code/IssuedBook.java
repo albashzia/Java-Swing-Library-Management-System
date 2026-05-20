@@ -18,4 +18,16 @@ public class IssuedBook implements Serializable {
         this.member = member;
         this.issueDate = issueDate;
     }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public Member getMember() {
+        return member;
+    }
+
+    public String getIssueDate() {
+        return issueDate;
+    }
 }
