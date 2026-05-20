@@ -1,5 +1,8 @@
 package GUI;
 
+import GUI.AdditionalClasses.CreateExitButton;
+import GUI.AdditionalClasses.CreateSubmitButton;
+
 import javax.swing.*;
 
 public class TestFrame {

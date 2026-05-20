@@ -1,9 +1,9 @@
 package GUI.BookFrames;
 
 import GUI.BookFrames.SearchBookFrames.SearchBookFrame;
-import GUI.CreateBackButton;
-import GUI.CreateExitButton;
-import GUI.CreateLabel;
+import GUI.AdditionalClasses.CreateBackButton;
+import GUI.AdditionalClasses.CreateExitButton;
+import GUI.AdditionalClasses.CreateLabel;
 import GUI.HomeFrame;
 
 import javax.swing.*;

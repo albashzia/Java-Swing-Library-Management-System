@@ -1,12 +1,11 @@
 package GUI.RoomFrames;
 
-import GUI.CreateBackButton;
-import GUI.CreateExitButton;
-import GUI.CreateLabel;
+import GUI.AdditionalClasses.CreateBackButton;
+import GUI.AdditionalClasses.CreateExitButton;
+import GUI.AdditionalClasses.CreateLabel;
 import GUI.HomeFrame;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
