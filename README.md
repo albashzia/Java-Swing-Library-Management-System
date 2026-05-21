@@ -7,6 +7,14 @@
         <ul>
             <li>📁GUI
                 <ul>
+                    <li>📁AdditionalClasses
+                        <ul>
+                            <li>CreateBackButton</li>
+                            <li>CreateExitButton</li>
+                            <li>CreateLabel</li>
+                            <li>CreateSubmitButton</li>
+                        </ul>
+                    </li>
                     <li>
                         📁BookFrames
                             <ul>
@@ -52,10 +60,6 @@
                             <li>ShowRoomsFrame</li>
                         </ul>
                     </li>
-                    <li>CreateBackButton</li>
-                    <li>CreateExitButton</li>
-                    <li>CreateLabel</li>
-                    <li>CreateSubmitButton</li>
                     <li>HomeFrame</li>
                     <li>Main</li>
                     <li>TestFrame</li>
