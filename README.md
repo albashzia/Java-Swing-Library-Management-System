@@ -43,7 +43,15 @@
                                 <li>RemoveMemberFrame</li>
                            </ul>
                     </li>
-                    <li>📁RoomFrames</li>
+                    <li>📁RoomFrames
+                        <ul>
+                            <li>CancelReservationFrame</li>
+                            <li>CheckRoomStatusFrame</li>
+                            <li>ReserveRoomFrame</li>
+                            <li>RoomsHomeFrame</li>
+                            <li>ShowRoomsFrame</li>
+                        </ul>
+                    </li>
                     <li>CreateBackButton</li>
                     <li>CreateExitButton</li>
                     <li>CreateLabel</li>
