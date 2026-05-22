@@ -6,19 +6,11 @@ public class ArrayListsManager {
 
     public static ArrayListsManager instance = new ArrayListsManager();
     ArrayList<Book> bookArrayList;
-
-    ArrayList<Integer> memberIds;
-    ArrayList<String> memberNames;
-    ArrayList<String> memberNumbers;
-    ArrayList<String> memberEmails;
+    ArrayList<Member> memberArrayList;
 
     public ArrayListsManager(){
         bookArrayList = new ArrayList<>();
-
-        memberIds = new ArrayList<Integer>();
-        memberNames = new ArrayList<String>();
-        memberNumbers = new ArrayList<String>();
-        memberEmails = new ArrayList<String>();
+        memberArrayList = new ArrayList<>();
     }
 
     public void addBook(Book book){
@@ -39,24 +31,12 @@ public class ArrayListsManager {
         return bookArrayList;
     }
 
-    public void addMember(int id, String name, String number, String email){
-        memberIds.add(id);
-        memberNames.add(name);
-        memberNumbers.add(number);
-        memberEmails.add(email);
+    public void addMember(Member member){
+        memberArrayList.add(member);
     }
 
     // Fetching data, returning array lists for DisplayMembersFrame class
-    public ArrayList<Integer> fetchMemberIdsData(){
-        return memberIds;
-    }
-    public ArrayList<String> fetchMemberNamesData(){
-        return memberNames;
-    }
-    public ArrayList<String> fetchMemberNumbersData(){
-        return memberNumbers;
-    }
-    public ArrayList<String> fetchMemberMailsData(){
-        return memberEmails;
+    public ArrayList<Member> returnMembersArrayList(){
+        return memberArrayList;
     }
 }
