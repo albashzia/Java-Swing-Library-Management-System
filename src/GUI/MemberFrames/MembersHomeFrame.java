@@ -30,11 +30,11 @@ public class MembersHomeFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
-        button1.setBounds(120,130,200,50);
-        button2.setBounds(120,190,200,50);
-        button3.setBounds(120,250,200,50);
-        button4.setBounds(120,310,200,50);
-        button5.setBounds(120,370,200,50);
+        button1.setBounds(80,130,200,80);
+        button2.setBounds(300,130,200,80);
+        button3.setBounds(520,130,200,80);
+        button4.setBounds(190,240,200,80);
+        button5.setBounds(410,240,200,80);
 
         button1.setText("Register member");
         button2.setText("Display all members");
