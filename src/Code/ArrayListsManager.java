@@ -26,16 +26,13 @@ public class ArrayListsManager {
     }
 
 
-//    public void removeBookById(int id) {
-//        for (int i = 0; i < bookIds.size(); i++) {
-//            if (bookIds.get(i) == id) {
-//                bookIds.remove(i);
-//                bookTitles.remove(i);
-//                bookAuthors.remove(i);
-//                booksQuantity.remove(i);
-//            }
-//        }
-//    }
+    public void removeBookById(String id) {
+        for (int i = 0; i < bookArrayList.size(); i++) {
+            if (bookArrayList.get(i).getId().equalsIgnoreCase(id)){
+                bookArrayList.remove(i);
+            }
+        }
+    }
 
     // Fetching data, returning array lists for DisplayBookFrame class
     public ArrayList<Book> returnBooksArrayList(){
