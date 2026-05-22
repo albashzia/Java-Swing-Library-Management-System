@@ -29,10 +29,10 @@ public class RoomsHomeFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
-        button1.setBounds(120,130,200,50);
-        button2.setBounds(120,190,200,50);
-        button3.setBounds(120,250,200,50);
-        button4.setBounds(120,310,200,50);
+        button1.setBounds(190,130,200,80);
+        button2.setBounds(410,130,200,80);
+        button3.setBounds(190,240,200,80);
+        button4.setBounds(410,240,200,80);
 
         button1.setText("Show Available Rooms");
         button2.setText("Reserve Study Room");
