@@ -1,6 +1,7 @@
 package GUI.MemberFrames;
 
 import Code.ArrayListsManager;
+import Code.Member;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
@@ -28,18 +29,15 @@ public class DisplayMembersFrame implements ActionListener {
 
         String[] columns = {"Ids", "Names", "Phone Numbers", "Emails"};
 
-        ArrayList<Integer> ids = manager.fetchMemberIdsData();
-        ArrayList<String> names = manager.fetchMemberNamesData();
-        ArrayList<String> numbers = manager.fetchMemberNumbersData();
-        ArrayList<String> emails = manager.fetchMemberMailsData();
+        ArrayList<Member> memberArrayList = manager.returnMembersArrayList();
 
-        String[][] data = new String[ids.size()][4];
+        String[][] data = new String[memberArrayList.size()][4];
 
-        for (int i = 0; i < ids.size(); i++){
-            data[i][0] = Integer.toString(ids.get(i));
-            data[i][1] = names.get(i);
-            data[i][2] = numbers.get(i);
-            data[i][3] = emails.get(i);
+        for (int i = 0; i < memberArrayList.size(); i++){
+            data[i][0] = memberArrayList.get(i).getId();
+            data[i][1] = memberArrayList.get(i).getName();
+            data[i][2] = memberArrayList.get(i).getPhoneNumber();
+            data[i][3] = memberArrayList.get(i).getEmail();
         }
 
         JTable table = new JTable(data,columns);
