@@ -1,6 +1,7 @@
 package GUI.BookFrames;
 
 import Code.ArrayListsManager;
+import Code.Book;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
@@ -112,13 +113,12 @@ public class AddBookFrame implements ActionListener {
         }
 
         if (e.getSource()==submitButton){
-            int id = Integer.parseInt(idTextField.getText());
+            String id = idTextField.getText();
             String name = titleTextField.getText();
             String author = authorTextField.getText();
             int quantity = Integer.parseInt(quantityTextField.getText());
-//            manager.addBook(id,name,author,quantity);
-//
-//            manager.displayAddedBooks();
+            Book book = new Book(id,name,author,quantity);
+            manager.addBook(book);
         }
     }
 }
