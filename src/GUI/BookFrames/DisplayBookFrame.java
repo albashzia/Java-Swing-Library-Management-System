@@ -1,6 +1,7 @@
 package GUI.BookFrames;
 
 import Code.ArrayListsManager;
+import Code.Book;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
@@ -30,17 +31,14 @@ public class DisplayBookFrame implements ActionListener {
 
         String[] columns = {"Books Id", "Books Name", "Author Name", "Quantity"};
 
-        ArrayList<Integer> ids = manager.fetchIdsData();
-        ArrayList<String> titles = manager.fetchTitlesData();
-        ArrayList<String> authors = manager.fetchAuthorsData();
-        ArrayList<Integer> quantities = manager.fetchQuantityData();
+        ArrayList<Book> books = manager.returnBooksArrayList();
 
-        String[][] data = new String[ids.size()][4];
-        for (int i = 0; i < ids.size();i++){
-            data[i][0] = Integer.toString((ids.get(i)));
-            data[i][1] = titles.get(i);
-            data[i][2] = authors.get(i);
-            data[i][3] = Integer.toString((quantities.get(i)));
+        String[][] data = new String[books.size()][4];
+        for (int i = 0; i < books.size();i++){
+            data[i][0] = books.get(i).getId();
+            data[i][1] = books.get(i).getBookTitle();
+            data[i][2] = books.get(i).getBookAuthor();
+            data[i][3] = Integer.toString((books.get(i).getQuantity()));
         }
 
         JTable table = new JTable(data,columns);
