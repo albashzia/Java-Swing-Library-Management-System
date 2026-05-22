@@ -15,7 +15,7 @@ public class Member implements Serializable {
         this.email = null;
     }
 
-    Member(String id, String name, String phoneNumber, String email){
+    public  Member(String id, String name, String phoneNumber, String email){
         this.id = id;
         this.name = name;
         this.phoneNumber = phoneNumber;
