@@ -1,6 +1,7 @@
 package GUI.MemberFrames;
 
 import Code.ArrayListsManager;
+import Code.Member;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
@@ -104,12 +105,12 @@ public class RegisterMemberFrame implements ActionListener {
         }
 
         if (e.getSource() == submitButton){
-            int id = Integer.parseInt(idTextField.getText());
+            String id = idTextField.getText();
             String name = nameTextField.getText();
             String number = phoneTextField.getText();
             String email = emailTextField.getText();
-
-            manager.addMember(id,name, number, email);
+            Member member = new Member(id,name,number,email);
+            manager.addMember(member);
         }
     }
 }
