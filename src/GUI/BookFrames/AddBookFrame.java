@@ -116,9 +116,9 @@ public class AddBookFrame implements ActionListener {
             String name = titleTextField.getText();
             String author = authorTextField.getText();
             int quantity = Integer.parseInt(quantityTextField.getText());
-            manager.addBook(id,name,author,quantity);
-
-            manager.displayAddedBooks();
+//            manager.addBook(id,name,author,quantity);
+//
+//            manager.displayAddedBooks();
         }
     }
 }

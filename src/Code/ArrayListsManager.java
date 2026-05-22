@@ -5,10 +5,7 @@ import java.util.ArrayList;
 public class ArrayListsManager {
 
     public static ArrayListsManager instance = new ArrayListsManager();
-    ArrayList<Integer> bookIds;
-    ArrayList<String> bookTitles;
-    ArrayList<String> bookAuthors;
-    ArrayList<Integer> booksQuantity;
+    ArrayList<Book> bookArrayList;
 
     ArrayList<Integer> memberIds;
     ArrayList<String> memberNames;
@@ -16,10 +13,7 @@ public class ArrayListsManager {
     ArrayList<String> memberEmails;
 
     public ArrayListsManager(){
-        bookIds = new ArrayList<Integer>();
-        bookTitles = new ArrayList<String>();
-        bookAuthors = new ArrayList<String>();
-        booksQuantity = new ArrayList<Integer>();
+        bookArrayList = new ArrayList<>();
 
         memberIds = new ArrayList<Integer>();
         memberNames = new ArrayList<String>();
@@ -27,45 +21,25 @@ public class ArrayListsManager {
         memberEmails = new ArrayList<String>();
     }
 
-    public void addBook(int id, String title, String author, int quantity){
-        bookIds.add(id);
-        bookTitles.add(title);
-        bookAuthors.add(author);
-        booksQuantity.add(quantity);
+    public void addBook(Book book){
+        bookArrayList.add(book);
     }
 
-    public void displayAddedBooks(){
-        for (int i = 0; i < bookIds.size();i++){
-            System.out.println(bookIds.get(i));
-            System.out.println(bookTitles.get(i));
-            System.out.println(bookAuthors.get(i));
-            System.out.println(booksQuantity.get(i));
-        }
-    }
 
-    public void removeBookById(int id) {
-        for (int i = 0; i < bookIds.size(); i++) {
-            if (bookIds.get(i) == id) {
-                bookIds.remove(i);
-                bookTitles.remove(i);
-                bookAuthors.remove(i);
-                booksQuantity.remove(i);
-            }
-        }
-    }
+//    public void removeBookById(int id) {
+//        for (int i = 0; i < bookIds.size(); i++) {
+//            if (bookIds.get(i) == id) {
+//                bookIds.remove(i);
+//                bookTitles.remove(i);
+//                bookAuthors.remove(i);
+//                booksQuantity.remove(i);
+//            }
+//        }
+//    }
 
     // Fetching data, returning array lists for DisplayBookFrame class
-    public ArrayList<Integer> fetchIdsData(){
-        return bookIds;
-    }
-    public ArrayList<String> fetchTitlesData(){
-        return bookTitles;
-    }
-    public ArrayList<String> fetchAuthorsData(){
-        return bookAuthors;
-    }
-    public ArrayList<Integer> fetchQuantityData(){
-        return booksQuantity;
+    public ArrayList<Book> returnBooksArrayList(){
+        return bookArrayList;
     }
 
     public void addMember(int id, String name, String number, String email){
