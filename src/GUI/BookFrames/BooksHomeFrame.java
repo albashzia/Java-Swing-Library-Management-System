@@ -33,13 +33,13 @@ public class BooksHomeFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
-        button1.setBounds(80,130,200,50);
-        button2.setBounds(300,130,200,50);
-        button3.setBounds(520,130,200,50);
-        button4.setBounds(80,200,200,50);
-        button5.setBounds(300,200,200,50);
-        button6.setBounds(520,200,200,50);
-        button7.setBounds(300,270,200,50);
+        button1.setBounds(80,130,200,80);
+        button2.setBounds(300,130,200,80);
+        button3.setBounds(520,130,200,80);
+        button4.setBounds(80,240,200,80);
+        button5.setBounds(300,240,200,80);
+        button6.setBounds(520,240,200,80);
+        button7.setBounds(300,350,200,80);
 
         button1.setText("Add Book");
         button2.setText("Remove Book");
