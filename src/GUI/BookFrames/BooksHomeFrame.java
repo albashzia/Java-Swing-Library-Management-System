@@ -1,5 +1,6 @@
 package GUI.BookFrames;
 
+import GUI.AdditionalClasses.CreateFrameButton;
 import GUI.BookFrames.SearchBookFrames.SearchBookFrame;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
@@ -16,13 +17,13 @@ public class BooksHomeFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Books Management");
 
-    JButton button1 = new JButton();
-    JButton button2 = new JButton();
-    JButton button3 = new JButton();
-    JButton button4 = new JButton();
-    JButton button5 = new JButton();
-    JButton button6 = new JButton();
-    JButton button7 = new JButton();
+    CreateFrameButton button1 = new CreateFrameButton("Add Book",80,130);
+    CreateFrameButton button2 = new CreateFrameButton("Remove Book",300,130);
+    CreateFrameButton button3 = new CreateFrameButton("Search Book",520,130);
+    CreateFrameButton button4 = new CreateFrameButton("Display Books",80,240);
+    CreateFrameButton button5 = new CreateFrameButton("Issue Book",300,240);
+    CreateFrameButton button6 = new CreateFrameButton("Return Book",520,240);
+    CreateFrameButton button7 = new CreateFrameButton("All  Issued Books",300,350);
 
     public BooksHomeFrame(){
         bhFrame.setSize(800,600);
@@ -32,30 +33,6 @@ public class BooksHomeFrame implements ActionListener {
         bhFrame.setTitle("Books Management");
 
         backButton.addActionListener(this);
-
-        button1.setBounds(80,130,200,80);
-        button2.setBounds(300,130,200,80);
-        button3.setBounds(520,130,200,80);
-        button4.setBounds(80,240,200,80);
-        button5.setBounds(300,240,200,80);
-        button6.setBounds(520,240,200,80);
-        button7.setBounds(300,350,200,80);
-
-        button1.setText("Add Book");
-        button2.setText("Remove Book");
-        button3.setText("Search Book");
-        button4.setText("Display Books");
-        button5.setText("Issue Book");
-        button6.setText("Return Book");
-        button7.setText("Display Issued Books");
-
-        button1.setFocusable(false);
-        button2.setFocusable(false);
-        button3.setFocusable(false);
-        button4.setFocusable(false);
-        button5.setFocusable(false);
-        button6.setFocusable(false);
-        button7.setFocusable(false);
 
         button1.addActionListener(this);
         button2.addActionListener(this);
