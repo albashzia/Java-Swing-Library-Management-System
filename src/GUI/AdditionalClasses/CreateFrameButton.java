@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class CreateFrameButton extends JButton {
 
-    CreateFrameButton(String text,int x, int y){
+    public CreateFrameButton(String text,int x, int y){
         this.setText(text);
         this.setSize(200,80);
         this.setLocation(x,y);
