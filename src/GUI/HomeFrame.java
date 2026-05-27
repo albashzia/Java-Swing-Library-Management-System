@@ -1,5 +1,6 @@
 package GUI;
 
+import GUI.AdditionalClasses.CreateFrameButton;
 import GUI.AdditionalClasses.CreateLabel;
 import GUI.BookFrames.BooksHomeFrame;
 import GUI.MemberFrames.MembersHomeFrame;
@@ -12,9 +13,9 @@ import java.awt.event.ActionListener;
 public class HomeFrame implements ActionListener {
 
     JFrame homeFrame = new JFrame();
-    JButton button1 = new JButton();
-    JButton button2 = new JButton();
-    JButton button3 = new JButton();
+    CreateFrameButton button1 = new CreateFrameButton("Books Management",80,160);
+    CreateFrameButton button2 = new CreateFrameButton("Membership Management",300,160);
+    CreateFrameButton button3 = new CreateFrameButton("Study Room Management",520,160);
 
     CreateLabel label = new CreateLabel("Library Management System");
     JButton testButton = new JButton();
@@ -28,21 +29,6 @@ public class HomeFrame implements ActionListener {
         homeFrame.setLayout(null);
         homeFrame.setLocationRelativeTo(null);
         homeFrame.setTitle("Library Management System");
-
-        button1.setSize(200,80);
-        button2.setSize(200,80);
-        button3.setSize(200,80);
-
-        button1.setLocation(80,160);
-        button2.setLocation(300,160);
-        button3.setLocation(520,160);
-
-        button1.setText("Books Management");
-        button2.setText("Membership Management");
-        button3.setText("Study Room Management");
-        button1.setFocusable(false);
-        button2.setFocusable(false);
-        button3.setFocusable(false);
 
         button1.addActionListener(this);
         button2.addActionListener(this);
