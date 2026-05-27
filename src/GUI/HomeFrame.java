@@ -14,8 +14,8 @@ public class HomeFrame implements ActionListener {
 
     JFrame homeFrame = new JFrame();
     CreateFrameButton button1 = new CreateFrameButton("Books Management",80,160);
-    CreateFrameButton button2 = new CreateFrameButton("Membership Management",300,160);
-    CreateFrameButton button3 = new CreateFrameButton("Study Room Management",520,160);
+    CreateFrameButton button2 = new CreateFrameButton("Member Management",300,160);
+    CreateFrameButton button3 = new CreateFrameButton("Room Management",520,160);
 
     CreateLabel label = new CreateLabel("Library Management System");
     JButton testButton = new JButton();
