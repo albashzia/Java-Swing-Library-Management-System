@@ -1,9 +1,12 @@
 package GUI.AdditionalClasses;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class CreateBackButton extends JButton {
     public CreateBackButton() {
+        this.setBackground(Color.BLACK);
+        this.setForeground(Color.WHITE);
         this.setLocation(570, 470);
         this.setSize(70, 50);
         this.setText("Back");
