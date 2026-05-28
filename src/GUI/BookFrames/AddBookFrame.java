@@ -46,10 +46,10 @@ public class AddBookFrame implements ActionListener {
         authorLabel.setText("Enter Author Name : ");
         quantityLabel.setText("Enter Total Quantity : ");
 
-        idLabel.setBounds(100,120,200,100);
-        titleLabel.setBounds(100,170,200,100);
-        authorLabel.setBounds(100,220,200,100);
-        quantityLabel.setBounds(100,270,200,100);
+        idLabel.setBounds(10,80,200,100);
+        titleLabel.setBounds(10,150,200,100);
+        authorLabel.setBounds(10,220,200,100);
+        quantityLabel.setBounds(10,290,200,100);
 
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
         titleLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
