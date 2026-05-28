@@ -34,10 +34,10 @@ public class RemoveBookFrame implements ActionListener {
         rbFrame.setTitle("Remove Book");
 
         idLabel.setText("Enter book id : ");
-        idLabel.setBounds(130, 200, 200, 40);
+        idLabel.setBounds(10,150,200,100);
         idLabel.setFont(new Font("Comic Sans", Font.PLAIN, 25));
 
-        idTextField.setBounds(350, 200, 100, 40);
+        idTextField.setBounds(10,220,760,30);
         idTextField.setFont(new Font("Comic", Font.BOLD, 20));
         idTextField.setForeground(Color.WHITE);
         idTextField.setBackground(Color.BLACK);
