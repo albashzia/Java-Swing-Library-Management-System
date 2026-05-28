@@ -1,11 +1,14 @@
 package GUI.AdditionalClasses;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CreateExitButton extends JButton implements ActionListener {
     public CreateExitButton(){
+        this.setBackground(Color.BLACK);
+        this.setForeground(Color.WHITE);
         this.setBounds(670,470,70,50);
         this.setText("Exit");
         this.setFocusable(false);
