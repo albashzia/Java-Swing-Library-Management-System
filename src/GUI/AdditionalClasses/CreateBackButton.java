@@ -8,7 +8,7 @@ public class CreateBackButton extends JButton {
         this.setBackground(Color.BLACK);
         this.setForeground(Color.WHITE);
         this.setLocation(50, 470);
-        this.setSize(70, 50);
+        this.setSize(100, 50);
         this.setText("Back");
         this.setFocusable(false);
     }

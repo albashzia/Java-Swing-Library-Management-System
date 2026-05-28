@@ -9,7 +9,7 @@ public class CreateExitButton extends JButton implements ActionListener {
     public CreateExitButton(){
         this.setBackground(Color.BLACK);
         this.setForeground(Color.WHITE);
-        this.setBounds(670,470,70,50);
+        this.setBounds(650,470,100,50);
         this.setText("Exit");
         this.setFocusable(false);
         this.addActionListener(this);
