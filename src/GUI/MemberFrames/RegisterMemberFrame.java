@@ -44,10 +44,10 @@ public class RegisterMemberFrame implements ActionListener {
         phoneLabel.setText("Enter Phone Number : ");
         emailLabel.setText("Enter Member Email : ");
 
-        idLabel.setBounds(100,120,200,100);
-        nameLabel.setBounds(100,170,200,100);
-        phoneLabel.setBounds(100,220,250,100);
-        emailLabel.setBounds(100,270,200,100);
+        idLabel.setBounds(10,80,200,100);
+        nameLabel.setBounds(10,150,200,100);
+        phoneLabel.setBounds(10,220,250,100);
+        emailLabel.setBounds(10,290,200,100);
 
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
         nameLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
