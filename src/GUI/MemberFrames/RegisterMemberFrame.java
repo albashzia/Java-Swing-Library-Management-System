@@ -54,10 +54,10 @@ public class RegisterMemberFrame implements ActionListener {
         phoneLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
         emailLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
-        idTextField.setBounds(270,160,100,30);
-        nameTextField.setBounds(300,210,300,30);
-        phoneTextField.setBounds(300,260,300,30);
-        emailTextField.setBounds(300,310,300,30);
+        idTextField.setBounds(10,150,760,30);
+        nameTextField.setBounds(10,220,760,30);
+        phoneTextField.setBounds(10,290,760,30);
+        emailTextField.setBounds(10,360,760,30);
 
         idTextField.setFont(new Font("Consolas",Font.BOLD,20));
         idTextField.setForeground(Color.WHITE);
