@@ -17,7 +17,7 @@ public class RegisterMemberFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Register a Member");
-    CreateSubmitButton submitButton = new CreateSubmitButton(350,360,100,50,"Register");
+    CreateSubmitButton submitButton = new CreateSubmitButton(350,400,100,50,"Register");
 
     ArrayListsManager manager = ArrayListsManager.instance;
 
