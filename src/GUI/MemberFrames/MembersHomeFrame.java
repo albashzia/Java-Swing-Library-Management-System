@@ -2,6 +2,7 @@ package GUI.MemberFrames;
 
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
+import GUI.AdditionalClasses.CreateFrameButton;
 import GUI.AdditionalClasses.CreateLabel;
 import GUI.HomeFrame;
 import GUI.MemberFrames.SearchMemberFrames.SearchMemberFrame;
@@ -15,11 +16,11 @@ public class MembersHomeFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Membership Management");
-    JButton button1 = new JButton();
-    JButton button2 = new JButton();
-    JButton button3 = new JButton();
-    JButton button4 = new JButton();
-    JButton button5 = new JButton();
+    CreateFrameButton button1 = new CreateFrameButton("Register member",80,130);
+    CreateFrameButton button2 = new CreateFrameButton("Display all members",300,130);
+    CreateFrameButton button3 = new CreateFrameButton("Search member",520,130);
+    CreateFrameButton button4 = new CreateFrameButton("View Issued Books",190,240);
+    CreateFrameButton button5 = new CreateFrameButton("Remove member",410,240);
 
     public MembersHomeFrame(){
         mhFrame.setSize(800,600);
@@ -29,24 +30,6 @@ public class MembersHomeFrame implements ActionListener {
         mhFrame.setTitle("Membership Management");
 
         backButton.addActionListener(this);
-
-        button1.setBounds(80,130,200,80);
-        button2.setBounds(300,130,200,80);
-        button3.setBounds(520,130,200,80);
-        button4.setBounds(190,240,200,80);
-        button5.setBounds(410,240,200,80);
-
-        button1.setText("Register member");
-        button2.setText("Display all members");
-        button3.setText("Search member");
-        button4.setText("View Issued Books");
-        button5.setText("Remove member");
-
-        button1.setFocusable(false);
-        button2.setFocusable(false);
-        button3.setFocusable(false);
-        button4.setFocusable(false);
-        button5.setFocusable(false);
 
         button1.addActionListener(this);
         button2.addActionListener(this);
