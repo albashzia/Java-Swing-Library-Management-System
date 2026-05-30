@@ -1,5 +1,6 @@
 package GUI.BookFrames.SearchBookFrames;
 
+import GUI.AdditionalClasses.CreateFrameButton;
 import GUI.BookFrames.BooksHomeFrame;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
@@ -15,9 +16,9 @@ public class SearchBookFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
 
-    JButton button1 = new JButton();
-    JButton button2 = new JButton();
-    JButton button3 = new JButton();
+    CreateFrameButton button1 = new CreateFrameButton("Use Book ID",120,160);
+    CreateFrameButton button2 = new CreateFrameButton("Use Book Title",120,240);
+    CreateFrameButton button3 = new CreateFrameButton("Use Author Name",120,320);
     CreateLabel label1 = new CreateLabel("Search a Book");
 
     public SearchBookFrame(){
@@ -27,18 +28,6 @@ public class SearchBookFrame implements ActionListener {
         sbFrame.setLayout(null);
         sbFrame.setLocationRelativeTo(null);
         sbFrame.setTitle("Search Book");
-
-        button1.setBounds(120,160,220,50);
-        button2.setBounds(120,240,220,50);
-        button3.setBounds(120,320,220,50);
-
-        button1.setText("Search using Book ID");
-        button2.setText("Search using Book Title");
-        button3.setText("Search using Author Name");
-
-        button1.setFocusable(false);
-        button2.setFocusable(false);
-        button3.setFocusable(false);
 
         button1.addActionListener(this);
         button2.addActionListener(this);
