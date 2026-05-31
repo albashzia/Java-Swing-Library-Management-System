@@ -2,10 +2,7 @@ package GUI.BookFrames;
 
 import Code.ArrayListsManager;
 import Code.Book;
-import GUI.AdditionalClasses.CreateBackButton;
-import GUI.AdditionalClasses.CreateExitButton;
-import GUI.AdditionalClasses.CreateLabel;
-import GUI.AdditionalClasses.CreateSubmitButton;
+import GUI.AdditionalClasses.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -119,6 +116,7 @@ public class AddBookFrame implements ActionListener {
             int quantity = Integer.parseInt(quantityTextField.getText());
             Book book = new Book(id,name,author,quantity);
             manager.addBook(book);
+            CreateDialogBox dialogBox = new CreateDialogBox("Success", "Book Added Successfully");
         }
     }
 }
