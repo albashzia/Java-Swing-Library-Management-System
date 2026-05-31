@@ -6,7 +6,8 @@ public class CreateDialogBox extends JDialog {
 
     public CreateDialogBox(String title, String text){
         this.setTitle(title);
-        JTextField message = new JTextField(text);
+        JLabel message = new JLabel(text);
         this.add(message);
+        this.setVisible(true);
     }
 }
