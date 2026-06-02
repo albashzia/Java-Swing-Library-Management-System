@@ -34,7 +34,7 @@ public class IssueBookFrame implements ActionListener {
         ibFrame.setTitle("Issue Book");
 
         idLabel.setText("Enter book id : ");
-        idLabel.setBounds(130,170,200,40);
+        idLabel.setBounds(10,80,200,100);
         idLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
         backButton.addActionListener(this);
 
