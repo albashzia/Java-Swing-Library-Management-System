@@ -10,7 +10,7 @@ public class CreateFrameButton extends JButton {
         this.setSize(200,80);
         this.setLocation(x,y);
         this.setFocusable(false);
-        this.setFont(new Font("Canvas",Font.BOLD,15));
+        this.setFont(new Font("Canvas",Font.PLAIN,15));
         this.setBackground(Color.BLACK);
         this.setForeground(Color.WHITE);
     }
