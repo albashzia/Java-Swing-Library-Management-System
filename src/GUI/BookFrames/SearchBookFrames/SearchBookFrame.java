@@ -16,9 +16,9 @@ public class SearchBookFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
 
-    CreateFrameButton button1 = new CreateFrameButton("Use Book ID",120,160);
-    CreateFrameButton button2 = new CreateFrameButton("Use Book Title",120,240);
-    CreateFrameButton button3 = new CreateFrameButton("Use Author Name",120,320);
+    CreateFrameButton button1 = new CreateFrameButton("Use Book ID",100,200);
+    CreateFrameButton button2 = new CreateFrameButton("Use Book Title",320,200);
+    CreateFrameButton button3 = new CreateFrameButton("Use Author Name",540,200);
     CreateLabel label1 = new CreateLabel("Search a Book");
 
     public SearchBookFrame(){
