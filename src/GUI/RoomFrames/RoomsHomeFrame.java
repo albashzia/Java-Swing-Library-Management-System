@@ -2,6 +2,7 @@ package GUI.RoomFrames;
 
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
+import GUI.AdditionalClasses.CreateFrameButton;
 import GUI.AdditionalClasses.CreateLabel;
 import GUI.HomeFrame;
 
@@ -15,10 +16,10 @@ public class RoomsHomeFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Study Room Management");
-    JButton button1 = new JButton();
-    JButton button2 = new JButton();
-    JButton button3 = new JButton();
-    JButton button4 = new JButton();
+    CreateFrameButton button1 = new CreateFrameButton("Show Rooms",190,130);
+    CreateFrameButton button2 = new CreateFrameButton("Reserve Study Room",410,130);
+    CreateFrameButton button3 = new CreateFrameButton("Cancel Reservation",190,240);
+    CreateFrameButton button4 = new CreateFrameButton("Check Status",410,240);
 
     public RoomsHomeFrame(){
         srhFrame.setSize(800,600);
@@ -28,21 +29,6 @@ public class RoomsHomeFrame implements ActionListener {
         srhFrame.setTitle("Study Room Management");
 
         backButton.addActionListener(this);
-
-        button1.setBounds(190,130,200,80);
-        button2.setBounds(410,130,200,80);
-        button3.setBounds(190,240,200,80);
-        button4.setBounds(410,240,200,80);
-
-        button1.setText("Show Available Rooms");
-        button2.setText("Reserve Study Room");
-        button3.setText("Cancel Reservation");
-        button4.setText("Check Reservation Status");
-
-        button1.setFocusable(false);
-        button2.setFocusable(false);
-        button3.setFocusable(false);
-        button4.setFocusable(false);
 
         button1.addActionListener(this);
         button2.addActionListener(this);
