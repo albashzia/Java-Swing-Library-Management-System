@@ -48,7 +48,7 @@ public class IssueBookFrame implements ActionListener {
         memberIdLabel.setBounds(10,150,200,100);
         memberIdLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
-        memberIdTextField.setBounds(350,220,100,40);
+        memberIdTextField.setBounds(10,220,760,30);
         memberIdTextField.setFont(new Font("Comic",Font.BOLD,20));
         memberIdTextField.setForeground(Color.WHITE);
         memberIdTextField.setBackground(Color.BLACK);
