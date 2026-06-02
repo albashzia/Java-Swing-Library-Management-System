@@ -31,7 +31,7 @@ public class SearchBookByTitleFrame implements ActionListener {
         titleLabel.setBounds(10,150,200,100);
         titleLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
-        titleTextField.setBounds(350,200,300,40);
+        titleTextField.setBounds(10,150,200,100);
         titleTextField.setFont(new Font("Comic",Font.BOLD,20));
         titleTextField.setForeground(Color.WHITE);
         titleTextField.setBackground(Color.BLACK);
