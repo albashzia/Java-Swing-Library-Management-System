@@ -45,7 +45,7 @@ public class IssueBookFrame implements ActionListener {
         idTextField.setCaretColor(Color.WHITE);
 
         memberIdLabel.setText("Enter member id : ");
-        memberIdLabel.setBounds(10,150,200,100);
+        memberIdLabel.setBounds(10,150,300,100);
         memberIdLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
         memberIdTextField.setBounds(10,220,760,30);
