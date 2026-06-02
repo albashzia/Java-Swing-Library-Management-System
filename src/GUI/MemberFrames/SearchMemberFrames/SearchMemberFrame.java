@@ -2,6 +2,7 @@ package GUI.MemberFrames.SearchMemberFrames;
 
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
+import GUI.AdditionalClasses.CreateFrameButton;
 import GUI.AdditionalClasses.CreateLabel;
 import GUI.MemberFrames.MembersHomeFrame;
 
@@ -15,8 +16,8 @@ public class SearchMemberFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Search Member");
 
-    JButton button1 = new JButton();
-    JButton button2 = new JButton();
+    CreateFrameButton button1 = new CreateFrameButton("Use ID",180,200);
+    CreateFrameButton button2 = new CreateFrameButton("Use Name",420,200);
 
     public SearchMemberFrame(){
 
@@ -25,15 +26,6 @@ public class SearchMemberFrame implements ActionListener {
         smFrame.setLayout(null);
         smFrame.setLocationRelativeTo(null);
         smFrame.setTitle("Search Members");
-
-        button1.setBounds(150,160,220,50);
-        button2.setBounds(150,240,220,50);
-
-        button1.setText("Search Member using ID");
-        button2.setText("Search Member using name");
-
-        button1.setFocusable(false);
-        button2.setFocusable(false);
 
         button1.addActionListener(this);
         button2.addActionListener(this);
