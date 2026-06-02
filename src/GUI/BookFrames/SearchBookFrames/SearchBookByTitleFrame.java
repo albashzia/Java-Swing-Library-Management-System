@@ -28,7 +28,7 @@ public class SearchBookByTitleFrame implements ActionListener {
         sbtFrame.setTitle("Search Book By Title");
 
         titleLabel.setText("Enter book title : ");
-        titleLabel.setBounds(130,200,250,40);
+        titleLabel.setBounds(10,150,200,100);
         titleLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
         titleTextField.setBounds(350,200,300,40);
