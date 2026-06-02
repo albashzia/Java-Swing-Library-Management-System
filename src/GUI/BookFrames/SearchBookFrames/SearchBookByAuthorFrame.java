@@ -31,7 +31,7 @@ public class SearchBookByAuthorFrame implements ActionListener {
         authorLabel.setBounds(130,200,250,40);
         authorLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
-        authorTextField.setBounds(350,200,300,40);
+        authorTextField.setBounds(10,220,760,30);
         authorTextField.setFont(new Font("Comic",Font.BOLD,20));
         authorTextField.setForeground(Color.WHITE);
         authorTextField.setBackground(Color.BLACK);
