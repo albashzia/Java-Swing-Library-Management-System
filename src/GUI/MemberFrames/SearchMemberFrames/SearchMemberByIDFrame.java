@@ -28,7 +28,7 @@ public class SearchMemberByIDFrame implements ActionListener {
         smiFrame.setTitle("Search Members by ID");
 
         idLabel.setText("Enter Member ID : ");
-        idLabel.setBounds(100,170,200,100);
+        idLabel.setBounds(10,150,200,100);
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
         idTextField.setBounds(270,210,100,30);
