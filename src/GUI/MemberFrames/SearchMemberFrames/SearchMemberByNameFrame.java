@@ -28,7 +28,7 @@ public class SearchMemberByNameFrame implements ActionListener {
         smnFrame.setTitle("Search Members by Name");
 
         nameLabel.setText("Enter Member Name : ");
-        nameLabel.setBounds(100,170,200,100);
+        nameLabel.setBounds(10,150,200,100);
         nameLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
 
         nameTextField.setBounds(310,205,250,30);
