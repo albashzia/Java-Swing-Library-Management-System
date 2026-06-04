@@ -41,7 +41,7 @@ public class ReturnBookFrame implements ActionListener {
         idTextField.setCaretColor(Color.WHITE);
 
         memberIdLabel.setText("Enter member id : ");
-        memberIdLabel.setBounds(130,220,250,40);
+        memberIdLabel.setBounds(10,150,300,100);
         memberIdLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
         memberIdTextField.setBounds(350,220,100,40);
