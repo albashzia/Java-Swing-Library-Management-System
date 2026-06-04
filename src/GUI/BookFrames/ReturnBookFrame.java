@@ -31,7 +31,7 @@ public class ReturnBookFrame implements ActionListener {
         rbFrame.setTitle("Return Book");
 
         idLabel.setText("Enter book id : ");
-        idLabel.setBounds(130,170,200,40);
+        idLabel.setBounds(10,80,200,100);
         idLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
         idTextField.setBounds(350,170,100,40);
