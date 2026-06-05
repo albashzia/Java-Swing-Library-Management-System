@@ -3,6 +3,7 @@ package GUI.MemberFrames;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
+import GUI.AdditionalClasses.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,7 +17,7 @@ public class RemoveMemberFrame implements ActionListener {
     CreateLabel label1 = new CreateLabel("Remove a Member");
     JLabel idLabel = new JLabel();
     JTextField idTextField = new JTextField();
-
+    CreateSubmitButton submitButton = new CreateSubmitButton(340,270,"Remove");
     RemoveMemberFrame(){
 
         rmFrame.setSize(800,600);
@@ -42,6 +43,7 @@ public class RemoveMemberFrame implements ActionListener {
         rmFrame.add(exitButton);
         rmFrame.add(label1);
         rmFrame.add(backButton);
+        rmFrame.add(submitButton);
         rmFrame.setVisible(true);
         
     }
