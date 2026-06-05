@@ -12,6 +12,7 @@ import java.awt.event.ActionListener;
 public class IssuedToMemberFrame implements ActionListener {
     JFrame itmFrame = new JFrame();
     JLabel idLabel = new JLabel();
+    JTextField idTextField = new JTextField();
     CreateBackButton backButton = new CreateBackButton();
     CreateExitButton exitButton = new CreateExitButton();
     CreateLabel label1 = new CreateLabel("Books Issued to Member");
@@ -20,6 +21,12 @@ public class IssuedToMemberFrame implements ActionListener {
         idLabel.setText("Enter Member ID : ");
         idLabel.setBounds(10,80,200,100);
         idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
+
+        idTextField.setBounds(10,150,760,30);
+        idTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        idTextField.setForeground(Color.WHITE);
+        idTextField.setBackground(Color.BLACK);
+        idTextField.setCaretColor(Color.WHITE);
 
         itmFrame.setSize(800,600);
         itmFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -30,6 +37,7 @@ public class IssuedToMemberFrame implements ActionListener {
         backButton.addActionListener(this);
 
         itmFrame.add(idLabel);
+        itmFrame.add(idTextField);
         itmFrame.add(exitButton);
         itmFrame.add(label1);
         itmFrame.add(backButton);
