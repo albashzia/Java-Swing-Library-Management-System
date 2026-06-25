@@ -32,21 +32,21 @@ public class ReserveRoomFrame implements ActionListener {
 
 
         roomNumberLabel.setText("Enter room number: ");
-        roomNumberLabel.setBounds(100,170,200,100);
-        roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
-        
-        roomNumberTextField.setBounds(300,210,300,30);
+        roomNumberLabel.setBounds(10,150,300,100);
+        roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,25));
 
         memberIdTextField.setBounds(10,150,760,30);
         memberIdTextField.setFont(new Font("Comic",Font.BOLD,20));
         memberIdTextField.setForeground(Color.WHITE);
         memberIdTextField.setBackground(Color.BLACK);
         memberIdTextField.setCaretColor(Color.WHITE);
-
-        roomNumberTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        
+        roomNumberTextField.setBounds(10,220,760,30);
+        roomNumberTextField.setFont(new Font("Comic",Font.BOLD,20));
         roomNumberTextField.setForeground(Color.WHITE);
         roomNumberTextField.setBackground(Color.BLACK);
         roomNumberTextField.setCaretColor(Color.WHITE);
+
 
         backButton.addActionListener(this);
 
