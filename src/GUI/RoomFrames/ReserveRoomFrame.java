@@ -11,15 +11,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ReserveRoomFrame implements ActionListener {
+
     JFrame rrFrame = new JFrame();
-    CreateBackButton backButton = new CreateBackButton();
+
     CreateLabel label1 = new CreateLabel("Reserve a Room");
+
     JLabel memberIdLabel = new JLabel();
-    JTextField memberIdTextField = new JTextField();
     JLabel roomNumberLabel = new JLabel();
+
+    JTextField memberIdTextField = new JTextField();
     JTextField roomNumberTextField = new JTextField();
-    CreateExitButton exitButton = new CreateExitButton();
+
     CreateSubmitButton submitButton = new CreateSubmitButton(350,290,"Reserve");
+    CreateBackButton backButton = new CreateBackButton();
+    CreateExitButton exitButton = new CreateExitButton();
 
     public ReserveRoomFrame(){
         rrFrame.setSize(800,600);
