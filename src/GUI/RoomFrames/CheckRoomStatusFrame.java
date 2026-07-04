@@ -3,6 +3,7 @@ package GUI.RoomFrames;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
+import GUI.AdditionalClasses.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,6 +17,7 @@ public class CheckRoomStatusFrame implements ActionListener {
     JLabel roomNumberLabel = new JLabel();
     JTextField roomNumberTextField = new JTextField();
     CreateExitButton exitButton = new CreateExitButton();
+    CreateSubmitButton submitButton = new CreateSubmitButton(350,280,"Check");
 
     public CheckRoomStatusFrame(){
         crsFrame.setSize(800,600);
@@ -36,6 +38,7 @@ public class CheckRoomStatusFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        crsFrame.add(submitButton);
         crsFrame.add(exitButton);
         crsFrame.add(roomNumberTextField);
         crsFrame.add(roomNumberLabel);
