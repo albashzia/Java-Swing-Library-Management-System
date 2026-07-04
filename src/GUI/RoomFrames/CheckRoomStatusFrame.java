@@ -28,8 +28,8 @@ public class CheckRoomStatusFrame implements ActionListener {
         roomNumberLabel.setBounds(10,150,400,100);
         roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,25));
 
-        roomNumberTextField.setBounds(415,190,100,30);
-        roomNumberTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        roomNumberTextField.setBounds(10,220,760,30);
+        roomNumberTextField.setFont(new Font("Comic",Font.BOLD,20));
         roomNumberTextField.setForeground(Color.WHITE);
         roomNumberTextField.setBackground(Color.BLACK);
         roomNumberTextField.setCaretColor(Color.WHITE);
