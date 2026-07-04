@@ -5,6 +5,7 @@ import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,6 +14,7 @@ public class CancelReservationFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Cancel Reservation");
     CreateExitButton exitButton = new CreateExitButton();
+    JLabel roomNumberLabel = new JLabel();
 
     public CancelReservationFrame(){
         crFrame.setSize(800,600);
@@ -20,6 +22,10 @@ public class CancelReservationFrame implements ActionListener {
         crFrame.setLayout(null);
         crFrame.setLocationRelativeTo(null);
         crFrame.setTitle("Cancel Reservation");
+
+        roomNumberLabel.setText("Enter room number to cancel reservation : ");
+        roomNumberLabel.setBounds(10,150,500,100);
+        roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,25));
 
         backButton.addActionListener(this);
 
