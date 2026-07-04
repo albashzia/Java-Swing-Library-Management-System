@@ -18,7 +18,6 @@ public class HomeFrame implements ActionListener {
     CreateFrameButton button3 = new CreateFrameButton("Room Management",520,160);
 
     CreateLabel label = new CreateLabel("Library Management System");
-    JButton testButton = new JButton();
 
     JButton exitButton = new JButton();
 
@@ -40,12 +39,6 @@ public class HomeFrame implements ActionListener {
         exitButton.setFocusable(false);
         exitButton.addActionListener(this);
 
-        testButton.setSize(240,50);
-        testButton.setLocation(280,320);
-        testButton.setText("Test Frame");
-        testButton.setFocusable(false);
-        testButton.addActionListener(this);
-        homeFrame.add(testButton);
 
         homeFrame.add(button1);
         homeFrame.add(button2);
@@ -74,11 +67,6 @@ public class HomeFrame implements ActionListener {
         }
         if (e.getSource()==exitButton){
             homeFrame.dispose();
-        }
-
-        if (e.getSource()==testButton){
-            homeFrame.dispose();
-            new TestFrame();
         }
     }
 }
