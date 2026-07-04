@@ -3,6 +3,7 @@ package GUI.RoomFrames;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
+import GUI.AdditionalClasses.CreateSubmitButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,6 +17,7 @@ public class CancelReservationFrame implements ActionListener {
     CreateExitButton exitButton = new CreateExitButton();
     JTextField roomNumberTextField = new JTextField();
     JLabel roomNumberLabel = new JLabel();
+    CreateSubmitButton submitButton = new CreateSubmitButton(350,280,"Cancel");
 
     public CancelReservationFrame(){
         crFrame.setSize(800,600);
@@ -36,6 +38,7 @@ public class CancelReservationFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        crFrame.add(submitButton);
         crFrame.add(exitButton);
         crFrame.add(label1);
         crFrame.add(backButton);
