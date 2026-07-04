@@ -14,6 +14,7 @@ public class CancelReservationFrame implements ActionListener {
     CreateBackButton backButton = new CreateBackButton();
     CreateLabel label1 = new CreateLabel("Cancel Reservation");
     CreateExitButton exitButton = new CreateExitButton();
+    JTextField roomNumberTextField = new JTextField();
     JLabel roomNumberLabel = new JLabel();
 
     public CancelReservationFrame(){
