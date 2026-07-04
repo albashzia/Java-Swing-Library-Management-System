@@ -28,6 +28,12 @@ public class CancelReservationFrame implements ActionListener {
         roomNumberLabel.setBounds(10,150,500,100);
         roomNumberLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,25));
 
+        roomNumberTextField.setBounds(10,220,760,30);
+        roomNumberTextField.setFont(new Font("Comic",Font.BOLD,20));
+        roomNumberTextField.setForeground(Color.WHITE);
+        roomNumberTextField.setBackground(Color.BLACK);
+        roomNumberTextField.setCaretColor(Color.WHITE);
+
         backButton.addActionListener(this);
 
         crFrame.add(exitButton);
