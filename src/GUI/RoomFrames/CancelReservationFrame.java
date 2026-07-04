@@ -38,6 +38,8 @@ public class CancelReservationFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
+        crFrame.add(roomNumberLabel);
+        crFrame.add(roomNumberTextField);
         crFrame.add(submitButton);
         crFrame.add(exitButton);
         crFrame.add(label1);
