@@ -49,32 +49,32 @@ public class AddBookFrame implements ActionListener {
         authorLabel.setBounds(10,220,200,100);
         quantityLabel.setBounds(10,290,200,100);
 
-        idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
-        titleLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
-        authorLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
-        quantityLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,20));
+        idLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,18));
+        titleLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,18));
+        authorLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,18));
+        quantityLabel.setFont(new Font("Cosmic Sans",Font.PLAIN,18));
 
         idTextField.setBounds(10,150,760,30);
         titleTextField.setBounds(10,220,760,30);
         authorTextField.setBounds(10,290,760,30);
         quantityTextField.setBounds(10,360,760,30);
 
-        idTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        idTextField.setFont(new Font("Consolas",Font.BOLD,18));
         idTextField.setForeground(Color.WHITE);
         idTextField.setBackground(Color.BLACK);
         idTextField.setCaretColor(Color.WHITE);
 
-        titleTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        titleTextField.setFont(new Font("Consolas",Font.BOLD,18));
         titleTextField.setForeground(Color.WHITE);
         titleTextField.setBackground(Color.BLACK);
         titleTextField.setCaretColor(Color.WHITE);
         
-        authorTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        authorTextField.setFont(new Font("Consolas",Font.BOLD,18));
         authorTextField.setForeground(Color.WHITE);
         authorTextField.setBackground(Color.BLACK);
         authorTextField.setCaretColor(Color.WHITE);
 
-        quantityTextField.setFont(new Font("Consolas",Font.BOLD,20));
+        quantityTextField.setFont(new Font("Consolas",Font.BOLD,18));
         quantityTextField.setForeground(Color.WHITE);
         quantityTextField.setBackground(Color.BLACK);
         quantityTextField.setCaretColor(Color.WHITE);
