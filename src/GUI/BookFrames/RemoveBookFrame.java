@@ -68,7 +68,7 @@ public class RemoveBookFrame implements ActionListener {
 
         if (e.getSource() == submitButton) {
             String id = idTextField.getText();
-            manager.removeBookById(id);
+            service.removeBook(id);
         }
     }
 }
