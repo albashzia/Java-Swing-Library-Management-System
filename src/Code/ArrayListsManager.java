@@ -18,12 +18,8 @@ public class ArrayListsManager {
     }
 
 
-    public void removeBookById(String id) {
-        for (int i = 0; i < bookArrayList.size(); i++) {
-            if (bookArrayList.get(i).getId().equalsIgnoreCase(id)){
-                bookArrayList.remove(i);
-            }
-        }
+    public void removeBookById(Book book) {
+        bookArrayList.remove(book);
     }
 
     // Fetching data, returning array lists for DisplayBookFrame class
