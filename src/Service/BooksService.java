@@ -11,10 +11,16 @@ public class BooksService {
     ArrayListsManager manager = ArrayListsManager.instance;
     ArrayList<Book> bookArrayList = manager.returnBooksArrayList();
 
-    public void addBook(String id,String name,String author,int quantity){
+    public boolean addBook(String id,String name,String author,int quantity){
         Book book = new Book(id,name,author,quantity);
-        manager.addBook(book);
-        CreateDialogBox dialogBox = new CreateDialogBox("Success", "Book Added Successfully");
+        Boolean success = manager.addBook(book);
+        if (success==true){
+            CreateDialogBox dialogBox = new CreateDialogBox("Success", "Book Added Successfully");
+        }
+        else {
+            success= false;
+        }
+        return success;
     }
 
     public void removeBook(String id){
