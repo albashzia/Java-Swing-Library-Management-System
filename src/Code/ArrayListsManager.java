@@ -13,8 +13,10 @@ public class ArrayListsManager {
         memberArrayList = new ArrayList<>();
     }
 
-    public void addBook(Book book){
+    public boolean addBook(Book book){
+        Boolean success = true;
         bookArrayList.add(book);
+        return true;
     }
 
 
