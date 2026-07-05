@@ -5,6 +5,7 @@ import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
 import GUI.AdditionalClasses.CreateSubmitButton;
+import Service.BooksService;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,7 +21,7 @@ public class RemoveBookFrame implements ActionListener {
     CreateSubmitButton submitButton = new CreateSubmitButton(320, 300, 160, 50, "Remove Book");
     CreateLabel label1 = new CreateLabel("Remove a Book");
 
-    ArrayListsManager manager = ArrayListsManager.instance;
+    BooksService service = new BooksService();
 
     JLabel idLabel = new JLabel();
     JTextField idTextField = new JTextField();
