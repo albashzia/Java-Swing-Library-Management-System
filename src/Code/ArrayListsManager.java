@@ -16,7 +16,7 @@ public class ArrayListsManager {
     public boolean addBook(Book book){
         Boolean success = true;
         bookArrayList.add(book);
-        return true;
+        return success;
     }
 
 
