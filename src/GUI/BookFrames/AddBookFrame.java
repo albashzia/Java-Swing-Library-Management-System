@@ -3,6 +3,7 @@ package GUI.BookFrames;
 import Code.ArrayListsManager;
 import Code.Book;
 import GUI.AdditionalClasses.*;
+import Service.BooksService;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,7 +27,7 @@ public class AddBookFrame implements ActionListener {
     JTextField authorTextField = new JTextField();
     JTextField quantityTextField = new JTextField();
 
-    ArrayListsManager manager = ArrayListsManager.instance;
+    BooksService service = new BooksService();
 
     CreateLabel label1 = new CreateLabel("Add a Book");
 
