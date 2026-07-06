@@ -34,4 +34,17 @@ public class BooksService {
             manager.removeBookById(removableBook);
         }
     }
+
+    public Book searchBookById(String id){
+        Book searchableBook = null;
+        for (int i = 0; i < bookArrayList.size(); i++) {
+            if (bookArrayList.get(i).getId().equalsIgnoreCase(id)){
+                searchableBook = bookArrayList.get(i);
+            }
+        }
+        if(searchableBook !=null){
+            return searchableBook;
+        }
+        return searchableBook;
+    }
 }
