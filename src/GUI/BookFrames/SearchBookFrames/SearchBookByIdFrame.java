@@ -17,7 +17,7 @@ public class SearchBookByIdFrame implements ActionListener {
     JLabel idLabel = new JLabel();
     JTextField idTextField = new JTextField();
     CreateLabel label = new CreateLabel("Search Book by ID");
-    CreateSubmitButton sb = new CreateSubmitButton(350,280,"Search");
+    CreateSubmitButton submitButton = new CreateSubmitButton(350,280,"Search");
 
     public SearchBookByIdFrame(){
 
@@ -39,7 +39,7 @@ public class SearchBookByIdFrame implements ActionListener {
 
         backButton.addActionListener(this);
 
-        sbiFrame.add(sb);
+        sbiFrame.add(submitButton);
         sbiFrame.add(idLabel);
         sbiFrame.add(idTextField);
         sbiFrame.add(exitButton);
@@ -53,5 +53,6 @@ public class SearchBookByIdFrame implements ActionListener {
             sbiFrame.dispose();
             new SearchBookFrame();
         }
+
     }
 }
