@@ -1,5 +1,6 @@
 package GUI.BookFrames.SearchBookFrames;
 
+import Code.Book;
 import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
@@ -58,6 +59,7 @@ public class SearchBookByIdFrame implements ActionListener {
 
         if(e.getSource()==submitButton){
             String id = idTextField.getText();
+            Book searchedBook = service.searchBookById(id);
         }
     }
 }
