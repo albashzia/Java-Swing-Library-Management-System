@@ -54,5 +54,8 @@ public class SearchBookByIdFrame implements ActionListener {
             new SearchBookFrame();
         }
 
+        if(e.getSource()==submitButton){
+            String id = idTextField.getText();
+        }
     }
 }
