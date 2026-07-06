@@ -4,6 +4,7 @@ import GUI.AdditionalClasses.CreateBackButton;
 import GUI.AdditionalClasses.CreateExitButton;
 import GUI.AdditionalClasses.CreateLabel;
 import GUI.AdditionalClasses.CreateSubmitButton;
+import Service.BooksService;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,6 +19,7 @@ public class SearchBookByIdFrame implements ActionListener {
     JTextField idTextField = new JTextField();
     CreateLabel label = new CreateLabel("Search Book by ID");
     CreateSubmitButton submitButton = new CreateSubmitButton(350,280,"Search");
+    BooksService service = new BooksService();
 
     public SearchBookByIdFrame(){
 
