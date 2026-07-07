@@ -68,11 +68,15 @@ public class SearchBookByIdFrame implements ActionListener {
                 int bookQuantity = searchedBook.getQuantity();
                 JLabel bookDisplayLabel = new JLabel();
                 bookDisplayLabel.setBounds(20,250,400,300);
+                bookDisplayLabel.setFont(new Font("Cosmic",Font.PLAIN,20));
                 bookDisplayLabel.setText(
-                        "ID"+bookId+"\n"+
-                        "Title"+bookTitle+"\n"+
-                        "Author"+bookAuthor+"\n"+
-                        "Quantity"+bookQuantity);
+                        "<html>" +
+                                "ID: " + bookId + "<br>" +
+                                "Title: " + bookTitle + "<br>" +
+                                "Author: " + bookAuthor + "<br>" +
+                                "Quantity: " + bookQuantity +
+                                "</html>"
+                );
                 sbiFrame.add(bookDisplayLabel);
                 sbiFrame.revalidate();
                 sbiFrame.repaint();
