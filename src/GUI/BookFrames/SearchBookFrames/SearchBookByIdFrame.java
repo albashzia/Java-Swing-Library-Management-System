@@ -41,6 +41,7 @@ public class SearchBookByIdFrame implements ActionListener {
         idTextField.setCaretColor(Color.WHITE);
 
         backButton.addActionListener(this);
+        submitButton.addActionListener(this);
 
         sbiFrame.add(submitButton);
         sbiFrame.add(idLabel);
