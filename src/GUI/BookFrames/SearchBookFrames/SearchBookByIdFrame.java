@@ -19,7 +19,7 @@ public class SearchBookByIdFrame implements ActionListener {
     JLabel idLabel = new JLabel();
     JTextField idTextField = new JTextField();
     CreateLabel label = new CreateLabel("Search Book by ID");
-    CreateSubmitButton submitButton = new CreateSubmitButton(350,280,"Search");
+    CreateSubmitButton submitButton = new CreateSubmitButton(350,200,"Search");
     BooksService service = new BooksService();
 
     public SearchBookByIdFrame(){
