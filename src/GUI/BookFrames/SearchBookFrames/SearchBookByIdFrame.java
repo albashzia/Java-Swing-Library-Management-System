@@ -31,7 +31,7 @@ public class SearchBookByIdFrame implements ActionListener {
         sbiFrame.setTitle("Search Book By ID");
 
         idLabel.setText("Enter book id : ");
-        idLabel.setBounds(10,150,200,100);
+        idLabel.setBounds(10,80,200,100);
         idLabel.setFont(new Font("Comic Sans",Font.PLAIN,25));
 
         idTextField.setBounds(10,220,760,30);
