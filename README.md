@@ -74,6 +74,13 @@
                     <li>Main</li>
                 </ul>
             </li>
+            <li>📁Service
+                <ul>
+                    <li>BooksService</li>
+                    <li>MembersService</li>
+                    <li>RoomsService</li>
+                </ul>
+            </li>
         </ul>
     </li>
 </ul>
