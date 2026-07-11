@@ -5,6 +5,16 @@
 <ul>
     <li>📁src
         <ul>
+            <li>📁Code
+                <ul>
+                    <li>ArrayListsManager</li>
+                    <li>Book</li>
+                    <li>FileMember</li>
+                    <li>IssuedBook</li>
+                    <li>Member</li>
+                    <li>StudyRoom</li>
+                </ul>
+            </li>
             <li>📁GUI
                 <ul>
                     <li>📁AdditionalClasses
