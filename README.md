@@ -84,3 +84,5 @@
         </ul>
     </li>
 </ul>
+<h2>License</h2>
+<p>This project is solely developed for learning and educational purposes</p>
