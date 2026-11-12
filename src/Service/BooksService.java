@@ -13,8 +13,8 @@ public class BooksService {
 
     public boolean addBook(String id,String name,String author,int quantity){
         Book book = new Book(id,name,author,quantity);
-        Boolean success = manager.addBook(book);
-        if (success==true){
+        boolean success = manager.addBook(book);
+        if (success){
             CreateDialogBox dialogBox = new CreateDialogBox("Success", "Book Added Successfully");
         }
         else {
